@@ -16,5 +16,11 @@ namespace Control_Pacientes_Clinica_Machado
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("h:mm:ss");
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }
