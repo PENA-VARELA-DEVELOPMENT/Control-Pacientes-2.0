@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Cita.cs" />
+    <Compile Include="Clases\DetalleCita.cs" />
+    <Compile Include="Clases\Doctores.cs" />
+    <Compile Include="Clases\ExamenDental.cs" />
+    <Compile Include="Clases\HistorialDental.cs" />
+    <Compile Include="Clases\HistoriaMedica.cs" />
+    <Compile Include="Clases\Paciente.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
