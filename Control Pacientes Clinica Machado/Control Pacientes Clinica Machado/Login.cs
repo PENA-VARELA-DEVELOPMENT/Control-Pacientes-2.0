@@ -16,5 +16,13 @@ namespace Control_Pacientes_Clinica_Machado
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bienvenido al Sistema", "Clínica Dental Machado", MessageBoxButtons.OK);
+            Menu menu = new Menu();
+
+            menu.Visible = true;
+        }
     }
 }
