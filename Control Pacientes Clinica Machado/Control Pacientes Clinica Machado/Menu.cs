@@ -60,5 +60,10 @@ namespace Control_Pacientes_Clinica_Machado
             // Al quitar el mouse sobre el boton estre vuleve a su color original
             this.citasBtn.BackColor = ColorTranslator.FromHtml("#33C42D");
         }
+
+        private void citasBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
