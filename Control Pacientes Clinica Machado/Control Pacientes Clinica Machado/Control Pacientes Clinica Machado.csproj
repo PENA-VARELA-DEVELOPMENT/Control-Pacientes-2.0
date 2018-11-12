@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +49,86 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarPaciente.Designer.cs">
+      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Cita.cs" />
+    <Compile Include="Clases\DetalleCita.cs" />
+    <Compile Include="Clases\Doctores.cs" />
+    <Compile Include="Clases\ExamenDental.cs" />
+    <Compile Include="Clases\HistorialDental.cs" />
+    <Compile Include="Clases\HistoriaMedica.cs" />
+    <Compile Include="Clases\Paciente.cs" />
+    <Compile Include="DarDeBajaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DarDeBajaPaciente.Designer.cs">
+      <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarPaciente.Designer.cs">
+      <DependentUpon>ListarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogoClinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogoClinica.Designer.cs">
+      <DependentUpon>LogoClinica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoPaciente.Designer.cs">
+      <DependentUpon>NuevoPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacientes.Designer.cs">
+      <DependentUpon>Pacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActualizarPaciente.resx">
+      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DarDeBajaPaciente.resx">
+      <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarPaciente.resx">
+      <DependentUpon>ListarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoClinica.resx">
+      <DependentUpon>LogoClinica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoPaciente.resx">
+      <DependentUpon>NuevoPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacientes.resx">
+      <DependentUpon>Pacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +138,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +152,64 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector clinica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Letras02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoLetrasPequeño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\033-male-nurse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentista1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\048-dentist-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotamPequeño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\focusing-target-to-take-a-photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+    <None Include="Resources\borrar.png" />
+    <Content Include="Stored Procedures\Citas\sp_ActualizarCita.sql" />
+    <Content Include="Stored Procedures\Citas\sp_EliminarCita.sql" />
+    <Content Include="Stored Procedures\Citas\sp_InsertarCita.sql" />
+    <Content Include="Stored Procedures\Citas\sp_ListarCitas.sql" />
+    <Content Include="Stored Procedures\DetalleCita\sp_ActualizarDetalleCita.sql" />
+    <Content Include="Stored Procedures\DetalleCita\sp_EliminarDetalleCita.sql" />
+    <Content Include="Stored Procedures\DetalleCita\sp_InsertarDetalleCita.sql" />
+    <Content Include="Stored Procedures\DetalleCita\sp_ListarDetalleCita.sql" />
+    <Content Include="Stored Procedures\Paciente\sp_ActualizarPaciente.sql" />
+    <Content Include="Stored Procedures\Paciente\sp_EliminarPaciente.sql" />
+    <Content Include="Stored Procedures\Paciente\sp_InsertarPaciente.sql" />
+    <Content Include="Stored Procedures\Paciente\sp_ListarPaciente.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

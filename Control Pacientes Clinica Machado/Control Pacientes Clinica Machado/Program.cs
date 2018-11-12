@@ -16,7 +16,7 @@ namespace Control_Pacientes_Clinica_Machado
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new Login());
         }
     }
 }
