@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Control_Pacientes_Clinica_Machado
 {
-    public partial class ActualizarPaciente : Form
+    public partial class Citas : Form
     {
-        public ActualizarPaciente()
+        public Citas()
         {
             InitializeComponent();
         }
-
-
     }
 }
