@@ -36,9 +36,9 @@
             this.PanelCrud = new System.Windows.Forms.Panel();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,10 +46,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(379, 9);
+            this.label1.Font = new System.Drawing.Font("Lemon/Milk", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.label1.Location = new System.Drawing.Point(387, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 25);
+            this.label1.Size = new System.Drawing.Size(117, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pacientes";
             // 
@@ -143,14 +144,14 @@
             this.shapeContainer2.TabIndex = 9;
             this.shapeContainer2.TabStop = false;
             // 
-            // lineShape2
+            // lineShape4
             // 
-            this.lineShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 259;
-            this.lineShape2.X2 = 417;
-            this.lineShape2.Y1 = 118;
-            this.lineShape2.Y2 = 118;
+            this.lineShape4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 739;
+            this.lineShape4.X2 = 877;
+            this.lineShape4.Y1 = 118;
+            this.lineShape4.Y2 = 118;
             // 
             // lineShape3
             // 
@@ -161,14 +162,14 @@
             this.lineShape3.Y1 = 118;
             this.lineShape3.Y2 = 118;
             // 
-            // lineShape4
+            // lineShape2
             // 
-            this.lineShape4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 739;
-            this.lineShape4.X2 = 877;
-            this.lineShape4.Y1 = 118;
-            this.lineShape4.Y2 = 118;
+            this.lineShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 259;
+            this.lineShape2.X2 = 417;
+            this.lineShape2.Y1 = 118;
+            this.lineShape2.Y2 = 118;
             // 
             // pictureBox1
             // 
