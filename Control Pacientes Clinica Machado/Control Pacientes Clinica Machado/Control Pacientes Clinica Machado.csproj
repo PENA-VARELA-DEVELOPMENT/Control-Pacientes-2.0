@@ -55,6 +55,18 @@
     <Compile Include="ActualizarPaciente.Designer.cs">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="CancelarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelarCita.Designer.cs">
+      <DependentUpon>CancelarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citas.Designer.cs">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Cita.cs" />
     <Compile Include="Clases\DetalleCita.cs" />
     <Compile Include="Clases\Doctores.cs" />
@@ -67,6 +79,12 @@
     </Compile>
     <Compile Include="DarDeBajaPaciente.Designer.cs">
       <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListarCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarCitas.Designer.cs">
+      <DependentUpon>ListarCitas.cs</DependentUpon>
     </Compile>
     <Compile Include="ListarPaciente.cs">
       <SubType>Form</SubType>
@@ -92,6 +110,18 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCita.Designer.cs">
+      <DependentUpon>ModificarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaCita.Designer.cs">
+      <DependentUpon>NuevaCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="NuevoPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,8 +139,17 @@
     <EmbeddedResource Include="ActualizarPaciente.resx">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CancelarCita.resx">
+      <DependentUpon>CancelarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citas.resx">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DarDeBajaPaciente.resx">
       <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarCitas.resx">
+      <DependentUpon>ListarCitas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListarPaciente.resx">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
@@ -123,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCita.resx">
+      <DependentUpon>ModificarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaCita.resx">
+      <DependentUpon>NuevaCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoPaciente.resx">
       <DependentUpon>NuevoPaciente.cs</DependentUpon>

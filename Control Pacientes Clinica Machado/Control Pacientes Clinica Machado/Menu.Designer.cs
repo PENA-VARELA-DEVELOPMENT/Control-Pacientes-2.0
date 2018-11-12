@@ -36,13 +36,13 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.PanelCitas = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.citasBtn = new System.Windows.Forms.Button();
             this.pacientesBtn = new System.Windows.Forms.Button();
             this.doctoresBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.PanelOpciones.SuspendLayout();
             this.PanelInformacion.SuspendLayout();
             this.PanelCitas.SuspendLayout();
@@ -84,7 +84,7 @@
             // 
             // PanelInformacion
             // 
-            this.PanelInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
+            this.PanelInformacion.BackColor = System.Drawing.SystemColors.Control;
             this.PanelInformacion.Controls.Add(this.lblFecha);
             this.PanelInformacion.Controls.Add(this.lblHora);
             this.PanelInformacion.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -119,13 +119,23 @@
             // 
             // PanelCitas
             // 
-            this.PanelCitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
+            this.PanelCitas.BackColor = System.Drawing.SystemColors.Control;
             this.PanelCitas.Controls.Add(this.label1);
             this.PanelCitas.Dock = System.Windows.Forms.DockStyle.Right;
             this.PanelCitas.Location = new System.Drawing.Point(1150, 0);
             this.PanelCitas.Name = "PanelCitas";
             this.PanelCitas.Size = new System.Drawing.Size(200, 629);
             this.PanelCitas.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Informacion del dia";
             // 
             // PanelContenedor
             // 
@@ -155,6 +165,7 @@
             this.citasBtn.Text = "Citas";
             this.citasBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.citasBtn.UseVisualStyleBackColor = true;
+            this.citasBtn.Click += new System.EventHandler(this.citasBtn_Click);
             this.citasBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.citasBtn_MouseDown);
             this.citasBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.citasBtn_MouseUp);
             // 
@@ -204,16 +215,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Informacion del dia";
             // 
             // Menu
             // 
