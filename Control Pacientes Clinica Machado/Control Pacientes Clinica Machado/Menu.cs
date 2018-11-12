@@ -15,6 +15,7 @@ namespace Control_Pacientes_Clinica_Machado
         public Menu()
         {
             InitializeComponent();
+            AbrirFormHija(new LogoClinica());
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -24,46 +25,70 @@ namespace Control_Pacientes_Clinica_Machado
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
-        private void doctoresBtn_MouseHover(object sender, EventArgs e)
-        {
-            // Al colocar el mouse sobre el boton este cambia de color 
-            this.doctoresBtn.BackColor = ColorTranslator.FromHtml("#FF7300");
-
-        }
-
-        private void doctoresBtn_MouseLeave(object sender, EventArgs e)
-        {
-            // Al quitar el mouse sobre el boton estre vuleve a su color original
-            this.doctoresBtn.BackColor = ColorTranslator.FromHtml("#33C42D");
-        }
-
-        private void pacientesBtn_MouseHover(object sender, EventArgs e)
+        private void pacientesBtn_MouseDown(object sender, MouseEventArgs e)
         {
             // Al colocar el mouse sobre el boton este cambia de color 
             this.pacientesBtn.BackColor = ColorTranslator.FromHtml("#FF7300");
         }
 
-        private void pacientesBtn_MouseLeave(object sender, EventArgs e)
+        private void pacientesBtn_MouseUp(object sender, MouseEventArgs e)
         {
             // Al quitar el mouse sobre el boton estre vuleve a su color original
             this.pacientesBtn.BackColor = ColorTranslator.FromHtml("#33C42D");
         }
 
-        private void citasBtn_MouseHover(object sender, EventArgs e)
+        private void doctoresBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            // Al colocar el mouse sobre el boton este cambia de color 
+            this.doctoresBtn.BackColor = ColorTranslator.FromHtml("#FF7300");
+        }
+
+        private void doctoresBtn_MouseUp(object sender, MouseEventArgs e)
+        {
+            // Al quitar el mouse sobre el boton estre vuleve a su color original
+            this.doctoresBtn.BackColor = ColorTranslator.FromHtml("#33C42D");
+        }
+
+        private void citasBtn_MouseDown(object sender, MouseEventArgs e)
         {
             // Al colocar el mouse sobre el boton este cambia de color 
             this.citasBtn.BackColor = ColorTranslator.FromHtml("#FF7300");
         }
 
-        private void citasBtn_MouseLeave(object sender, EventArgs e)
+        private void citasBtn_MouseUp(object sender, MouseEventArgs e)
         {
             // Al quitar el mouse sobre el boton estre vuleve a su color original
             this.citasBtn.BackColor = ColorTranslator.FromHtml("#33C42D");
         }
 
-        private void citasBtn_Click(object sender, EventArgs e)
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void AbrirFormHija(object FormHija)
+        {
+            if (this.PanelContenedor.Controls.Count > 0)
+            {
+                this.PanelContenedor.Controls.RemoveAt(0);
+            }
+
+            Form fh = FormHija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.PanelContenedor.Controls.Add(fh);
+            this.PanelContenedor.Tag = fh;
+            fh.Show();     
+        }
+
+        private void pacientesBtn_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Pacientes());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new LogoClinica());
         }
     }
 }
