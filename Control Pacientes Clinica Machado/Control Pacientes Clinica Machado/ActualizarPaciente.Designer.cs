@@ -238,7 +238,7 @@
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(168)))));
-            this.BtnAceptar.Location = new System.Drawing.Point(291, 382);
+            this.BtnAceptar.Location = new System.Drawing.Point(307, 382);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(187, 39);
             this.BtnAceptar.TabIndex = 28;
@@ -480,7 +480,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(168)))));
-            this.button1.Location = new System.Drawing.Point(456, 382);
+            this.button1.Location = new System.Drawing.Point(457, 382);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(187, 39);
             this.button1.TabIndex = 70;
