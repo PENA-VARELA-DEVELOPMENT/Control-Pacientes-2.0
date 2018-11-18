@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PanelOpciones = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.PanelInformacion = new System.Windows.Forms.Panel();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -54,7 +53,6 @@
             this.PanelOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
             this.PanelOpciones.Controls.Add(this.citasBtn);
             this.PanelOpciones.Controls.Add(this.pacientesBtn);
-            this.PanelOpciones.Controls.Add(this.button5);
             this.PanelOpciones.Controls.Add(this.button4);
             this.PanelOpciones.Controls.Add(this.doctoresBtn);
             this.PanelOpciones.Controls.Add(this.pictureBox1);
@@ -64,18 +62,9 @@
             this.PanelOpciones.Size = new System.Drawing.Size(200, 729);
             this.PanelOpciones.TabIndex = 0;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(0, 537);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 58);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(0, 436);
+            this.button4.Location = new System.Drawing.Point(0, 551);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 58);
             this.button4.TabIndex = 4;
@@ -156,11 +145,10 @@
             this.citasBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.citasBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.citasBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.citasBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.calendario;
             this.citasBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.citasBtn.Location = new System.Drawing.Point(0, 336);
+            this.citasBtn.Location = new System.Drawing.Point(3, 247);
             this.citasBtn.Name = "citasBtn";
-            this.citasBtn.Size = new System.Drawing.Size(200, 58);
+            this.citasBtn.Size = new System.Drawing.Size(197, 66);
             this.citasBtn.TabIndex = 3;
             this.citasBtn.Text = "Citas";
             this.citasBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -175,7 +163,6 @@
             this.pacientesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pacientesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pacientesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.pacientesBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources._048_dentist_1;
             this.pacientesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.pacientesBtn.Location = new System.Drawing.Point(0, 156);
             this.pacientesBtn.Name = "pacientesBtn";
@@ -194,11 +181,10 @@
             this.doctoresBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.doctoresBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctoresBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.doctoresBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.dentista1;
             this.doctoresBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.doctoresBtn.Location = new System.Drawing.Point(0, 252);
+            this.doctoresBtn.Location = new System.Drawing.Point(3, 355);
             this.doctoresBtn.Name = "doctoresBtn";
-            this.doctoresBtn.Size = new System.Drawing.Size(200, 58);
+            this.doctoresBtn.Size = new System.Drawing.Size(200, 78);
             this.doctoresBtn.TabIndex = 1;
             this.doctoresBtn.Text = "Doctores";
             this.doctoresBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -247,7 +233,6 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button doctoresBtn;
         private System.Windows.Forms.PictureBox pictureBox1;

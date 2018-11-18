@@ -177,14 +177,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -208,31 +202,10 @@
     <None Include="Resources\LogoLetrasPequeño.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\033-male-nurse.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dentista.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dentista1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\048-dentist-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calendario.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\logo3.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logotamPequeño.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\focusing-target-to-take-a-photo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\login.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login1.png" />
@@ -242,7 +215,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cerrar.png" />
-    <None Include="Resources\borrar.png" />
+    <None Include="Resources\citasBlaco.png" />
+    <None Include="Resources\PACIENTES01.png" />
     <Content Include="Stored Procedures\Citas\sp_ActualizarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_EliminarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_InsertarCita.sql" />
