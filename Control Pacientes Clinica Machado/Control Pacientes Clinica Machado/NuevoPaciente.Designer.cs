@@ -78,7 +78,7 @@
             this.identidadTxt.Location = new System.Drawing.Point(134, 18);
             this.identidadTxt.Name = "identidadTxt";
             this.identidadTxt.Size = new System.Drawing.Size(254, 26);
-            this.identidadTxt.TabIndex = 2;
+            this.identidadTxt.TabIndex = 1;
             // 
             // label1
             // 
@@ -88,7 +88,7 @@
             this.label1.Location = new System.Drawing.Point(25, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 20);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Identidad";
             // 
             // label2
@@ -99,17 +99,18 @@
             this.label2.Location = new System.Drawing.Point(25, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nombre";
             // 
             // nombreTxt
             // 
+            this.nombreTxt.AcceptsTab = true;
             this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTxt.Location = new System.Drawing.Point(134, 61);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(254, 26);
-            this.nombreTxt.TabIndex = 4;
+            this.nombreTxt.TabIndex = 2;
             // 
             // label3
             // 
@@ -124,12 +125,13 @@
             // 
             // apellidoTxt
             // 
+            this.apellidoTxt.AcceptsTab = true;
             this.apellidoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.apellidoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apellidoTxt.Location = new System.Drawing.Point(134, 103);
             this.apellidoTxt.Name = "apellidoTxt";
             this.apellidoTxt.Size = new System.Drawing.Size(254, 26);
-            this.apellidoTxt.TabIndex = 6;
+            this.apellidoTxt.TabIndex = 3;
             // 
             // label4
             // 
@@ -155,12 +157,13 @@
             // 
             // direccionTxt
             // 
+            this.direccionTxt.AcceptsTab = true;
             this.direccionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.direccionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionTxt.Location = new System.Drawing.Point(134, 184);
             this.direccionTxt.Name = "direccionTxt";
             this.direccionTxt.Size = new System.Drawing.Size(254, 26);
-            this.direccionTxt.TabIndex = 10;
+            this.direccionTxt.TabIndex = 5;
             // 
             // label6
             // 
@@ -175,12 +178,13 @@
             // 
             // telefonoTxt
             // 
+            this.telefonoTxt.AcceptsTab = true;
             this.telefonoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.telefonoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonoTxt.Location = new System.Drawing.Point(134, 225);
             this.telefonoTxt.Name = "telefonoTxt";
             this.telefonoTxt.Size = new System.Drawing.Size(254, 26);
-            this.telefonoTxt.TabIndex = 12;
+            this.telefonoTxt.TabIndex = 6;
             // 
             // label7
             // 
@@ -195,12 +199,13 @@
             // 
             // CiudadTxt
             // 
+            this.CiudadTxt.AcceptsTab = true;
             this.CiudadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.CiudadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CiudadTxt.Location = new System.Drawing.Point(601, 26);
             this.CiudadTxt.Name = "CiudadTxt";
             this.CiudadTxt.Size = new System.Drawing.Size(254, 26);
-            this.CiudadTxt.TabIndex = 14;
+            this.CiudadTxt.TabIndex = 7;
             // 
             // label8
             // 
@@ -215,12 +220,13 @@
             // 
             // fechaNacimientoTxt
             // 
+            this.fechaNacimientoTxt.AcceptsTab = true;
             this.fechaNacimientoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.fechaNacimientoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fechaNacimientoTxt.Location = new System.Drawing.Point(601, 67);
             this.fechaNacimientoTxt.Name = "fechaNacimientoTxt";
             this.fechaNacimientoTxt.Size = new System.Drawing.Size(254, 26);
-            this.fechaNacimientoTxt.TabIndex = 16;
+            this.fechaNacimientoTxt.TabIndex = 8;
             // 
             // label9
             // 
@@ -235,12 +241,13 @@
             // 
             // ocupacionTxt
             // 
+            this.ocupacionTxt.AcceptsTab = true;
             this.ocupacionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ocupacionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ocupacionTxt.Location = new System.Drawing.Point(601, 108);
             this.ocupacionTxt.Name = "ocupacionTxt";
             this.ocupacionTxt.Size = new System.Drawing.Size(254, 26);
-            this.ocupacionTxt.TabIndex = 18;
+            this.ocupacionTxt.TabIndex = 9;
             // 
             // label10
             // 
@@ -255,12 +262,13 @@
             // 
             // tutorTxt
             // 
+            this.tutorTxt.AcceptsTab = true;
             this.tutorTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.tutorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tutorTxt.Location = new System.Drawing.Point(601, 149);
             this.tutorTxt.Name = "tutorTxt";
             this.tutorTxt.Size = new System.Drawing.Size(254, 26);
-            this.tutorTxt.TabIndex = 20;
+            this.tutorTxt.TabIndex = 10;
             // 
             // label11
             // 
@@ -275,12 +283,13 @@
             // 
             // doctorRefTxt
             // 
+            this.doctorRefTxt.AcceptsTab = true;
             this.doctorRefTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.doctorRefTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorRefTxt.Location = new System.Drawing.Point(601, 190);
             this.doctorRefTxt.Name = "doctorRefTxt";
             this.doctorRefTxt.Size = new System.Drawing.Size(254, 26);
-            this.doctorRefTxt.TabIndex = 22;
+            this.doctorRefTxt.TabIndex = 11;
             // 
             // label12
             // 
@@ -295,11 +304,12 @@
             // 
             // observacionesTxt
             // 
+            this.observacionesTxt.AcceptsTab = true;
             this.observacionesTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.observacionesTxt.Location = new System.Drawing.Point(601, 232);
             this.observacionesTxt.Name = "observacionesTxt";
             this.observacionesTxt.Size = new System.Drawing.Size(254, 95);
-            this.observacionesTxt.TabIndex = 24;
+            this.observacionesTxt.TabIndex = 12;
             this.observacionesTxt.Text = "";
             // 
             // edadNmr
@@ -309,7 +319,7 @@
             this.edadNmr.Location = new System.Drawing.Point(134, 144);
             this.edadNmr.Name = "edadNmr";
             this.edadNmr.Size = new System.Drawing.Size(254, 26);
-            this.edadNmr.TabIndex = 8;
+            this.edadNmr.TabIndex = 4;
             // 
             // lineShape3
             // 
@@ -452,7 +462,7 @@
             this.BtnCancelar.Location = new System.Drawing.Point(437, 369);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(144, 39);
-            this.BtnCancelar.TabIndex = 26;
+            this.BtnCancelar.TabIndex = 14;
             this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -468,7 +478,7 @@
             this.BtnAceptar.Location = new System.Drawing.Point(267, 369);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(121, 39);
-            this.BtnAceptar.TabIndex = 25;
+            this.BtnAceptar.TabIndex = 13;
             this.BtnAceptar.Text = "ACEPTAR";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAceptar.UseVisualStyleBackColor = true;

@@ -51,6 +51,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.button3.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(470, 80);
             this.button3.Name = "button3";
@@ -66,12 +67,14 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.button2.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(719, 80);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 38);
             this.button2.TabIndex = 12;
             this.button2.Text = "Cancelar cita";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -81,12 +84,14 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.button1.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.insert;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(251, 80);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 38);
+            this.button1.Size = new System.Drawing.Size(158, 38);
             this.button1.TabIndex = 11;
             this.button1.Text = "Nueva cita";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -96,6 +101,7 @@
             this.pacientesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pacientesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pacientesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.pacientesBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
             this.pacientesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.pacientesBtn.Location = new System.Drawing.Point(32, 80);
             this.pacientesBtn.Name = "pacientesBtn";

@@ -78,7 +78,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(141, 158);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(251, 26);
-            this.numericUpDown1.TabIndex = 53;
+            this.numericUpDown1.TabIndex = 4;
             // 
             // ObservacionesTxt
             // 
@@ -86,7 +86,7 @@
             this.ObservacionesTxt.Location = new System.Drawing.Point(601, 225);
             this.ObservacionesTxt.Name = "ObservacionesTxt";
             this.ObservacionesTxt.Size = new System.Drawing.Size(249, 123);
-            this.ObservacionesTxt.TabIndex = 52;
+            this.ObservacionesTxt.TabIndex = 12;
             this.ObservacionesTxt.Text = "";
             // 
             // label12
@@ -230,7 +230,7 @@
             this.identidadTxt.Location = new System.Drawing.Point(141, 18);
             this.identidadTxt.Name = "identidadTxt";
             this.identidadTxt.Size = new System.Drawing.Size(251, 26);
-            this.identidadTxt.TabIndex = 2;
+            this.identidadTxt.TabIndex = 1;
             // 
             // BtnAceptar
             // 
@@ -243,7 +243,7 @@
             this.BtnAceptar.Location = new System.Drawing.Point(324, 382);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(154, 39);
-            this.BtnAceptar.TabIndex = 28;
+            this.BtnAceptar.TabIndex = 13;
             this.BtnAceptar.Text = "ACEPTAR";
             this.BtnAceptar.UseVisualStyleBackColor = true;
             // 
@@ -379,59 +379,64 @@
             this.button1.Location = new System.Drawing.Point(497, 382);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 39);
-            this.button1.TabIndex = 70;
+            this.button1.TabIndex = 14;
             this.button1.Text = "CANCELAR";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // nombreTxt
             // 
+            this.nombreTxt.AcceptsTab = true;
             this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTxt.ForeColor = System.Drawing.Color.Black;
             this.nombreTxt.Location = new System.Drawing.Point(142, 65);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(251, 26);
-            this.nombreTxt.TabIndex = 4;
+            this.nombreTxt.TabIndex = 2;
             // 
             // apellidoTxt
             // 
+            this.apellidoTxt.AcceptsTab = true;
             this.apellidoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.apellidoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apellidoTxt.ForeColor = System.Drawing.Color.Black;
             this.apellidoTxt.Location = new System.Drawing.Point(143, 113);
             this.apellidoTxt.Name = "apellidoTxt";
             this.apellidoTxt.Size = new System.Drawing.Size(251, 26);
-            this.apellidoTxt.TabIndex = 72;
+            this.apellidoTxt.TabIndex = 3;
             // 
             // direccionTxt
             // 
+            this.direccionTxt.AcceptsTab = true;
             this.direccionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.direccionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionTxt.ForeColor = System.Drawing.Color.Black;
             this.direccionTxt.Location = new System.Drawing.Point(143, 208);
             this.direccionTxt.Name = "direccionTxt";
             this.direccionTxt.Size = new System.Drawing.Size(251, 26);
-            this.direccionTxt.TabIndex = 73;
+            this.direccionTxt.TabIndex = 5;
             // 
             // telefonoTxt
             // 
+            this.telefonoTxt.AcceptsTab = true;
             this.telefonoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.telefonoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonoTxt.ForeColor = System.Drawing.Color.Black;
             this.telefonoTxt.Location = new System.Drawing.Point(141, 259);
             this.telefonoTxt.Name = "telefonoTxt";
             this.telefonoTxt.Size = new System.Drawing.Size(251, 26);
-            this.telefonoTxt.TabIndex = 74;
+            this.telefonoTxt.TabIndex = 6;
             // 
             // ciudadTxt
             // 
+            this.ciudadTxt.AcceptsTab = true;
             this.ciudadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ciudadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ciudadTxt.ForeColor = System.Drawing.Color.Black;
             this.ciudadTxt.Location = new System.Drawing.Point(145, 315);
             this.ciudadTxt.Name = "ciudadTxt";
             this.ciudadTxt.Size = new System.Drawing.Size(251, 26);
-            this.ciudadTxt.TabIndex = 75;
+            this.ciudadTxt.TabIndex = 7;
             // 
             // fechaNacimientoTxt
             // 
@@ -441,7 +446,7 @@
             this.fechaNacimientoTxt.Location = new System.Drawing.Point(598, 24);
             this.fechaNacimientoTxt.Name = "fechaNacimientoTxt";
             this.fechaNacimientoTxt.Size = new System.Drawing.Size(251, 26);
-            this.fechaNacimientoTxt.TabIndex = 76;
+            this.fechaNacimientoTxt.TabIndex = 8;
             // 
             // OcupacionTxt
             // 
@@ -451,7 +456,7 @@
             this.OcupacionTxt.Location = new System.Drawing.Point(599, 70);
             this.OcupacionTxt.Name = "OcupacionTxt";
             this.OcupacionTxt.Size = new System.Drawing.Size(251, 26);
-            this.OcupacionTxt.TabIndex = 77;
+            this.OcupacionTxt.TabIndex = 9;
             // 
             // tutorTxt
             // 
@@ -461,7 +466,7 @@
             this.tutorTxt.Location = new System.Drawing.Point(598, 117);
             this.tutorTxt.Name = "tutorTxt";
             this.tutorTxt.Size = new System.Drawing.Size(251, 26);
-            this.tutorTxt.TabIndex = 78;
+            this.tutorTxt.TabIndex = 10;
             // 
             // doctorRefTxt
             // 
@@ -471,7 +476,7 @@
             this.doctorRefTxt.Location = new System.Drawing.Point(599, 166);
             this.doctorRefTxt.Name = "doctorRefTxt";
             this.doctorRefTxt.Size = new System.Drawing.Size(251, 26);
-            this.doctorRefTxt.TabIndex = 79;
+            this.doctorRefTxt.TabIndex = 11;
             // 
             // lineShape11
             // 
