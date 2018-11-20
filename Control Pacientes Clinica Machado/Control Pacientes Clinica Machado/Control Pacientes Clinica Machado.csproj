@@ -243,6 +243,18 @@
   <ItemGroup>
     <None Include="Resources\Cerrar.png" />
     <None Include="Resources\borrar.png" />
+    <None Include="Resources\PACIENTES01.png" />
+    <None Include="Resources\doctor.png" />
+    <None Include="Resources\team.png" />
+    <None Include="Resources\appointment.png" />
+    <None Include="Resources\cassh.png" />
+    <None Include="Resources\conta.png" />
+    <None Include="Resources\search.ico" />
+    <None Include="Resources\insert.ico" />
+    <None Include="Resources\reload.ico" />
+    <None Include="Resources\trash.ico" />
+    <None Include="Resources\ok.ico" />
+    <None Include="Resources\error.ico" />
     <Content Include="Stored Procedures\Citas\sp_ActualizarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_EliminarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_InsertarCita.sql" />
