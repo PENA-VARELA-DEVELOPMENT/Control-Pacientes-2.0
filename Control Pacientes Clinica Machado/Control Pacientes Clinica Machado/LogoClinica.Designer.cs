@@ -36,7 +36,7 @@
             // 
             this.logoPict01.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Vector_clinica;
             this.logoPict01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoPict01.Location = new System.Drawing.Point(10, 77);
+            this.logoPict01.Location = new System.Drawing.Point(18, 77);
             this.logoPict01.Name = "logoPict01";
             this.logoPict01.Size = new System.Drawing.Size(915, 436);
             this.logoPict01.TabIndex = 1;
@@ -46,7 +46,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 590);
+            this.ClientSize = new System.Drawing.Size(950, 629);
             this.Controls.Add(this.logoPict01);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LogoClinica";
