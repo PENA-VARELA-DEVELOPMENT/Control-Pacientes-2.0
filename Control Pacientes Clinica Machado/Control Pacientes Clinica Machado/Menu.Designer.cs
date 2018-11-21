@@ -29,7 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.PanelOpciones = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ContaBtn = new System.Windows.Forms.Button();
+            this.citasBtn = new System.Windows.Forms.Button();
+            this.pacientesBtn = new System.Windows.Forms.Button();
+            this.doctoresBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelInformacion = new System.Windows.Forms.Panel();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
@@ -37,16 +44,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ContaBtn = new System.Windows.Forms.Button();
-            this.citasBtn = new System.Windows.Forms.Button();
-            this.pacientesBtn = new System.Windows.Forms.Button();
-            this.doctoresBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.PanelOpciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelInformacion.SuspendLayout();
             this.PanelCitas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelOpciones
@@ -64,73 +65,16 @@
             this.PanelOpciones.Size = new System.Drawing.Size(200, 729);
             this.PanelOpciones.TabIndex = 0;
             // 
-            // PanelInformacion
+            // button2
             // 
-            this.PanelInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
-            this.PanelInformacion.Controls.Add(this.lblFecha);
-            this.PanelInformacion.Controls.Add(this.lblHora);
-            this.PanelInformacion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelInformacion.Location = new System.Drawing.Point(200, 629);
-            this.PanelInformacion.Name = "PanelInformacion";
-            this.PanelInformacion.Size = new System.Drawing.Size(1150, 100);
-            this.PanelInformacion.TabIndex = 1;
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
-            this.lblFecha.Location = new System.Drawing.Point(719, 69);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(86, 31);
-            this.lblFecha.TabIndex = 1;
-            this.lblFecha.Text = "label1";
-            // 
-            // lblHora
-            // 
-            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.Color.Indigo;
-            this.lblHora.Location = new System.Drawing.Point(897, 0);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(190, 69);
-            this.lblHora.TabIndex = 0;
-            this.lblHora.Text = "label1";
-            // 
-            // PanelCitas
-            // 
-            this.PanelCitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
-            this.PanelCitas.Controls.Add(this.label1);
-            this.PanelCitas.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PanelCitas.Location = new System.Drawing.Point(1150, 0);
-            this.PanelCitas.Name = "PanelCitas";
-            this.PanelCitas.Size = new System.Drawing.Size(200, 629);
-            this.PanelCitas.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Informacion del dia";
-            // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(200, 0);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(950, 629);
-            this.PanelContenedor.TabIndex = 3;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(12, 694);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Acerca de los desarrolladores";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // ContaBtn
             // 
@@ -213,16 +157,73 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button2
+            // PanelInformacion
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(12, 694);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Acerca de los desarrolladores";
-            this.button2.UseVisualStyleBackColor = true;
+            this.PanelInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
+            this.PanelInformacion.Controls.Add(this.lblFecha);
+            this.PanelInformacion.Controls.Add(this.lblHora);
+            this.PanelInformacion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PanelInformacion.Location = new System.Drawing.Point(200, 629);
+            this.PanelInformacion.Name = "PanelInformacion";
+            this.PanelInformacion.Size = new System.Drawing.Size(1150, 100);
+            this.PanelInformacion.TabIndex = 1;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
+            this.lblFecha.Location = new System.Drawing.Point(719, 69);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(86, 31);
+            this.lblFecha.TabIndex = 1;
+            this.lblFecha.Text = "label1";
+            // 
+            // lblHora
+            // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.Indigo;
+            this.lblHora.Location = new System.Drawing.Point(897, 0);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(190, 69);
+            this.lblHora.TabIndex = 0;
+            this.lblHora.Text = "label1";
+            // 
+            // PanelCitas
+            // 
+            this.PanelCitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
+            this.PanelCitas.Controls.Add(this.label1);
+            this.PanelCitas.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelCitas.Location = new System.Drawing.Point(1150, 0);
+            this.PanelCitas.Name = "PanelCitas";
+            this.PanelCitas.Size = new System.Drawing.Size(200, 629);
+            this.PanelCitas.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Informacion del dia";
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedor.Location = new System.Drawing.Point(200, 0);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(950, 629);
+            this.PanelContenedor.TabIndex = 3;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Menu
             // 
@@ -233,15 +234,16 @@
             this.Controls.Add(this.PanelCitas);
             this.Controls.Add(this.PanelInformacion);
             this.Controls.Add(this.PanelOpciones);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.Text = "Clínica Dental Machado";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             this.PanelOpciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelInformacion.ResumeLayout(false);
             this.PanelInformacion.PerformLayout();
             this.PanelCitas.ResumeLayout(false);
             this.PanelCitas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

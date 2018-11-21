@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.edadNUD = new System.Windows.Forms.NumericUpDown();
             this.ObservacionesTxt = new System.Windows.Forms.RichTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -56,7 +57,7 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.apellidoTxt = new System.Windows.Forms.TextBox();
             this.direccionTxt = new System.Windows.Forms.TextBox();
@@ -66,23 +67,23 @@
             this.OcupacionTxt = new System.Windows.Forms.TextBox();
             this.tutorTxt = new System.Windows.Forms.TextBox();
             this.doctorRefTxt = new System.Windows.Forms.TextBox();
-            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edadNUD)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // edadNUD
             // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.ForeColor = System.Drawing.Color.Black;
-            this.numericUpDown1.Location = new System.Drawing.Point(141, 158);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(251, 26);
-            this.numericUpDown1.TabIndex = 4;
+            this.edadNUD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.edadNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edadNUD.ForeColor = System.Drawing.Color.Black;
+            this.edadNUD.Location = new System.Drawing.Point(121, 158);
+            this.edadNUD.Name = "edadNUD";
+            this.edadNUD.Size = new System.Drawing.Size(251, 26);
+            this.edadNUD.TabIndex = 4;
             // 
             // ObservacionesTxt
             // 
             this.ObservacionesTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.ObservacionesTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ObservacionesTxt.Location = new System.Drawing.Point(601, 225);
             this.ObservacionesTxt.Name = "ObservacionesTxt";
             this.ObservacionesTxt.Size = new System.Drawing.Size(249, 123);
@@ -92,133 +93,133 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(419, 206);
+            this.label12.Location = new System.Drawing.Point(430, 208);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(137, 24);
-            this.label12.TabIndex = 51;
+            this.label12.Size = new System.Drawing.Size(127, 20);
+            this.label12.TabIndex = 0;
             this.label12.Text = "Observaciones";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(419, 164);
+            this.label11.Location = new System.Drawing.Point(430, 166);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 24);
-            this.label11.TabIndex = 50;
+            this.label11.Size = new System.Drawing.Size(155, 20);
+            this.label11.TabIndex = 0;
             this.label11.Text = "Doctor que refiere";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(419, 117);
+            this.label10.Location = new System.Drawing.Point(430, 119);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 24);
-            this.label10.TabIndex = 48;
+            this.label10.Size = new System.Drawing.Size(51, 20);
+            this.label10.TabIndex = 0;
             this.label10.Text = "Tutor";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(419, 70);
+            this.label9.Location = new System.Drawing.Point(430, 72);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 24);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Ocupacion";
+            this.label9.Size = new System.Drawing.Size(94, 20);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Ocupación";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(419, 28);
+            this.label8.Location = new System.Drawing.Point(430, 30);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 24);
-            this.label8.TabIndex = 44;
+            this.label8.Size = new System.Drawing.Size(153, 20);
+            this.label8.TabIndex = 0;
             this.label8.Text = "Fecha Nacimiento";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(22, 313);
+            this.label7.Location = new System.Drawing.Point(23, 321);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 24);
-            this.label7.TabIndex = 42;
+            this.label7.Size = new System.Drawing.Size(65, 20);
+            this.label7.TabIndex = 0;
             this.label7.Text = "Ciudad";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(22, 261);
+            this.label6.Location = new System.Drawing.Point(23, 265);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 24);
-            this.label6.TabIndex = 40;
-            this.label6.Text = "Telefono";
+            this.label6.Size = new System.Drawing.Size(79, 20);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Teléfono";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(22, 209);
+            this.label5.Location = new System.Drawing.Point(22, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 24);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "Direccion";
+            this.label5.Size = new System.Drawing.Size(84, 20);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Dirección";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(22, 166);
+            this.label4.Location = new System.Drawing.Point(23, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 24);
-            this.label4.TabIndex = 36;
+            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.TabIndex = 0;
             this.label4.Text = "Edad";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(22, 117);
+            this.label3.Location = new System.Drawing.Point(22, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 24);
-            this.label3.TabIndex = 35;
+            this.label3.Size = new System.Drawing.Size(73, 20);
+            this.label3.TabIndex = 0;
             this.label3.Text = "Apellido";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(22, 70);
+            this.label2.Location = new System.Drawing.Point(22, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 24);
-            this.label2.TabIndex = 3;
+            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nombre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 28);
+            this.label1.Location = new System.Drawing.Point(22, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 24);
-            this.label1.TabIndex = 1;
+            this.label1.Size = new System.Drawing.Size(85, 20);
+            this.label1.TabIndex = 0;
             this.label1.Text = "Identidad";
             // 
             // identidadTxt
@@ -227,7 +228,7 @@
             this.identidadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.identidadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.identidadTxt.ForeColor = System.Drawing.Color.Black;
-            this.identidadTxt.Location = new System.Drawing.Point(141, 18);
+            this.identidadTxt.Location = new System.Drawing.Point(121, 18);
             this.identidadTxt.Name = "identidadTxt";
             this.identidadTxt.Size = new System.Drawing.Size(251, 26);
             this.identidadTxt.TabIndex = 1;
@@ -240,19 +241,20 @@
             this.BtnAceptar.ForeColor = System.Drawing.Color.White;
             this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(324, 382);
+            this.BtnAceptar.Location = new System.Drawing.Point(323, 382);
             this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(154, 39);
+            this.BtnAceptar.Size = new System.Drawing.Size(123, 39);
             this.BtnAceptar.TabIndex = 13;
             this.BtnAceptar.Text = "ACEPTAR";
+            this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAceptar.UseVisualStyleBackColor = true;
             // 
             // lineShape1
             // 
             this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 143;
-            this.lineShape1.X2 = 393;
+            this.lineShape1.X1 = 125;
+            this.lineShape1.X2 = 375;
             this.lineShape1.Y1 = 96;
             this.lineShape1.Y2 = 96;
             // 
@@ -260,8 +262,8 @@
             // 
             this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 142;
-            this.lineShape3.X2 = 391;
+            this.lineShape3.X1 = 124;
+            this.lineShape3.X2 = 373;
             this.lineShape3.Y1 = 49;
             this.lineShape3.Y2 = 49;
             // 
@@ -287,12 +289,21 @@
             this.shapeContainer1.TabIndex = 54;
             this.shapeContainer1.TabStop = false;
             // 
+            // lineShape11
+            // 
+            this.lineShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.lineShape11.Name = "lineShape11";
+            this.lineShape11.X1 = 600;
+            this.lineShape11.X2 = 849;
+            this.lineShape11.Y1 = 357;
+            this.lineShape11.Y2 = 357;
+            // 
             // lineShape10
             // 
             this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape10.Name = "lineShape10";
-            this.lineShape10.X1 = 604;
-            this.lineShape10.X2 = 853;
+            this.lineShape10.X1 = 600;
+            this.lineShape10.X2 = 849;
             this.lineShape10.Y1 = 196;
             this.lineShape10.Y2 = 196;
             // 
@@ -327,8 +338,8 @@
             // 
             this.lineShape13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape13.Name = "lineShape13";
-            this.lineShape13.X1 = 143;
-            this.lineShape13.X2 = 393;
+            this.lineShape13.X1 = 125;
+            this.lineShape13.X2 = 375;
             this.lineShape13.Y1 = 347;
             this.lineShape13.Y2 = 347;
             // 
@@ -336,8 +347,8 @@
             // 
             this.lineShape5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 145;
-            this.lineShape5.X2 = 395;
+            this.lineShape5.X1 = 127;
+            this.lineShape5.X2 = 377;
             this.lineShape5.Y1 = 292;
             this.lineShape5.Y2 = 292;
             // 
@@ -345,8 +356,8 @@
             // 
             this.lineShape4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 142;
-            this.lineShape4.X2 = 392;
+            this.lineShape4.X1 = 124;
+            this.lineShape4.X2 = 374;
             this.lineShape4.Y1 = 238;
             this.lineShape4.Y2 = 238;
             // 
@@ -354,8 +365,8 @@
             // 
             this.lineShape6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape6.Name = "lineShape6";
-            this.lineShape6.X1 = 141;
-            this.lineShape6.X2 = 391;
+            this.lineShape6.X1 = 123;
+            this.lineShape6.X2 = 373;
             this.lineShape6.Y1 = 187;
             this.lineShape6.Y2 = 187;
             // 
@@ -363,25 +374,26 @@
             // 
             this.lineShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 145;
-            this.lineShape2.X2 = 395;
+            this.lineShape2.X1 = 127;
+            this.lineShape2.X2 = 377;
             this.lineShape2.Y1 = 142;
             this.lineShape2.Y2 = 142;
             // 
-            // button1
+            // BtnCancelar
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(497, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 39);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "CANCELAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnCancelar.FlatAppearance.BorderSize = 0;
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.ForeColor = System.Drawing.Color.White;
+            this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
+            this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnCancelar.Location = new System.Drawing.Point(477, 382);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(137, 39);
+            this.BtnCancelar.TabIndex = 14;
+            this.BtnCancelar.Text = "CANCELAR";
+            this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
             // nombreTxt
             // 
@@ -389,7 +401,7 @@
             this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTxt.ForeColor = System.Drawing.Color.Black;
-            this.nombreTxt.Location = new System.Drawing.Point(142, 65);
+            this.nombreTxt.Location = new System.Drawing.Point(122, 65);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(251, 26);
             this.nombreTxt.TabIndex = 2;
@@ -400,7 +412,7 @@
             this.apellidoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.apellidoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apellidoTxt.ForeColor = System.Drawing.Color.Black;
-            this.apellidoTxt.Location = new System.Drawing.Point(143, 113);
+            this.apellidoTxt.Location = new System.Drawing.Point(123, 113);
             this.apellidoTxt.Name = "apellidoTxt";
             this.apellidoTxt.Size = new System.Drawing.Size(251, 26);
             this.apellidoTxt.TabIndex = 3;
@@ -411,7 +423,7 @@
             this.direccionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.direccionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionTxt.ForeColor = System.Drawing.Color.Black;
-            this.direccionTxt.Location = new System.Drawing.Point(143, 208);
+            this.direccionTxt.Location = new System.Drawing.Point(123, 208);
             this.direccionTxt.Name = "direccionTxt";
             this.direccionTxt.Size = new System.Drawing.Size(251, 26);
             this.direccionTxt.TabIndex = 5;
@@ -422,7 +434,7 @@
             this.telefonoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.telefonoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonoTxt.ForeColor = System.Drawing.Color.Black;
-            this.telefonoTxt.Location = new System.Drawing.Point(141, 259);
+            this.telefonoTxt.Location = new System.Drawing.Point(121, 259);
             this.telefonoTxt.Name = "telefonoTxt";
             this.telefonoTxt.Size = new System.Drawing.Size(251, 26);
             this.telefonoTxt.TabIndex = 6;
@@ -433,7 +445,7 @@
             this.ciudadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ciudadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ciudadTxt.ForeColor = System.Drawing.Color.Black;
-            this.ciudadTxt.Location = new System.Drawing.Point(145, 315);
+            this.ciudadTxt.Location = new System.Drawing.Point(125, 315);
             this.ciudadTxt.Name = "ciudadTxt";
             this.ciudadTxt.Size = new System.Drawing.Size(251, 26);
             this.ciudadTxt.TabIndex = 7;
@@ -473,19 +485,10 @@
             this.doctorRefTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.doctorRefTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorRefTxt.ForeColor = System.Drawing.Color.Black;
-            this.doctorRefTxt.Location = new System.Drawing.Point(599, 166);
+            this.doctorRefTxt.Location = new System.Drawing.Point(600, 166);
             this.doctorRefTxt.Name = "doctorRefTxt";
             this.doctorRefTxt.Size = new System.Drawing.Size(251, 26);
             this.doctorRefTxt.TabIndex = 11;
-            // 
-            // lineShape11
-            // 
-            this.lineShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape11.Name = "lineShape11";
-            this.lineShape11.X1 = 600;
-            this.lineShape11.X2 = 849;
-            this.lineShape11.Y1 = 357;
-            this.lineShape11.Y2 = 357;
             // 
             // ActualizarPaciente
             // 
@@ -502,8 +505,8 @@
             this.Controls.Add(this.direccionTxt);
             this.Controls.Add(this.apellidoTxt);
             this.Controls.Add(this.nombreTxt);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.edadNUD);
             this.Controls.Add(this.ObservacionesTxt);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -523,7 +526,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActualizarPaciente";
             this.Text = "ActualizarPaciente";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edadNUD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,7 +534,7 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown edadNUD;
         private System.Windows.Forms.RichTextBox ObservacionesTxt;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -550,7 +553,7 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnCancelar;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape13;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape5;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;

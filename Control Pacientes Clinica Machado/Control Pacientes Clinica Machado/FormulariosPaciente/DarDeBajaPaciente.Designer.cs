@@ -44,7 +44,7 @@
             this.label1.Location = new System.Drawing.Point(237, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 25);
-            this.label1.TabIndex = 33;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
             // nombreTxt
@@ -54,7 +54,7 @@
             this.nombreTxt.Location = new System.Drawing.Point(348, 134);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(254, 26);
-            this.nombreTxt.TabIndex = 32;
+            this.nombreTxt.TabIndex = 1;
             // 
             // BtnAceptar
             // 
@@ -67,7 +67,7 @@
             this.BtnAceptar.Location = new System.Drawing.Point(239, 352);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(203, 39);
-            this.BtnAceptar.TabIndex = 34;
+            this.BtnAceptar.TabIndex = 2;
             this.BtnAceptar.Text = "Dar de baja";
             this.BtnAceptar.UseVisualStyleBackColor = true;
             // 
@@ -102,7 +102,7 @@
             this.BtnCancelar.Location = new System.Drawing.Point(456, 352);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(190, 39);
-            this.BtnCancelar.TabIndex = 37;
+            this.BtnCancelar.TabIndex = 3;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
             // 

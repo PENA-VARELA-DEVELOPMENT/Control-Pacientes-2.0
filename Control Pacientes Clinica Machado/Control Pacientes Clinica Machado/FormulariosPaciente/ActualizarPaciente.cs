@@ -17,6 +17,5 @@ namespace Control_Pacientes_Clinica_Machado
             InitializeComponent();
         }
 
-
     }
 }

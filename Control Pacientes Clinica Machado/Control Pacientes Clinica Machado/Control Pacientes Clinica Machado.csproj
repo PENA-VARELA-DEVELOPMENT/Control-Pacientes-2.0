@@ -49,22 +49,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualizarPaciente.cs">
+    <Compile Include="FormulariosPaciente\ActualizarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActualizarPaciente.Designer.cs">
+    <Compile Include="FormulariosPaciente\ActualizarPaciente.Designer.cs">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="CancelarCita.cs">
+    <Compile Include="FormulariosCitas\CancelarCita.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CancelarCita.Designer.cs">
+    <Compile Include="FormulariosCitas\CancelarCita.Designer.cs">
       <DependentUpon>CancelarCita.cs</DependentUpon>
     </Compile>
-    <Compile Include="Citas.cs">
+    <Compile Include="FormulariosCitas\Citas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Citas.Designer.cs">
+    <Compile Include="FormulariosCitas\Citas.Designer.cs">
       <DependentUpon>Citas.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Cita.cs" />
@@ -74,22 +74,22 @@
     <Compile Include="Clases\HistorialDental.cs" />
     <Compile Include="Clases\HistoriaMedica.cs" />
     <Compile Include="Clases\Paciente.cs" />
-    <Compile Include="DarDeBajaPaciente.cs">
+    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DarDeBajaPaciente.Designer.cs">
+    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.Designer.cs">
       <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListarCitas.cs">
+    <Compile Include="FormulariosCitas\ListarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListarCitas.Designer.cs">
+    <Compile Include="FormulariosCitas\ListarCitas.Designer.cs">
       <DependentUpon>ListarCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListarPaciente.cs">
+    <Compile Include="FormulariosPaciente\ListarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListarPaciente.Designer.cs">
+    <Compile Include="FormulariosPaciente\ListarPaciente.Designer.cs">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -110,48 +110,48 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModificarCita.cs">
+    <Compile Include="FormulariosCitas\ModificarCita.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModificarCita.Designer.cs">
+    <Compile Include="FormulariosCitas\ModificarCita.Designer.cs">
       <DependentUpon>ModificarCita.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevaCita.cs">
+    <Compile Include="FormulariosCitas\NuevaCita.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevaCita.Designer.cs">
+    <Compile Include="FormulariosCitas\NuevaCita.Designer.cs">
       <DependentUpon>NuevaCita.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevoPaciente.cs">
+    <Compile Include="FormulariosPaciente\NuevoPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoPaciente.Designer.cs">
+    <Compile Include="FormulariosPaciente\NuevoPaciente.Designer.cs">
       <DependentUpon>NuevoPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pacientes.cs">
+    <Compile Include="FormulariosPaciente\Pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacientes.Designer.cs">
+    <Compile Include="FormulariosPaciente\Pacientes.Designer.cs">
       <DependentUpon>Pacientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ActualizarPaciente.resx">
+    <EmbeddedResource Include="FormulariosPaciente\ActualizarPaciente.resx">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CancelarCita.resx">
+    <EmbeddedResource Include="FormulariosCitas\CancelarCita.resx">
       <DependentUpon>CancelarCita.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Citas.resx">
+    <EmbeddedResource Include="FormulariosCitas\Citas.resx">
       <DependentUpon>Citas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DarDeBajaPaciente.resx">
+    <EmbeddedResource Include="FormulariosPaciente\DarDeBajaPaciente.resx">
       <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListarCitas.resx">
+    <EmbeddedResource Include="FormulariosCitas\ListarCitas.resx">
       <DependentUpon>ListarCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListarPaciente.resx">
+    <EmbeddedResource Include="FormulariosPaciente\ListarPaciente.resx">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -163,16 +163,16 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModificarCita.resx">
+    <EmbeddedResource Include="FormulariosCitas\ModificarCita.resx">
       <DependentUpon>ModificarCita.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevaCita.resx">
+    <EmbeddedResource Include="FormulariosCitas\NuevaCita.resx">
       <DependentUpon>NuevaCita.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoPaciente.resx">
+    <EmbeddedResource Include="FormulariosPaciente\NuevoPaciente.resx">
       <DependentUpon>NuevoPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pacientes.resx">
+    <EmbeddedResource Include="FormulariosPaciente\Pacientes.resx">
       <DependentUpon>Pacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -255,6 +255,8 @@
     <None Include="Resources\trash.ico" />
     <None Include="Resources\ok.ico" />
     <None Include="Resources\error.ico" />
+    <None Include="Resources\users.ico" />
+    <None Include="Resources\key01.ico" />
     <Content Include="Stored Procedures\Citas\sp_ActualizarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_EliminarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_InsertarCita.sql" />
