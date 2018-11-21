@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.PanelOpciones = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ContaBtn = new System.Windows.Forms.Button();
             this.citasBtn = new System.Windows.Forms.Button();
             this.pacientesBtn = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.doctoresBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelInformacion = new System.Windows.Forms.Panel();
@@ -52,10 +53,10 @@
             // PanelOpciones
             // 
             this.PanelOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
+            this.PanelOpciones.Controls.Add(this.button2);
+            this.PanelOpciones.Controls.Add(this.ContaBtn);
             this.PanelOpciones.Controls.Add(this.citasBtn);
             this.PanelOpciones.Controls.Add(this.pacientesBtn);
-            this.PanelOpciones.Controls.Add(this.button5);
-            this.PanelOpciones.Controls.Add(this.button4);
             this.PanelOpciones.Controls.Add(this.doctoresBtn);
             this.PanelOpciones.Controls.Add(this.pictureBox1);
             this.PanelOpciones.Dock = System.Windows.Forms.DockStyle.Left;
@@ -64,19 +65,45 @@
             this.PanelOpciones.Size = new System.Drawing.Size(200, 729);
             this.PanelOpciones.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(12, 694);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Acerca de los desarrolladores";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // ContaBtn
+            // 
+            this.ContaBtn.FlatAppearance.BorderSize = 0;
+            this.ContaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.ContaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.conta;
+            this.ContaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ContaBtn.Location = new System.Drawing.Point(3, 484);
+            this.ContaBtn.Name = "ContaBtn";
+            this.ContaBtn.Size = new System.Drawing.Size(203, 58);
+            this.ContaBtn.TabIndex = 4;
+            this.ContaBtn.Text = "Contabilidad";
+            this.ContaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // citasBtn
             // 
             this.citasBtn.FlatAppearance.BorderSize = 0;
             this.citasBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.citasBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.citasBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.citasBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.citasBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.calendario;
+            this.citasBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.appointment;
             this.citasBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.citasBtn.Location = new System.Drawing.Point(0, 336);
+            this.citasBtn.Location = new System.Drawing.Point(3, 256);
             this.citasBtn.Name = "citasBtn";
-            this.citasBtn.Size = new System.Drawing.Size(200, 58);
+            this.citasBtn.Size = new System.Drawing.Size(197, 71);
             this.citasBtn.TabIndex = 3;
-            this.citasBtn.Text = "Citas";
+            this.citasBtn.Text = "Citas        ";
             this.citasBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.citasBtn.UseVisualStyleBackColor = true;
             this.citasBtn.Click += new System.EventHandler(this.citasBtn_Click);
@@ -87,52 +114,34 @@
             // 
             this.pacientesBtn.FlatAppearance.BorderSize = 0;
             this.pacientesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pacientesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pacientesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pacientesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.pacientesBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources._048_dentist_1;
+            this.pacientesBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.team;
             this.pacientesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pacientesBtn.Location = new System.Drawing.Point(0, 156);
+            this.pacientesBtn.Location = new System.Drawing.Point(0, 152);
             this.pacientesBtn.Name = "pacientesBtn";
             this.pacientesBtn.Size = new System.Drawing.Size(200, 58);
             this.pacientesBtn.TabIndex = 2;
-            this.pacientesBtn.Text = "Pacientes";
+            this.pacientesBtn.Text = "Pacientes ";
             this.pacientesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.pacientesBtn.UseVisualStyleBackColor = true;
             this.pacientesBtn.Click += new System.EventHandler(this.pacientesBtn_Click);
             this.pacientesBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pacientesBtn_MouseDown);
             this.pacientesBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pacientesBtn_MouseUp);
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(0, 537);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 58);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(0, 436);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 58);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // doctoresBtn
             // 
             this.doctoresBtn.FlatAppearance.BorderSize = 0;
             this.doctoresBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doctoresBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctoresBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctoresBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.doctoresBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.dentista1;
+            this.doctoresBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.doctor;
             this.doctoresBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.doctoresBtn.Location = new System.Drawing.Point(0, 252);
+            this.doctoresBtn.Location = new System.Drawing.Point(0, 365);
             this.doctoresBtn.Name = "doctoresBtn";
             this.doctoresBtn.Size = new System.Drawing.Size(200, 58);
             this.doctoresBtn.TabIndex = 1;
-            this.doctoresBtn.Text = "Doctores";
+            this.doctoresBtn.Text = "Doctores   ";
             this.doctoresBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.doctoresBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.doctoresBtn_MouseDown);
             this.doctoresBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.doctoresBtn_MouseUp);
@@ -196,12 +205,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Informacion del dia";
+            this.label1.Text = "Información del día";
             // 
             // PanelContenedor
             // 
@@ -225,6 +236,7 @@
             this.Controls.Add(this.PanelCitas);
             this.Controls.Add(this.PanelInformacion);
             this.Controls.Add(this.PanelOpciones);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.Text = "Clínica Dental Machado";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
@@ -247,13 +259,13 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button doctoresBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button citasBtn;
         private System.Windows.Forms.Button pacientesBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button ContaBtn;
+        private System.Windows.Forms.Button button2;
     }
 }
 
