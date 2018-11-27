@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.BtnAceptar = new System.Windows.Forms.Button();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -71,26 +69,6 @@
             this.BtnAceptar.Text = "Dar de baja";
             this.BtnAceptar.UseVisualStyleBackColor = true;
             // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 347;
-            this.lineShape3.X2 = 602;
-            this.lineShape3.Y1 = 169;
-            this.lineShape3.Y2 = 169;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape3});
-            this.shapeContainer1.Size = new System.Drawing.Size(867, 443);
-            this.shapeContainer1.TabIndex = 36;
-            this.shapeContainer1.TabStop = false;
-            // 
             // BtnCancelar
             // 
             this.BtnCancelar.FlatAppearance.BorderSize = 0;
@@ -116,7 +94,6 @@
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nombreTxt);
-            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DarDeBajaPaciente";
             this.Text = "Dar de baja";
@@ -130,8 +107,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox nombreTxt;
         private System.Windows.Forms.Button BtnAceptar;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private System.Windows.Forms.Button BtnCancelar;
     }
 }

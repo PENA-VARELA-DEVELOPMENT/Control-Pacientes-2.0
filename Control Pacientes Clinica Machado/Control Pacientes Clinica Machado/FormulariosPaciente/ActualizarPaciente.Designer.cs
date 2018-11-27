@@ -44,19 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.identidadTxt = new System.Windows.Forms.TextBox();
             this.BtnAceptar = new System.Windows.Forms.Button();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape13 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.apellidoTxt = new System.Windows.Forms.TextBox();
@@ -84,7 +71,7 @@
             // 
             this.ObservacionesTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ObservacionesTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ObservacionesTxt.Location = new System.Drawing.Point(601, 225);
+            this.ObservacionesTxt.Location = new System.Drawing.Point(598, 218);
             this.ObservacionesTxt.Name = "ObservacionesTxt";
             this.ObservacionesTxt.Size = new System.Drawing.Size(249, 123);
             this.ObservacionesTxt.TabIndex = 12;
@@ -249,136 +236,6 @@
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAceptar.UseVisualStyleBackColor = true;
             // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 125;
-            this.lineShape1.X2 = 375;
-            this.lineShape1.Y1 = 96;
-            this.lineShape1.Y2 = 96;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 124;
-            this.lineShape3.X2 = 373;
-            this.lineShape3.Y1 = 49;
-            this.lineShape3.Y2 = 49;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape11,
-            this.lineShape10,
-            this.lineShape9,
-            this.lineShape8,
-            this.lineShape7,
-            this.lineShape13,
-            this.lineShape5,
-            this.lineShape4,
-            this.lineShape6,
-            this.lineShape2,
-            this.lineShape3,
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(867, 443);
-            this.shapeContainer1.TabIndex = 54;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape11
-            // 
-            this.lineShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape11.Name = "lineShape11";
-            this.lineShape11.X1 = 600;
-            this.lineShape11.X2 = 849;
-            this.lineShape11.Y1 = 357;
-            this.lineShape11.Y2 = 357;
-            // 
-            // lineShape10
-            // 
-            this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape10.Name = "lineShape10";
-            this.lineShape10.X1 = 600;
-            this.lineShape10.X2 = 849;
-            this.lineShape10.Y1 = 196;
-            this.lineShape10.Y2 = 196;
-            // 
-            // lineShape9
-            // 
-            this.lineShape9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape9.Name = "lineShape9";
-            this.lineShape9.X1 = 599;
-            this.lineShape9.X2 = 848;
-            this.lineShape9.Y1 = 148;
-            this.lineShape9.Y2 = 148;
-            // 
-            // lineShape8
-            // 
-            this.lineShape8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape8.Name = "lineShape8";
-            this.lineShape8.X1 = 601;
-            this.lineShape8.X2 = 850;
-            this.lineShape8.Y1 = 101;
-            this.lineShape8.Y2 = 101;
-            // 
-            // lineShape7
-            // 
-            this.lineShape7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape7.Name = "lineShape7";
-            this.lineShape7.X1 = 599;
-            this.lineShape7.X2 = 848;
-            this.lineShape7.Y1 = 56;
-            this.lineShape7.Y2 = 56;
-            // 
-            // lineShape13
-            // 
-            this.lineShape13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape13.Name = "lineShape13";
-            this.lineShape13.X1 = 125;
-            this.lineShape13.X2 = 375;
-            this.lineShape13.Y1 = 347;
-            this.lineShape13.Y2 = 347;
-            // 
-            // lineShape5
-            // 
-            this.lineShape5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 127;
-            this.lineShape5.X2 = 377;
-            this.lineShape5.Y1 = 292;
-            this.lineShape5.Y2 = 292;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 124;
-            this.lineShape4.X2 = 374;
-            this.lineShape4.Y1 = 238;
-            this.lineShape4.Y2 = 238;
-            // 
-            // lineShape6
-            // 
-            this.lineShape6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape6.Name = "lineShape6";
-            this.lineShape6.X1 = 123;
-            this.lineShape6.X2 = 373;
-            this.lineShape6.Y1 = 187;
-            this.lineShape6.Y2 = 187;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 127;
-            this.lineShape2.X2 = 377;
-            this.lineShape2.Y1 = 142;
-            this.lineShape2.Y2 = 142;
-            // 
             // BtnCancelar
             // 
             this.BtnCancelar.FlatAppearance.BorderSize = 0;
@@ -401,7 +258,7 @@
             this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTxt.ForeColor = System.Drawing.Color.Black;
-            this.nombreTxt.Location = new System.Drawing.Point(122, 65);
+            this.nombreTxt.Location = new System.Drawing.Point(121, 66);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(251, 26);
             this.nombreTxt.TabIndex = 2;
@@ -412,7 +269,7 @@
             this.apellidoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.apellidoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apellidoTxt.ForeColor = System.Drawing.Color.Black;
-            this.apellidoTxt.Location = new System.Drawing.Point(123, 113);
+            this.apellidoTxt.Location = new System.Drawing.Point(121, 113);
             this.apellidoTxt.Name = "apellidoTxt";
             this.apellidoTxt.Size = new System.Drawing.Size(251, 26);
             this.apellidoTxt.TabIndex = 3;
@@ -423,7 +280,7 @@
             this.direccionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.direccionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionTxt.ForeColor = System.Drawing.Color.Black;
-            this.direccionTxt.Location = new System.Drawing.Point(123, 208);
+            this.direccionTxt.Location = new System.Drawing.Point(121, 205);
             this.direccionTxt.Name = "direccionTxt";
             this.direccionTxt.Size = new System.Drawing.Size(251, 26);
             this.direccionTxt.TabIndex = 5;
@@ -445,7 +302,7 @@
             this.ciudadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ciudadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ciudadTxt.ForeColor = System.Drawing.Color.Black;
-            this.ciudadTxt.Location = new System.Drawing.Point(125, 315);
+            this.ciudadTxt.Location = new System.Drawing.Point(121, 315);
             this.ciudadTxt.Name = "ciudadTxt";
             this.ciudadTxt.Size = new System.Drawing.Size(251, 26);
             this.ciudadTxt.TabIndex = 7;
@@ -465,7 +322,7 @@
             this.OcupacionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.OcupacionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OcupacionTxt.ForeColor = System.Drawing.Color.Black;
-            this.OcupacionTxt.Location = new System.Drawing.Point(599, 70);
+            this.OcupacionTxt.Location = new System.Drawing.Point(598, 68);
             this.OcupacionTxt.Name = "OcupacionTxt";
             this.OcupacionTxt.Size = new System.Drawing.Size(251, 26);
             this.OcupacionTxt.TabIndex = 9;
@@ -475,7 +332,7 @@
             this.tutorTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.tutorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tutorTxt.ForeColor = System.Drawing.Color.Black;
-            this.tutorTxt.Location = new System.Drawing.Point(598, 117);
+            this.tutorTxt.Location = new System.Drawing.Point(598, 116);
             this.tutorTxt.Name = "tutorTxt";
             this.tutorTxt.Size = new System.Drawing.Size(251, 26);
             this.tutorTxt.TabIndex = 10;
@@ -485,7 +342,7 @@
             this.doctorRefTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.doctorRefTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorRefTxt.ForeColor = System.Drawing.Color.Black;
-            this.doctorRefTxt.Location = new System.Drawing.Point(600, 166);
+            this.doctorRefTxt.Location = new System.Drawing.Point(598, 166);
             this.doctorRefTxt.Name = "doctorRefTxt";
             this.doctorRefTxt.Size = new System.Drawing.Size(251, 26);
             this.doctorRefTxt.TabIndex = 11;
@@ -522,7 +379,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.identidadTxt);
             this.Controls.Add(this.BtnAceptar);
-            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActualizarPaciente";
             this.Text = "ActualizarPaciente";
@@ -550,19 +406,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox identidadTxt;
         private System.Windows.Forms.Button BtnAceptar;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private System.Windows.Forms.Button BtnCancelar;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape13;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape5;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape6;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape10;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape9;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape8;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape7;
         private System.Windows.Forms.TextBox nombreTxt;
         private System.Windows.Forms.TextBox apellidoTxt;
         private System.Windows.Forms.TextBox direccionTxt;
@@ -572,6 +416,5 @@
         private System.Windows.Forms.TextBox OcupacionTxt;
         private System.Windows.Forms.TextBox tutorTxt;
         private System.Windows.Forms.TextBox doctorRefTxt;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape11;
     }
 }
