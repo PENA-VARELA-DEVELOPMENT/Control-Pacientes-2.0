@@ -21,5 +21,10 @@ namespace Control_Pacientes_Clinica_Machado
         {
             this.Close();
         }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
