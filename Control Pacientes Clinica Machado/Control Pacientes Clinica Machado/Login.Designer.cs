@@ -75,12 +75,11 @@
             // nombreTbox
             // 
             this.nombreTbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
-            this.nombreTbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nombreTbox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(168)))));
-            this.nombreTbox.Location = new System.Drawing.Point(276, 66);
+            this.nombreTbox.Location = new System.Drawing.Point(276, 59);
             this.nombreTbox.Name = "nombreTbox";
-            this.nombreTbox.Size = new System.Drawing.Size(243, 20);
+            this.nombreTbox.Size = new System.Drawing.Size(243, 27);
             this.nombreTbox.TabIndex = 1;
             this.nombreTbox.Text = "Nombre";
             // 
@@ -98,12 +97,11 @@
             // PasswTbox
             // 
             this.PasswTbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(196)))), ((int)(((byte)(45)))));
-            this.PasswTbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PasswTbox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswTbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(168)))));
-            this.PasswTbox.Location = new System.Drawing.Point(277, 115);
+            this.PasswTbox.Location = new System.Drawing.Point(277, 106);
             this.PasswTbox.Name = "PasswTbox";
-            this.PasswTbox.Size = new System.Drawing.Size(243, 20);
+            this.PasswTbox.Size = new System.Drawing.Size(243, 27);
             this.PasswTbox.TabIndex = 2;
             this.PasswTbox.Text = "Contraseña";
             // 
@@ -114,7 +112,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(168)))));
-            this.button1.Location = new System.Drawing.Point(301, 155);
+            this.button1.Location = new System.Drawing.Point(303, 156);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(192, 28);
             this.button1.TabIndex = 3;

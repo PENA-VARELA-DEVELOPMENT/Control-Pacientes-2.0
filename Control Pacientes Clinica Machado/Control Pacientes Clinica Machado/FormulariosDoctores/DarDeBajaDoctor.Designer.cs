@@ -32,8 +32,6 @@
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.nombreTxt = new System.Windows.Forms.TextBox();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.SuspendLayout();
             // 
             // BtnCancelar
@@ -86,26 +84,6 @@
             this.nombreTxt.Size = new System.Drawing.Size(254, 26);
             this.nombreTxt.TabIndex = 5;
             // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 355;
-            this.lineShape3.X2 = 610;
-            this.lineShape3.Y1 = 158;
-            this.lineShape3.Y2 = 158;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape3});
-            this.shapeContainer1.Size = new System.Drawing.Size(867, 443);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
-            // 
             // DarDeBajaDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,7 +94,6 @@
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nombreTxt);
-            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DarDeBajaDoctor";
             this.Text = "DarDeBajaDoctor";
@@ -131,7 +108,5 @@
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox nombreTxt;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
     }
 }

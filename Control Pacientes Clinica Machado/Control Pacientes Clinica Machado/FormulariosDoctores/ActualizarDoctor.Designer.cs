@@ -40,12 +40,6 @@
             this.IDdoctorTxt = new System.Windows.Forms.TextBox();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAceptar = new System.Windows.Forms.Button();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.SuspendLayout();
             // 
             // label9
@@ -188,66 +182,6 @@
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAceptar.UseVisualStyleBackColor = true;
             // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 123;
-            this.lineShape2.X2 = 373;
-            this.lineShape2.Y1 = 238;
-            this.lineShape2.Y2 = 238;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 124;
-            this.lineShape3.X2 = 373;
-            this.lineShape3.Y1 = 143;
-            this.lineShape3.Y2 = 143;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 122;
-            this.lineShape1.X2 = 372;
-            this.lineShape1.Y1 = 191;
-            this.lineShape1.Y2 = 191;
-            // 
-            // lineShape8
-            // 
-            this.lineShape8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape8.Name = "lineShape8";
-            this.lineShape8.X1 = 601;
-            this.lineShape8.X2 = 850;
-            this.lineShape8.Y1 = 186;
-            this.lineShape8.Y2 = 186;
-            // 
-            // lineShape7
-            // 
-            this.lineShape7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape7.Name = "lineShape7";
-            this.lineShape7.X1 = 602;
-            this.lineShape7.X2 = 851;
-            this.lineShape7.Y1 = 141;
-            this.lineShape7.Y2 = 141;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape7,
-            this.lineShape8,
-            this.lineShape1,
-            this.lineShape3,
-            this.lineShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(867, 443);
-            this.shapeContainer1.TabIndex = 27;
-            this.shapeContainer1.TabStop = false;
-            // 
             // ActualizarDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,7 +200,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActualizarDoctor";
             this.Text = "ActualizarDoctor";
@@ -288,11 +221,5 @@
         private System.Windows.Forms.TextBox IDdoctorTxt;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnAceptar;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape8;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape7;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
     }
 }
