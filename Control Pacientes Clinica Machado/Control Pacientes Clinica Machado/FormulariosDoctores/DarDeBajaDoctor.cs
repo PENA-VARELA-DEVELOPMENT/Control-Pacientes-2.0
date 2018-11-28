@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Control_Pacientes_Clinica_Machado
+namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 {
-    public partial class NuevaCita : Form
+    public partial class DarDeBajaDoctor : Form
     {
-        public NuevaCita()
+        public DarDeBajaDoctor()
         {
             InitializeComponent();
-        }
-
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

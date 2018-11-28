@@ -52,19 +52,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.observacionesTxt = new System.Windows.Forms.RichTextBox();
             this.edadNmr = new System.Windows.Forms.NumericUpDown();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape12 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape11 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape10 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape9 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape8 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape7 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape6 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape5 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAceptar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).BeginInit();
@@ -75,7 +62,7 @@
             this.identidadTxt.AcceptsTab = true;
             this.identidadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.identidadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identidadTxt.Location = new System.Drawing.Point(130, 22);
+            this.identidadTxt.Location = new System.Drawing.Point(129, 22);
             this.identidadTxt.Name = "identidadTxt";
             this.identidadTxt.Size = new System.Drawing.Size(254, 26);
             this.identidadTxt.TabIndex = 1;
@@ -202,7 +189,7 @@
             this.CiudadTxt.AcceptsTab = true;
             this.CiudadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.CiudadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CiudadTxt.Location = new System.Drawing.Point(129, 315);
+            this.CiudadTxt.Location = new System.Drawing.Point(129, 313);
             this.CiudadTxt.Name = "CiudadTxt";
             this.CiudadTxt.Size = new System.Drawing.Size(254, 26);
             this.CiudadTxt.TabIndex = 7;
@@ -306,7 +293,7 @@
             // 
             this.observacionesTxt.AcceptsTab = true;
             this.observacionesTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.observacionesTxt.Location = new System.Drawing.Point(599, 230);
+            this.observacionesTxt.Location = new System.Drawing.Point(598, 230);
             this.observacionesTxt.Name = "observacionesTxt";
             this.observacionesTxt.Size = new System.Drawing.Size(254, 109);
             this.observacionesTxt.TabIndex = 12;
@@ -320,136 +307,6 @@
             this.edadNmr.Name = "edadNmr";
             this.edadNmr.Size = new System.Drawing.Size(254, 26);
             this.edadNmr.TabIndex = 4;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 131;
-            this.lineShape3.X2 = 386;
-            this.lineShape3.Y1 = 55;
-            this.lineShape3.Y2 = 55;
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape12,
-            this.lineShape11,
-            this.lineShape10,
-            this.lineShape9,
-            this.lineShape8,
-            this.lineShape7,
-            this.lineShape6,
-            this.lineShape5,
-            this.lineShape4,
-            this.lineShape2,
-            this.lineShape1,
-            this.lineShape3});
-            this.shapeContainer1.Size = new System.Drawing.Size(867, 443);
-            this.shapeContainer1.TabIndex = 28;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape12
-            // 
-            this.lineShape12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape12.Name = "lineShape12";
-            this.lineShape12.X1 = 599;
-            this.lineShape12.X2 = 854;
-            this.lineShape12.Y1 = 348;
-            this.lineShape12.Y2 = 348;
-            // 
-            // lineShape11
-            // 
-            this.lineShape11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape11.Name = "lineShape11";
-            this.lineShape11.X1 = 598;
-            this.lineShape11.X2 = 853;
-            this.lineShape11.Y1 = 199;
-            this.lineShape11.Y2 = 199;
-            // 
-            // lineShape10
-            // 
-            this.lineShape10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape10.Name = "lineShape10";
-            this.lineShape10.X1 = 597;
-            this.lineShape10.X2 = 852;
-            this.lineShape10.Y1 = 152;
-            this.lineShape10.Y2 = 152;
-            // 
-            // lineShape9
-            // 
-            this.lineShape9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape9.Name = "lineShape9";
-            this.lineShape9.X1 = 597;
-            this.lineShape9.X2 = 852;
-            this.lineShape9.Y1 = 102;
-            this.lineShape9.Y2 = 102;
-            // 
-            // lineShape8
-            // 
-            this.lineShape8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape8.Name = "lineShape8";
-            this.lineShape8.X1 = 598;
-            this.lineShape8.X2 = 853;
-            this.lineShape8.Y1 = 57;
-            this.lineShape8.Y2 = 57;
-            // 
-            // lineShape7
-            // 
-            this.lineShape7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape7.Name = "lineShape7";
-            this.lineShape7.X1 = 128;
-            this.lineShape7.X2 = 383;
-            this.lineShape7.Y1 = 348;
-            this.lineShape7.Y2 = 348;
-            // 
-            // lineShape6
-            // 
-            this.lineShape6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape6.Name = "lineShape6";
-            this.lineShape6.X1 = 129;
-            this.lineShape6.X2 = 384;
-            this.lineShape6.Y1 = 192;
-            this.lineShape6.Y2 = 192;
-            // 
-            // lineShape5
-            // 
-            this.lineShape5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape5.Name = "lineShape5";
-            this.lineShape5.X1 = 129;
-            this.lineShape5.X2 = 384;
-            this.lineShape5.Y1 = 289;
-            this.lineShape5.Y2 = 289;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 129;
-            this.lineShape4.X2 = 384;
-            this.lineShape4.Y1 = 240;
-            this.lineShape4.Y2 = 240;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 129;
-            this.lineShape2.X2 = 384;
-            this.lineShape2.Y1 = 144;
-            this.lineShape2.Y2 = 144;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 130;
-            this.lineShape1.X2 = 385;
-            this.lineShape1.Y1 = 102;
-            this.lineShape1.Y2 = 102;
             // 
             // BtnCancelar
             // 
@@ -466,6 +323,7 @@
             this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAceptar
             // 
@@ -515,7 +373,6 @@
             this.Controls.Add(this.nombreTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.identidadTxt);
-            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoPaciente";
             this.Text = "NuevoPaciente";
@@ -550,19 +407,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RichTextBox observacionesTxt;
         private System.Windows.Forms.NumericUpDown edadNmr;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape11;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape10;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape9;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape8;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape7;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape6;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape5;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape12;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnAceptar;
     }

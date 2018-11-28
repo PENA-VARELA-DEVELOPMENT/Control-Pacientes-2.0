@@ -49,6 +49,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormulariosDoctores\ActualizarDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\ActualizarDoctor.Designer.cs">
+      <DependentUpon>ActualizarDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.Designer.cs">
+      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\Doctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\Doctores.Designer.cs">
+      <DependentUpon>Doctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\ListarDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\ListarDoctores.Designer.cs">
+      <DependentUpon>ListarDoctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\NuevoDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\NuevoDoctor.Designer.cs">
+      <DependentUpon>NuevoDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulariosPaciente\ActualizarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +166,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormulariosDoctores\ActualizarDoctor.resx">
+      <DependentUpon>ActualizarDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\DarDeBajaDoctor.resx">
+      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\Doctores.resx">
+      <DependentUpon>Doctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\ListarDoctores.resx">
+      <DependentUpon>ListarDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\NuevoDoctor.resx">
+      <DependentUpon>NuevoDoctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\ActualizarPaciente.resx">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </EmbeddedResource>
