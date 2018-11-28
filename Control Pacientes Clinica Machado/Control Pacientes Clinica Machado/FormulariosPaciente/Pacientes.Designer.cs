@@ -41,11 +41,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lemon/Milk", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.label1.Location = new System.Drawing.Point(387, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 30);
+            this.label1.Size = new System.Drawing.Size(107, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pacientes";
             // 
@@ -53,7 +53,7 @@
             // 
             this.PanelCrud.Location = new System.Drawing.Point(32, 135);
             this.PanelCrud.Name = "PanelCrud";
-            this.PanelCrud.Size = new System.Drawing.Size(867, 443);
+            this.PanelCrud.Size = new System.Drawing.Size(875, 443);
             this.PanelCrud.TabIndex = 7;
             // 
             // pictureBox1
