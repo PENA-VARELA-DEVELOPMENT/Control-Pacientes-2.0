@@ -95,5 +95,15 @@ namespace Control_Pacientes_Clinica_Machado
         {
             AbrirFormHija(new Citas());
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doctoresBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

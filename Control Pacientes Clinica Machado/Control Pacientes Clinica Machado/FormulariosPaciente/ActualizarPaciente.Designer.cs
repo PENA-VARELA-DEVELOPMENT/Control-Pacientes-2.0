@@ -42,18 +42,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.identidadTxt = new System.Windows.Forms.TextBox();
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.apellidoTxt = new System.Windows.Forms.TextBox();
             this.direccionTxt = new System.Windows.Forms.TextBox();
-            this.telefonoTxt = new System.Windows.Forms.TextBox();
             this.ciudadTxt = new System.Windows.Forms.TextBox();
             this.fechaNacimientoTxt = new System.Windows.Forms.TextBox();
             this.OcupacionTxt = new System.Windows.Forms.TextBox();
             this.tutorTxt = new System.Windows.Forms.TextBox();
             this.doctorRefTxt = new System.Windows.Forms.TextBox();
+            this.identidadMaskTxt = new System.Windows.Forms.MaskedTextBox();
+            this.telefonoMaskTxt = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.edadNUD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +66,7 @@
             this.edadNUD.Name = "edadNUD";
             this.edadNUD.Size = new System.Drawing.Size(251, 26);
             this.edadNUD.TabIndex = 4;
+            this.edadNUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ObservacionesTxt
             // 
@@ -209,17 +210,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Identidad";
             // 
-            // identidadTxt
-            // 
-            this.identidadTxt.AcceptsTab = true;
-            this.identidadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.identidadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identidadTxt.ForeColor = System.Drawing.Color.Black;
-            this.identidadTxt.Location = new System.Drawing.Point(121, 18);
-            this.identidadTxt.Name = "identidadTxt";
-            this.identidadTxt.Size = new System.Drawing.Size(251, 26);
-            this.identidadTxt.TabIndex = 1;
-            // 
             // BtnActualizar
             // 
             this.BtnActualizar.FlatAppearance.BorderSize = 0;
@@ -228,9 +218,9 @@
             this.BtnActualizar.ForeColor = System.Drawing.Color.White;
             this.BtnActualizar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnActualizar.Location = new System.Drawing.Point(323, 382);
+            this.BtnActualizar.Location = new System.Drawing.Point(296, 382);
             this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(123, 39);
+            this.BtnActualizar.Size = new System.Drawing.Size(150, 39);
             this.BtnActualizar.TabIndex = 13;
             this.BtnActualizar.Text = "ACTUALIZAR";
             this.BtnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -286,17 +276,6 @@
             this.direccionTxt.Size = new System.Drawing.Size(251, 26);
             this.direccionTxt.TabIndex = 5;
             // 
-            // telefonoTxt
-            // 
-            this.telefonoTxt.AcceptsTab = true;
-            this.telefonoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.telefonoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telefonoTxt.ForeColor = System.Drawing.Color.Black;
-            this.telefonoTxt.Location = new System.Drawing.Point(121, 259);
-            this.telefonoTxt.Name = "telefonoTxt";
-            this.telefonoTxt.Size = new System.Drawing.Size(251, 26);
-            this.telefonoTxt.TabIndex = 6;
-            // 
             // ciudadTxt
             // 
             this.ciudadTxt.AcceptsTab = true;
@@ -348,18 +327,41 @@
             this.doctorRefTxt.Size = new System.Drawing.Size(251, 26);
             this.doctorRefTxt.TabIndex = 11;
             // 
+            // identidadMaskTxt
+            // 
+            this.identidadMaskTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.identidadMaskTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.identidadMaskTxt.Location = new System.Drawing.Point(121, 18);
+            this.identidadMaskTxt.Mask = "0000-0000-00000";
+            this.identidadMaskTxt.Name = "identidadMaskTxt";
+            this.identidadMaskTxt.Size = new System.Drawing.Size(254, 26);
+            this.identidadMaskTxt.TabIndex = 16;
+            this.identidadMaskTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // telefonoMaskTxt
+            // 
+            this.telefonoMaskTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.telefonoMaskTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.telefonoMaskTxt.Location = new System.Drawing.Point(121, 265);
+            this.telefonoMaskTxt.Mask = "0000-0000";
+            this.telefonoMaskTxt.Name = "telefonoMaskTxt";
+            this.telefonoMaskTxt.Size = new System.Drawing.Size(254, 26);
+            this.telefonoMaskTxt.TabIndex = 17;
+            this.telefonoMaskTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // ActualizarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
+            this.Controls.Add(this.telefonoMaskTxt);
+            this.Controls.Add(this.identidadMaskTxt);
             this.Controls.Add(this.doctorRefTxt);
             this.Controls.Add(this.tutorTxt);
             this.Controls.Add(this.OcupacionTxt);
             this.Controls.Add(this.fechaNacimientoTxt);
             this.Controls.Add(this.ciudadTxt);
-            this.Controls.Add(this.telefonoTxt);
             this.Controls.Add(this.direccionTxt);
             this.Controls.Add(this.apellidoTxt);
             this.Controls.Add(this.nombreTxt);
@@ -378,7 +380,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.identidadTxt);
             this.Controls.Add(this.BtnActualizar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActualizarPaciente";
@@ -405,17 +406,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox identidadTxt;
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.TextBox nombreTxt;
         private System.Windows.Forms.TextBox apellidoTxt;
         private System.Windows.Forms.TextBox direccionTxt;
-        private System.Windows.Forms.TextBox telefonoTxt;
         private System.Windows.Forms.TextBox ciudadTxt;
         private System.Windows.Forms.TextBox fechaNacimientoTxt;
         private System.Windows.Forms.TextBox OcupacionTxt;
         private System.Windows.Forms.TextBox tutorTxt;
         private System.Windows.Forms.TextBox doctorRefTxt;
+        private System.Windows.Forms.MaskedTextBox identidadMaskTxt;
+        private System.Windows.Forms.MaskedTextBox telefonoMaskTxt;
     }
 }

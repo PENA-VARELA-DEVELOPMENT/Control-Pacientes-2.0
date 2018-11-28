@@ -143,6 +143,7 @@
             this.doctoresBtn.TabIndex = 1;
             this.doctoresBtn.Text = "Doctores   ";
             this.doctoresBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.doctoresBtn.Click += new System.EventHandler(this.doctoresBtn_Click);
             this.doctoresBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.doctoresBtn_MouseDown);
             this.doctoresBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.doctoresBtn_MouseUp);
             // 
@@ -240,6 +241,7 @@
             this.Name = "Menu";
             this.Text = "Clínica Dental Machado";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.PanelOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelInformacion.ResumeLayout(false);

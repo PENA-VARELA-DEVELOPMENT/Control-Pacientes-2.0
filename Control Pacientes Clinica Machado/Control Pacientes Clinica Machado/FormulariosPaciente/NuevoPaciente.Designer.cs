@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.identidadTxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.nombreTxt = new System.Windows.Forms.TextBox();
@@ -38,7 +37,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.direccionTxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.telefonoTxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.CiudadTxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,18 +52,10 @@
             this.edadNmr = new System.Windows.Forms.NumericUpDown();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
+            this.identidadMaskTxt = new System.Windows.Forms.MaskedTextBox();
+            this.telefonoMaskTxt = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).BeginInit();
             this.SuspendLayout();
-            // 
-            // identidadTxt
-            // 
-            this.identidadTxt.AcceptsTab = true;
-            this.identidadTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.identidadTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identidadTxt.Location = new System.Drawing.Point(129, 22);
-            this.identidadTxt.Name = "identidadTxt";
-            this.identidadTxt.Size = new System.Drawing.Size(254, 26);
-            this.identidadTxt.TabIndex = 1;
             // 
             // label1
             // 
@@ -162,16 +152,6 @@
             this.label6.Size = new System.Drawing.Size(79, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "Teléfono";
-            // 
-            // telefonoTxt
-            // 
-            this.telefonoTxt.AcceptsTab = true;
-            this.telefonoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.telefonoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telefonoTxt.Location = new System.Drawing.Point(129, 258);
-            this.telefonoTxt.Name = "telefonoTxt";
-            this.telefonoTxt.Size = new System.Drawing.Size(254, 26);
-            this.telefonoTxt.TabIndex = 6;
             // 
             // label7
             // 
@@ -307,6 +287,7 @@
             this.edadNmr.Name = "edadNmr";
             this.edadNmr.Size = new System.Drawing.Size(254, 26);
             this.edadNmr.TabIndex = 4;
+            this.edadNmr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // BtnCancelar
             // 
@@ -341,12 +322,36 @@
             this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAgregar.UseVisualStyleBackColor = true;
             // 
+            // identidadMaskTxt
+            // 
+            this.identidadMaskTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.identidadMaskTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.identidadMaskTxt.Location = new System.Drawing.Point(129, 25);
+            this.identidadMaskTxt.Mask = "0000-0000-00000";
+            this.identidadMaskTxt.Name = "identidadMaskTxt";
+            this.identidadMaskTxt.Size = new System.Drawing.Size(254, 26);
+            this.identidadMaskTxt.TabIndex = 15;
+            this.identidadMaskTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // telefonoMaskTxt
+            // 
+            this.telefonoMaskTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.telefonoMaskTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.telefonoMaskTxt.Location = new System.Drawing.Point(129, 258);
+            this.telefonoMaskTxt.Mask = "0000-0000";
+            this.telefonoMaskTxt.Name = "telefonoMaskTxt";
+            this.telefonoMaskTxt.Size = new System.Drawing.Size(254, 26);
+            this.telefonoMaskTxt.TabIndex = 16;
+            this.telefonoMaskTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // NuevoPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
+            this.Controls.Add(this.telefonoMaskTxt);
+            this.Controls.Add(this.identidadMaskTxt);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.edadNmr);
@@ -363,7 +368,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.CiudadTxt);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.telefonoTxt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.direccionTxt);
             this.Controls.Add(this.label4);
@@ -372,7 +376,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nombreTxt);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.identidadTxt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoPaciente";
             this.Text = "NuevoPaciente";
@@ -383,7 +386,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox identidadTxt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox nombreTxt;
@@ -393,7 +395,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox direccionTxt;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox telefonoTxt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox CiudadTxt;
         private System.Windows.Forms.Label label8;
@@ -409,5 +410,7 @@
         private System.Windows.Forms.NumericUpDown edadNmr;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnAgregar;
+        private System.Windows.Forms.MaskedTextBox identidadMaskTxt;
+        private System.Windows.Forms.MaskedTextBox telefonoMaskTxt;
     }
 }
