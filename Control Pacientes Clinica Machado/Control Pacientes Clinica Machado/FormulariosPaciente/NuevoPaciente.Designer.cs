@@ -53,7 +53,7 @@
             this.observacionesTxt = new System.Windows.Forms.RichTextBox();
             this.edadNmr = new System.Windows.Forms.NumericUpDown();
             this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.BtnAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).BeginInit();
             this.SuspendLayout();
             // 
@@ -325,21 +325,21 @@
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
-            // BtnAceptar
+            // BtnAgregar
             // 
-            this.BtnAceptar.FlatAppearance.BorderSize = 0;
-            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
-            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(304, 382);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(134, 39);
-            this.BtnAceptar.TabIndex = 13;
-            this.BtnAceptar.Text = "ACEPTAR";
-            this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAceptar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.FlatAppearance.BorderSize = 0;
+            this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAgregar.Location = new System.Drawing.Point(304, 382);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(144, 39);
+            this.BtnAgregar.TabIndex = 13;
+            this.BtnAgregar.Text = "AGREGAR";
+            this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregar.UseVisualStyleBackColor = true;
             // 
             // NuevoPaciente
             // 
@@ -348,7 +348,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
             this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnAceptar);
+            this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.edadNmr);
             this.Controls.Add(this.observacionesTxt);
             this.Controls.Add(this.label12);
@@ -408,6 +408,6 @@
         private System.Windows.Forms.RichTextBox observacionesTxt;
         private System.Windows.Forms.NumericUpDown edadNmr;
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Button BtnAceptar;
+        private System.Windows.Forms.Button BtnAgregar;
     }
 }

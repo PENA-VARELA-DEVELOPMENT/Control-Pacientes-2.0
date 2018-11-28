@@ -35,7 +35,7 @@
             this.doctorTxt = new System.Windows.Forms.TextBox();
             this.dateTimeDTP = new System.Windows.Forms.DateTimePicker();
             this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.BtnAgregarCita = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -102,7 +102,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(485, 369);
+            this.BtnCancelar.Location = new System.Drawing.Point(470, 355);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(154, 39);
             this.BtnCancelar.TabIndex = 72;
@@ -111,21 +111,21 @@
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
-            // BtnAceptar
+            // BtnAgregarCita
             // 
-            this.BtnAceptar.FlatAppearance.BorderSize = 0;
-            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
-            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(275, 369);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(138, 39);
-            this.BtnAceptar.TabIndex = 71;
-            this.BtnAceptar.Text = "ACEPTAR";
-            this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAceptar.UseVisualStyleBackColor = true;
+            this.BtnAgregarCita.FlatAppearance.BorderSize = 0;
+            this.BtnAgregarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarCita.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarCita.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregarCita.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.BtnAgregarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAgregarCita.Location = new System.Drawing.Point(240, 355);
+            this.BtnAgregarCita.Name = "BtnAgregarCita";
+            this.BtnAgregarCita.Size = new System.Drawing.Size(189, 39);
+            this.BtnAgregarCita.TabIndex = 71;
+            this.BtnAgregarCita.Text = "AGREGAR CITA";
+            this.BtnAgregarCita.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnAgregarCita.UseVisualStyleBackColor = true;
             // 
             // NuevaCita
             // 
@@ -134,7 +134,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
             this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnAceptar);
+            this.Controls.Add(this.BtnAgregarCita);
             this.Controls.Add(this.dateTimeDTP);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.doctorTxt);
@@ -158,6 +158,6 @@
         private System.Windows.Forms.TextBox doctorTxt;
         private System.Windows.Forms.DateTimePicker dateTimeDTP;
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Button BtnAceptar;
+        private System.Windows.Forms.Button BtnAgregarCita;
     }
 }

@@ -39,7 +39,7 @@
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.IDdoctorTxt = new System.Windows.Forms.TextBox();
             this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.BtnActualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label9
@@ -166,21 +166,21 @@
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
-            // BtnAceptar
+            // BtnActualizar
             // 
-            this.BtnAceptar.FlatAppearance.BorderSize = 0;
-            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
-            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(292, 351);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(123, 39);
-            this.BtnAceptar.TabIndex = 25;
-            this.BtnAceptar.Text = "ACEPTAR";
-            this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAceptar.UseVisualStyleBackColor = true;
+            this.BtnActualizar.FlatAppearance.BorderSize = 0;
+            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActualizar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.ForeColor = System.Drawing.Color.White;
+            this.BtnActualizar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.BtnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnActualizar.Location = new System.Drawing.Point(270, 351);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(145, 39);
+            this.BtnActualizar.TabIndex = 25;
+            this.BtnActualizar.Text = "ACTUALIZAR";
+            this.BtnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnActualizar.UseVisualStyleBackColor = true;
             // 
             // ActualizarDoctor
             // 
@@ -189,7 +189,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
             this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnAceptar);
+            this.Controls.Add(this.BtnActualizar);
             this.Controls.Add(this.colegiacionTxt);
             this.Controls.Add(this.especialidadTxt);
             this.Controls.Add(this.apellidoTxt);
@@ -220,6 +220,6 @@
         private System.Windows.Forms.TextBox nombreTxt;
         private System.Windows.Forms.TextBox IDdoctorTxt;
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Button BtnAceptar;
+        private System.Windows.Forms.Button BtnActualizar;
     }
 }
