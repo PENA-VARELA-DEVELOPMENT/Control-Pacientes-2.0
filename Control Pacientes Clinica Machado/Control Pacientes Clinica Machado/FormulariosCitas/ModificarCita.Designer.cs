@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.IdComBox = new System.Windows.Forms.ComboBox();
             this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dateTimeDTP
@@ -133,29 +133,30 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(458, 344);
+            this.BtnCancelar.Location = new System.Drawing.Point(460, 344);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(153, 39);
             this.BtnCancelar.TabIndex = 6;
             this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
-            // BtnAceptar
+            // BtnModificar
             // 
-            this.BtnAceptar.FlatAppearance.BorderSize = 0;
-            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
-            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(269, 344);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(139, 39);
-            this.BtnAceptar.TabIndex = 5;
-            this.BtnAceptar.Text = "ACEPTAR";
-            this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAceptar.UseVisualStyleBackColor = true;
+            this.BtnModificar.FlatAppearance.BorderSize = 0;
+            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnModificar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificar.ForeColor = System.Drawing.Color.White;
+            this.BtnModificar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModificar.Location = new System.Drawing.Point(254, 344);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(160, 39);
+            this.BtnModificar.TabIndex = 5;
+            this.BtnModificar.Text = "MODIFICAR";
+            this.BtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnModificar.UseVisualStyleBackColor = true;
             // 
             // ModificarCita
             // 
@@ -164,7 +165,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
             this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnAceptar);
+            this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.IdComBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimeDTP);
@@ -193,6 +194,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox IdComBox;
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Button BtnAceptar;
+        private System.Windows.Forms.Button BtnModificar;
     }
 }

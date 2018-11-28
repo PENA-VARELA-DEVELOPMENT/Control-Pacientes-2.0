@@ -28,31 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAceptar = new System.Windows.Forms.Button();
+            this.nombrePacienteCombox = new System.Windows.Forms.ComboBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(349, 167);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(254, 32);
-            this.comboBox1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(263, 175);
+            this.label2.Location = new System.Drawing.Point(57, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 24);
+            this.label2.Size = new System.Drawing.Size(213, 24);
             this.label2.TabIndex = 24;
-            this.label2.Text = "ID Cita";
+            this.label2.Text = "Nombre del Paciente:";
             // 
             // BtnCancelar
             // 
@@ -62,13 +53,14 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(453, 347);
+            this.BtnCancelar.Location = new System.Drawing.Point(586, 374);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(150, 39);
             this.BtnCancelar.TabIndex = 3;
             this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAceptar
             // 
@@ -78,7 +70,7 @@
             this.BtnAceptar.ForeColor = System.Drawing.Color.White;
             this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(267, 347);
+            this.BtnAceptar.Location = new System.Drawing.Point(398, 374);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(139, 39);
             this.BtnAceptar.TabIndex = 2;
@@ -86,15 +78,36 @@
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAceptar.UseVisualStyleBackColor = true;
             // 
+            // nombrePacienteCombox
+            // 
+            this.nombrePacienteCombox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.nombrePacienteCombox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombrePacienteCombox.FormattingEnabled = true;
+            this.nombrePacienteCombox.Location = new System.Drawing.Point(24, 98);
+            this.nombrePacienteCombox.Name = "nombrePacienteCombox";
+            this.nombrePacienteCombox.Size = new System.Drawing.Size(288, 32);
+            this.nombrePacienteCombox.TabIndex = 1;
+            // 
+            // listView1
+            // 
+            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.listView1.ForeColor = System.Drawing.Color.Black;
+            this.listView1.Location = new System.Drawing.Point(330, 61);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(503, 283);
+            this.listView1.TabIndex = 25;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // CancelarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnAceptar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.nombrePacienteCombox);
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -106,10 +119,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnAceptar;
+        private System.Windows.Forms.ComboBox nombrePacienteCombox;
+        private System.Windows.Forms.ListView listView1;
     }
 }

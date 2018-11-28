@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Control_Pacientes_Clinica_Machado
+namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 {
-    public partial class NuevoPaciente : Form
+    public partial class ActualizarDoctor : Form
     {
-        public NuevoPaciente()
+        public ActualizarDoctor()
         {
             InitializeComponent();
         }

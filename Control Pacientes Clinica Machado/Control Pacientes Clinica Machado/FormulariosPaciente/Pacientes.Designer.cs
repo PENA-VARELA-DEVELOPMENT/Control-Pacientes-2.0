@@ -30,11 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.PanelCrud = new System.Windows.Forms.Panel();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,56 +55,6 @@
             this.PanelCrud.Name = "PanelCrud";
             this.PanelCrud.Size = new System.Drawing.Size(867, 443);
             this.PanelCrud.TabIndex = 7;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 41;
-            this.lineShape1.X2 = 199;
-            this.lineShape1.Y1 = 118;
-            this.lineShape1.Y2 = 118;
-            // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape4,
-            this.lineShape3,
-            this.lineShape2,
-            this.lineShape1});
-            this.shapeContainer2.Size = new System.Drawing.Size(934, 590);
-            this.shapeContainer2.TabIndex = 9;
-            this.shapeContainer2.TabStop = false;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 739;
-            this.lineShape4.X2 = 877;
-            this.lineShape4.Y1 = 118;
-            this.lineShape4.Y2 = 118;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 479;
-            this.lineShape3.X2 = 666;
-            this.lineShape3.Y1 = 118;
-            this.lineShape3.Y2 = 118;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 259;
-            this.lineShape2.X2 = 417;
-            this.lineShape2.Y1 = 118;
-            this.lineShape2.Y2 = 118;
             // 
             // pictureBox1
             // 
@@ -181,7 +126,7 @@
             this.pacientesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.pacientesBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
             this.pacientesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pacientesBtn.Location = new System.Drawing.Point(29, 80);
+            this.pacientesBtn.Location = new System.Drawing.Point(32, 80);
             this.pacientesBtn.Name = "pacientesBtn";
             this.pacientesBtn.Size = new System.Drawing.Size(180, 38);
             this.pacientesBtn.TabIndex = 1;
@@ -203,7 +148,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pacientesBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.shapeContainer2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pacientes";
             this.Text = "Pacientes";
@@ -223,10 +167,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel PanelCrud;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
     }
 }

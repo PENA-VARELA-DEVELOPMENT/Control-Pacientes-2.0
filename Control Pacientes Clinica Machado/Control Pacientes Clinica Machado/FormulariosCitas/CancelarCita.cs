@@ -17,5 +17,21 @@ namespace Control_Pacientes_Clinica_Machado
             InitializeComponent();
         }
 
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            string message = "¿Esta seguro que desea cancelar el proceso?";
+            string caption = "Control de Pacientes Clinica Machado";
+            MessageBoxButtons button = MessageBoxButtons.YesNoCancel;
+
+            DialogResult result;
+            result = MessageBox.Show(message, caption, button);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Close();
+
+            }
+           // this.Close();
+            
+        }
     }
 }

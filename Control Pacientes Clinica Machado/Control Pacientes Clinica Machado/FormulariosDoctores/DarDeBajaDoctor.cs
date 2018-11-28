@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Control_Pacientes_Clinica_Machado
+namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 {
-    public partial class NuevoPaciente : Form
+    public partial class DarDeBajaDoctor : Form
     {
-        public NuevoPaciente()
+        public DarDeBajaDoctor()
         {
             InitializeComponent();
         }
@@ -25,10 +25,10 @@ namespace Control_Pacientes_Clinica_Machado
 
             DialogResult result;
             result = MessageBox.Show(message, caption, button);
+
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 this.Close();
-
             }
         }
     }
