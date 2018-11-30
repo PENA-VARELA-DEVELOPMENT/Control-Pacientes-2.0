@@ -105,5 +105,10 @@ namespace Control_Pacientes_Clinica_Machado
         {
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormulariosMantenimiento.Mantenimiento());
+        }
     }
 }

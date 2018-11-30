@@ -79,6 +79,24 @@
     <Compile Include="FormulariosDoctores\NuevoDoctor.Designer.cs">
       <DependentUpon>NuevoDoctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulariosMantenimiento\HabilitarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\HabilitarPaciente.Designer.cs">
+      <DependentUpon>HabilitarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\MantenimientoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\MantenimientoUsuarios.Designer.cs">
+      <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulariosPaciente\ActualizarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +198,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\NuevoDoctor.resx">
       <DependentUpon>NuevoDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosMantenimiento\HabilitarPaciente.resx">
+      <DependentUpon>HabilitarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosMantenimiento\Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosMantenimiento\MantenimientoUsuarios.resx">
+      <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\ActualizarPaciente.resx">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
@@ -302,6 +329,13 @@
     <None Include="Resources\error.ico" />
     <None Include="Resources\users.ico" />
     <None Include="Resources\key01.ico" />
+    <None Include="Resources\ajustess.png" />
+    <None Include="Resources\ajustes1.png" />
+    <None Include="Resources\team32.png" />
+    <None Include="Resources\habilitarOpt.png" />
+    <None Include="Resources\storage32.png" />
+    <None Include="Resources\habilitadoP.png" />
+    <None Include="Resources\inhabilitadoP.png" />
     <Content Include="Stored Procedures\Citas\sp_ActualizarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_EliminarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_InsertarCita.sql" />

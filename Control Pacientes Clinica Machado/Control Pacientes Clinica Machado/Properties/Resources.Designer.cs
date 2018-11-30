@@ -93,6 +93,26 @@ namespace Control_Pacientes_Clinica_Machado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ajustes1 {
+            get {
+                object obj = ResourceManager.GetObject("ajustes1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ajustess {
+            get {
+                object obj = ResourceManager.GetObject("ajustess", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap appointment {
             get {
                 object obj = ResourceManager.GetObject("appointment", resourceCulture);
@@ -196,6 +216,36 @@ namespace Control_Pacientes_Clinica_Machado.Properties {
         internal static System.Drawing.Bitmap focusing_target_to_take_a_photo {
             get {
                 object obj = ResourceManager.GetObject("focusing-target-to-take-a-photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap habilitadoP {
+            get {
+                object obj = ResourceManager.GetObject("habilitadoP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap habilitarOpt {
+            get {
+                object obj = ResourceManager.GetObject("habilitarOpt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inhabilitadoP {
+            get {
+                object obj = ResourceManager.GetObject("inhabilitadoP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +383,29 @@ namespace Control_Pacientes_Clinica_Machado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap storage32 {
+            get {
+                object obj = ResourceManager.GetObject("storage32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap team {
             get {
                 object obj = ResourceManager.GetObject("team", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap team32 {
+            get {
+                object obj = ResourceManager.GetObject("team32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
