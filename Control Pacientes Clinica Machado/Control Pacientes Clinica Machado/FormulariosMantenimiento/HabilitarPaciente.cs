@@ -21,6 +21,8 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosMantenimiento
         {
 
             // Mostrar barrita de inhabiltado a habilitado
+            // Esto saldría luego de haberse cambiado el estado
+            // de inhabilitado a habilitado en la base de datos
             inhabilitadoPicBox.Visible = false;
             habilitadoPicBox.Visible = true;
         
@@ -29,6 +31,7 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosMantenimiento
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
+            // Mensaje de control
             string message = "¿Esta seguro que desea cancelar el proceso?";
             string caption = "Control de Pacientes Clinica Machado";
             MessageBoxButtons button = MessageBoxButtons.YesNoCancel;
