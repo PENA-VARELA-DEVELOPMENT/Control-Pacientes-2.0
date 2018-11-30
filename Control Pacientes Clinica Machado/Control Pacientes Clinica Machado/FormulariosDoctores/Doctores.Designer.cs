@@ -1,4 +1,4 @@
-﻿namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
+﻿namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 {
     partial class Doctores
     {
@@ -41,11 +41,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lemon/Milk", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.label1.Location = new System.Drawing.Point(407, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 30);
+            this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 23;
             this.label1.Text = "Doctores";
             // 
@@ -81,6 +81,7 @@
             this.modificarDoctorBtn.Text = "Modificar doctor";
             this.modificarDoctorBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.modificarDoctorBtn.UseVisualStyleBackColor = true;
+            this.modificarDoctorBtn.Click += new System.EventHandler(this.modificarDoctorBtn_Click);
             // 
             // darBajaBtn
             // 
@@ -97,6 +98,7 @@
             this.darBajaBtn.Text = "Dar de baja ";
             this.darBajaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.darBajaBtn.UseVisualStyleBackColor = true;
+            this.darBajaBtn.Click += new System.EventHandler(this.darBajaBtn_Click);
             // 
             // nuevaDoctorBtn
             // 
@@ -113,6 +115,7 @@
             this.nuevaDoctorBtn.Text = "Nuevo doctor";
             this.nuevaDoctorBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.nuevaDoctorBtn.UseVisualStyleBackColor = true;
+            this.nuevaDoctorBtn.Click += new System.EventHandler(this.nuevaDoctorBtn_Click);
             // 
             // buscarDoctorBtn
             // 
@@ -129,6 +132,7 @@
             this.buscarDoctorBtn.Text = "Buscar doctor";
             this.buscarDoctorBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buscarDoctorBtn.UseVisualStyleBackColor = true;
+            this.buscarDoctorBtn.Click += new System.EventHandler(this.buscarDoctorBtn_Click);
             // 
             // Doctores
             // 
