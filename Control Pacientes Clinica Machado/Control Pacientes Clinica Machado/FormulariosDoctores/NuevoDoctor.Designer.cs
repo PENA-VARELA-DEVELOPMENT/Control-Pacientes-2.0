@@ -165,6 +165,7 @@
             this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAgregar
             // 
@@ -174,9 +175,9 @@
             this.BtnAgregar.ForeColor = System.Drawing.Color.White;
             this.BtnAgregar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(314, 365);
+            this.BtnAgregar.Location = new System.Drawing.Point(305, 365);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(123, 39);
+            this.BtnAgregar.Size = new System.Drawing.Size(132, 39);
             this.BtnAgregar.TabIndex = 32;
             this.BtnAgregar.Text = "AGREGAR";
             this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
