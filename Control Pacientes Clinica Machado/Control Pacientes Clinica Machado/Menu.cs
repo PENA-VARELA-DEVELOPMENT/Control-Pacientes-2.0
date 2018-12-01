@@ -103,7 +103,12 @@ namespace Control_Pacientes_Clinica_Machado
 
         private void doctoresBtn_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormHija(new FormulariosDoctores.Doctores());   
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FormulariosMantenimiento.Mantenimiento());
         }
     }
 }

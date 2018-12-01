@@ -8,26 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Control_Pacientes_Clinica_Machado
+namespace Control_Pacientes_Clinica_Machado.FormulariosMantenimiento
 {
-    public partial class Pacientes : Form
+    public partial class Mantenimiento : Form
     {
-        public Pacientes()
+        public Mantenimiento()
         {
             InitializeComponent();
-        }
-
-        private void Pacientes_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
-            
         }
 
+        // Funcion para formularios hijo
         private void AbrirFormHija(object FormHija)
         {
             if (this.PanelCrud.Controls.Count > 0)
@@ -43,26 +38,9 @@ namespace Control_Pacientes_Clinica_Machado
             fh.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void habilitarPxBtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new NuevoPaciente());
+            AbrirFormHija(new FormulariosMantenimiento.HabilitarPaciente());
         }
-
-        private void pacientesBtn_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new ListarPaciente());
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new ActualizarPaciente());
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new DarDeBajaPaciente());
-        }
-
-
     }
 }
