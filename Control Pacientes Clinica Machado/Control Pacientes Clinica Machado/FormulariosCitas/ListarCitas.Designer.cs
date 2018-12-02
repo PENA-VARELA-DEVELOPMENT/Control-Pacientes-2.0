@@ -1,6 +1,6 @@
 ﻿namespace Control_Pacientes_Clinica_Machado
 {
-    partial class LogoClinica
+    partial class ListarCitas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.logoPict01 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPict01)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // logoPict01
+            // dataGridView1
             // 
-            this.logoPict01.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Vector_clinica;
-            this.logoPict01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoPict01.Location = new System.Drawing.Point(18, 77);
-            this.logoPict01.Name = "logoPict01";
-            this.logoPict01.Size = new System.Drawing.Size(915, 436);
-            this.logoPict01.TabIndex = 1;
-            this.logoPict01.TabStop = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(843, 419);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // LogoClinica
+            // ListarCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 629);
-            this.Controls.Add(this.logoPict01);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.ClientSize = new System.Drawing.Size(867, 443);
+            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LogoClinica";
-            this.Text = "LogoClinica";
-            ((System.ComponentModel.ISupportInitialize)(this.logoPict01)).EndInit();
+            this.Name = "ListarCitas";
+            this.Text = "ListarCitas";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox logoPict01;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

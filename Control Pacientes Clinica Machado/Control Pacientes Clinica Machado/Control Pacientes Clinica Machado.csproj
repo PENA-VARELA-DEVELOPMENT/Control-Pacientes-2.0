@@ -49,11 +49,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualizarPaciente.cs">
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\CustomException.cs" />
+    <Compile Include="FormulariosDoctores\ActualizarDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActualizarPaciente.Designer.cs">
+    <Compile Include="FormulariosDoctores\ActualizarDoctor.Designer.cs">
+      <DependentUpon>ActualizarDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.Designer.cs">
+      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\Doctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\Doctores.Designer.cs">
+      <DependentUpon>Doctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\ListarDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\ListarDoctores.Designer.cs">
+      <DependentUpon>ListarDoctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\NuevoDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\NuevoDoctor.Designer.cs">
+      <DependentUpon>NuevoDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\HabilitarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\HabilitarPaciente.Designer.cs">
+      <DependentUpon>HabilitarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\MantenimientoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\MantenimientoUsuarios.Designer.cs">
+      <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosPaciente\ActualizarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\ActualizarPaciente.Designer.cs">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosCitas\CancelarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosCitas\CancelarCita.Designer.cs">
+      <DependentUpon>CancelarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosCitas\Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosCitas\Citas.Designer.cs">
+      <DependentUpon>Citas.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Cita.cs" />
     <Compile Include="Clases\DetalleCita.cs" />
@@ -62,16 +124,22 @@
     <Compile Include="Clases\HistorialDental.cs" />
     <Compile Include="Clases\HistoriaMedica.cs" />
     <Compile Include="Clases\Paciente.cs" />
-    <Compile Include="DarDeBajaPaciente.cs">
+    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DarDeBajaPaciente.Designer.cs">
+    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.Designer.cs">
       <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListarPaciente.cs">
+    <Compile Include="FormulariosCitas\ListarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListarPaciente.Designer.cs">
+    <Compile Include="FormulariosCitas\ListarCitas.Designer.cs">
+      <DependentUpon>ListarCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosPaciente\ListarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\ListarPaciente.Designer.cs">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -92,27 +160,72 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevoPaciente.cs">
+    <Compile Include="FormulariosCitas\ModificarCita.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoPaciente.Designer.cs">
+    <Compile Include="FormulariosCitas\ModificarCita.Designer.cs">
+      <DependentUpon>ModificarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosCitas\NuevaCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosCitas\NuevaCita.Designer.cs">
+      <DependentUpon>NuevaCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosPaciente\NuevoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\NuevoPaciente.Designer.cs">
       <DependentUpon>NuevoPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pacientes.cs">
+    <Compile Include="FormulariosPaciente\Pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pacientes.Designer.cs">
+    <Compile Include="FormulariosPaciente\Pacientes.Designer.cs">
       <DependentUpon>Pacientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ActualizarPaciente.resx">
+    <EmbeddedResource Include="FormulariosDoctores\ActualizarDoctor.resx">
+      <DependentUpon>ActualizarDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\DarDeBajaDoctor.resx">
+      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\Doctores.resx">
+      <DependentUpon>Doctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\ListarDoctores.resx">
+      <DependentUpon>ListarDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\NuevoDoctor.resx">
+      <DependentUpon>NuevoDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosMantenimiento\HabilitarPaciente.resx">
+      <DependentUpon>HabilitarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosMantenimiento\Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosMantenimiento\MantenimientoUsuarios.resx">
+      <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\ActualizarPaciente.resx">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DarDeBajaPaciente.resx">
+    <EmbeddedResource Include="FormulariosCitas\CancelarCita.resx">
+      <DependentUpon>CancelarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosCitas\Citas.resx">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\DarDeBajaPaciente.resx">
       <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListarPaciente.resx">
+    <EmbeddedResource Include="FormulariosCitas\ListarCitas.resx">
+      <DependentUpon>ListarCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\ListarPaciente.resx">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -124,10 +237,16 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoPaciente.resx">
+    <EmbeddedResource Include="FormulariosCitas\ModificarCita.resx">
+      <DependentUpon>ModificarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosCitas\NuevaCita.resx">
+      <DependentUpon>NuevaCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\NuevoPaciente.resx">
       <DependentUpon>NuevoPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pacientes.resx">
+    <EmbeddedResource Include="FormulariosPaciente\Pacientes.resx">
       <DependentUpon>Pacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -198,6 +317,27 @@
   <ItemGroup>
     <None Include="Resources\Cerrar.png" />
     <None Include="Resources\borrar.png" />
+    <None Include="Resources\PACIENTES01.png" />
+    <None Include="Resources\doctor.png" />
+    <None Include="Resources\team.png" />
+    <None Include="Resources\appointment.png" />
+    <None Include="Resources\cassh.png" />
+    <None Include="Resources\conta.png" />
+    <None Include="Resources\search.ico" />
+    <None Include="Resources\insert.ico" />
+    <None Include="Resources\reload.ico" />
+    <None Include="Resources\trash.ico" />
+    <None Include="Resources\ok.ico" />
+    <None Include="Resources\error.ico" />
+    <None Include="Resources\users.ico" />
+    <None Include="Resources\key01.ico" />
+    <None Include="Resources\ajustess.png" />
+    <None Include="Resources\ajustes1.png" />
+    <None Include="Resources\team32.png" />
+    <None Include="Resources\habilitarOpt.png" />
+    <None Include="Resources\storage32.png" />
+    <None Include="Resources\habilitadoP.png" />
+    <None Include="Resources\inhabilitadoP.png" />
     <Content Include="Stored Procedures\Citas\sp_ActualizarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_EliminarCita.sql" />
     <Content Include="Stored Procedures\Citas\sp_InsertarCita.sql" />

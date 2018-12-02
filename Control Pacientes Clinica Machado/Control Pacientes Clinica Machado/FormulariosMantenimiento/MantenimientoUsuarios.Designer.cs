@@ -1,6 +1,6 @@
-﻿namespace Control_Pacientes_Clinica_Machado
+﻿namespace Control_Pacientes_Clinica_Machado.FormulariosMantenimiento
 {
-    partial class LogoClinica
+    partial class MantenimientoUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.logoPict01 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPict01)).BeginInit();
             this.SuspendLayout();
             // 
-            // logoPict01
-            // 
-            this.logoPict01.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Vector_clinica;
-            this.logoPict01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoPict01.Location = new System.Drawing.Point(18, 77);
-            this.logoPict01.Name = "logoPict01";
-            this.logoPict01.Size = new System.Drawing.Size(915, 436);
-            this.logoPict01.TabIndex = 1;
-            this.logoPict01.TabStop = false;
-            // 
-            // LogoClinica
+            // MantenimientoUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 629);
-            this.Controls.Add(this.logoPict01);
+            this.ClientSize = new System.Drawing.Size(867, 443);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LogoClinica";
-            this.Text = "LogoClinica";
-            ((System.ComponentModel.ISupportInitialize)(this.logoPict01)).EndInit();
+            this.Name = "MantenimientoUsuarios";
+            this.Text = "MantenimientoUsuarios";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox logoPict01;
     }
 }
