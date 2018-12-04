@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control_Pacientes_Clinica_Machado.Clases;
 
 namespace Control_Pacientes_Clinica_Machado
 {
@@ -37,6 +38,34 @@ namespace Control_Pacientes_Clinica_Machado
 
         }
 
-     
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            Paciente Nuevo = new Paciente();
+            Nuevo.identidad = identidadTxt.Text;
+            Nuevo.nombre = nombreTxt.Text;
+            Nuevo.apellido = apellidoTxt.Text;
+            Nuevo.edad = edadNmr.TabIndex;
+            Nuevo.direccion = direccionTxt.Text;
+            Nuevo.telefono = Convert.ToInt32(telefonoTxt.Text);
+            Nuevo.ciudad = CiudadTxt.Text;
+            Nuevo.fechaNacimiento = fechaNacimientoTxt.Text;
+            Nuevo.ocupacion = ocupacionTxt.Text;
+            Nuevo.tutor = tutorTxt.Text;
+            Nuevo.nombreDelDoctorQueRefiere = doctorRefTxt.Text;
+            Nuevo.observaciones = observacionesTxt.Text;
+            Nuevo.Estado = 1;
+            Nuevo.tipo = TipoTxt.Text;
+
+            if (Nuevo.InsertarPaciente(Nuevo))
+            {
+                MessageBox.Show("Exito");
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+            
+
+        }
     }
 }

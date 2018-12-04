@@ -338,18 +338,9 @@
     <None Include="Resources\storage32.png" />
     <None Include="Resources\habilitadoP.png" />
     <None Include="Resources\inhabilitadoP.png" />
-    <Content Include="Stored Procedures\Citas\sp_ActualizarCita.sql" />
-    <Content Include="Stored Procedures\Citas\sp_EliminarCita.sql" />
-    <Content Include="Stored Procedures\Citas\sp_InsertarCita.sql" />
-    <Content Include="Stored Procedures\Citas\sp_ListarCitas.sql" />
-    <Content Include="Stored Procedures\DetalleCita\sp_ActualizarDetalleCita.sql" />
-    <Content Include="Stored Procedures\DetalleCita\sp_EliminarDetalleCita.sql" />
-    <Content Include="Stored Procedures\DetalleCita\sp_InsertarDetalleCita.sql" />
-    <Content Include="Stored Procedures\DetalleCita\sp_ListarDetalleCita.sql" />
-    <Content Include="Stored Procedures\Paciente\sp_ActualizarPaciente.sql" />
-    <Content Include="Stored Procedures\Paciente\sp_EliminarPaciente.sql" />
-    <Content Include="Stored Procedures\Paciente\sp_InsertarPaciente.sql" />
-    <Content Include="Stored Procedures\Paciente\sp_ListarPaciente.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sql\Clinica_Machado_create.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
