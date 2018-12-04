@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ATM_CRUD.Models
+namespace Control_Pacientes_Clinica_Machado.Clases
 {
     class Conexion
     {
