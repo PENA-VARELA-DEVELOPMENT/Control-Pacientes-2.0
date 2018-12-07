@@ -13,7 +13,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
     {
         // Propiedades para la clase
         public string tipo { get; set; }
-        public string fechaCreacion { get; set; }
+        public DateTime fechaCreacion { get; set; }
         public string identidad { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
@@ -82,65 +82,18 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
         }
 
-        public static Paciente ObtenerPacienteNombre(string Nombre)
+        /// <summary>
+        /// Lista un paciente
+        /// </summary>
+        /// <returns></returns>
+        public List<Paciente> ListarPaciente()
         {
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
-            string sql;
-            Paciente resultado = new Paciente();
-
-            // Query SQL
-            sql = @"SELECT *
-                    FROM ATM.Paciente
-                    WHERE nombres = @Nombre";
-
-            SqlCommand cmd = conexion.EjecutarComando(sql);
-            SqlDataReader rdr;
-
-            try
-            {
-                using (cmd)
-                {
-                    cmd.Parameters.Add("@Nombre", SqlDbType.Char, 13).Value = Nombre;
-
-                    rdr = cmd.ExecuteReader();
-                }
-
-                while (rdr.Read())
-                {
-                    //resultado.id = rdr.GetInt32(0);
-                    //resultado.nombres = rdr.GetString(1);
-                    //resultado.apellidos = rdr.GetString(2);
-                    //resultado.identidad = rdr.GetString(3);
-                    //resultado.direccion = rdr.GetString(4);
-                    //resultado.telefono = rdr.GetString(5);
-                    //resultado.celular = rdr.GetString(6);
-
-                    // Remover espacios en blanco
-
-                }
-
-                return resultado;
-            }
-            catch (SqlException)
-            {
-                return resultado;
-            }
-            finally
-            {
-                conexion.CerrarConexion();
-            }
-        }
-
-
-
-        public List<Paciente> ListarCancion()
-        {
-            Conexion conexion = new Conexion();
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
             string sql;
             List<Paciente> Lista = new List<Paciente>();
 
             // Query SQL
-            sql = @"select  Id, Nombre, Artista, Album, Genero, AñoCreacion FROM Music.Cancion Order by Id";
+            sql = @"SELECT * FROM [ControlPacientes].[Paciente]";
 
             SqlCommand cmd = conexion.EjecutarComando(sql);
             SqlDataReader rdr;
@@ -152,14 +105,24 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 while (rdr.Read())
                 {
                     Paciente resultado = new Paciente();
-                    //resultado.Id = rdr.GetInt32(0);
-                    //resultado.Nombre = rdr.GetString(1);
-                    //resultado.Artista = rdr.GetInt32(2);
-                    //resultado.Album = rdr.GetInt32(3);
-                    //resultado.Genero = rdr.GetString(4);
-                    //resultado.AñoCreacion = rdr.GetString(5);
-                    //Lista.Add(resultado);
-                    // Remover espacios
+                    resultado.tipo = rdr.GetString(0);
+                    resultado.fechaCreacion = rdr.GetDateTime(1);
+                    resultado.identidad = rdr.GetString(2);
+                    resultado.nombre = rdr.GetString(3);
+                    resultado.apellido = rdr.GetString(4);
+                    resultado.edad = rdr.GetInt32(5);
+                    resultado.direccion = rdr.GetString(6);
+                    resultado.telefono = rdr.GetInt32(7);
+                    resultado.ciudad = rdr.GetString(8);
+                    resultado.fechaNacimiento = rdr.GetString(9);
+                    resultado.ocupacion = rdr.GetString(10);
+                    resultado.tutor = rdr.GetString(11);
+                    resultado.observaciones = rdr.GetString(12);
+                    resultado.nombreDelDoctorQueRefiere = rdr.GetString(13);
+                    resultado.Estado = Convert.ToInt32(rdr.GetValue(14));
+
+
+                    Lista.Add(resultado);
                 }
 
                 return Lista;
@@ -264,7 +227,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("sp_ActualizarPaciente");
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_ActualizarPaciente");
             cmd.CommandType = CommandType.StoredProcedure;
 
             // agregamos los parámetros que son requeridos
