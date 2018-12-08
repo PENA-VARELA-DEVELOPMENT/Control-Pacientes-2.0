@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(229, 96);
+            this.label1.Location = new System.Drawing.Point(247, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 25);
             this.label1.TabIndex = 8;
@@ -53,7 +53,7 @@
             // 
             this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreTxt.Location = new System.Drawing.Point(340, 93);
+            this.nombreTxt.Location = new System.Drawing.Point(364, 139);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(254, 26);
             this.nombreTxt.TabIndex = 9;
@@ -84,9 +84,9 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(459, 311);
+            this.BtnCancelar.Location = new System.Drawing.Point(458, 311);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(190, 39);
+            this.BtnCancelar.Size = new System.Drawing.Size(185, 39);
             this.BtnCancelar.TabIndex = 11;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -100,9 +100,9 @@
             this.BtnAceptar.ForeColor = System.Drawing.Color.White;
             this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(234, 311);
+            this.BtnAceptar.Location = new System.Drawing.Point(252, 311);
             this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(203, 39);
+            this.BtnAceptar.Size = new System.Drawing.Size(185, 39);
             this.BtnAceptar.TabIndex = 10;
             this.BtnAceptar.Text = "Habilitar";
             this.BtnAceptar.UseVisualStyleBackColor = true;
