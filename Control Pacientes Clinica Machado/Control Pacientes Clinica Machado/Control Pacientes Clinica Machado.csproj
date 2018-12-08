@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\CustomException.cs" />
+    <Compile Include="Clases\Usuarios.cs" />
     <Compile Include="FormulariosDoctores\ActualizarDoctor.cs">
       <SubType>Form</SubType>
     </Compile>

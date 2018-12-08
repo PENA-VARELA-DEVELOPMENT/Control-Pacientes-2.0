@@ -348,6 +348,7 @@
             this.edadNmr.Name = "edadNmr";
             this.edadNmr.Size = new System.Drawing.Size(254, 26);
             this.edadNmr.TabIndex = 4;
+            this.edadNmr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // BtnCancelar
             // 
@@ -820,7 +821,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(926, 443);
+            this.ClientSize = new System.Drawing.Size(960, 443);
             this.Controls.Add(this.checkBox15);
             this.Controls.Add(this.checkBox16);
             this.Controls.Add(this.label33);

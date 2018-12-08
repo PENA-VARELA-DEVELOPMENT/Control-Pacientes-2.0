@@ -52,7 +52,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                     resultado.fecha = rdr.GetDateTime(1);
                     resultado.hora = rdr.GetDateTime(2);
                     resultado.pacienteIdentidad = rdr.GetString(3);
-                    resultado.idDoctor = rdr.GetInt32(4));
+                    resultado.idDoctor = rdr.GetInt32(4);
                 }
 
                 return resultado;
@@ -113,23 +113,135 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 }
         }
 
-            //public bool InsertarCita(Cita citaPaciente)
-            //{
-            //    Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+        // 
+        public bool InsertarCita(Cita citaPaciente)
+        {
+            Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
-            //    // enviamos y especificamos el comando a ejecutar
-            //    SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_NuevaCita");
-            //    cmd.CommandType = CommandType.StoredProcedure;
+            // enviamos y especificamos el comando a ejecutar
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_NuevaCita");
+            cmd.CommandType = CommandType.StoredProcedure;
 
-            //    // agregamos los parámetros que son requeridos
-            //    cmd.Parameters.Add(new SqlParameter("@fecha", SqlDbType.Date));
-            //    cmd.Parameters["@fecha"].Value = citaPaciente.fecha;
+            // agregamos los parámetros que son requeridos
+            cmd.Parameters.Add(new SqlParameter("@fecha", SqlDbType.Date));
+            cmd.Parameters["@fecha"].Value = citaPaciente.fecha;
 
-            //    cmd.Parameters.Add(new SqlParameter("@hora", SqlDbType.DateTime));
-            //    cmd.Parameters["@hora"].Value = citaPaciente.hora;
+            cmd.Parameters.Add(new SqlParameter("@hora", SqlDbType.DateTime));
+            cmd.Parameters["@hora"].Value = citaPaciente.hora;
 
-            //    cmd.Parameters.Add(new SqlParameter("@paciente_Identidad", SqlDbType.VarChar, 15));
-            //    cmd.Parameters["@paciente_Identidad"].Value = citaPaciente.pacienteIdentidad;    
-            //}
+            cmd.Parameters.Add(new SqlParameter("@paciente_Identidad", SqlDbType.VarChar, 15));
+            cmd.Parameters["@paciente_Identidad"].Value = citaPaciente.pacienteIdentidad;
+
+            cmd.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
+            cmd.Parameters["@IdDoctor"].Value = citaPaciente.idDoctor;
+
+            // intentamos insertar la nueva cita
+            try
+            {
+
+                // ejecutamos el comando
+                cmd.ExecuteNonQuery();
+
+                return true;
+
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return false;
+            }
+            finally
+            {
+                conn.CerrarConexion();
+            }
+        }
+
+        /// <summary>
+        /// Actualiza la cita de un Paciente en particular
+        /// </summary>
+        /// <param name="citaPaciente"></param>
+        /// <returns></returns>
+        public static bool ActualizarCita(Cita citaPaciente)
+        {
+            Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+
+            // enviamos y especificamos el comando a ejecutar
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_ActualizarCita");
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            // agregamos los parámetros que son requeridos
+
+            cmd.Parameters.Add(new SqlParameter("@fecha", SqlDbType.Date));
+            cmd.Parameters["@fecha"].Value = citaPaciente.fecha;
+
+            cmd.Parameters.Add(new SqlParameter("@hora", SqlDbType.DateTime));
+            cmd.Parameters["@hora"].Value = citaPaciente.hora;
+
+            cmd.Parameters.Add(new SqlParameter("@paciente_Identidad", SqlDbType.VarChar, 15));
+            cmd.Parameters["@paciente_Identidad"].Value = citaPaciente.pacienteIdentidad;
+
+            cmd.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
+            cmd.Parameters["@IdDoctor"].Value = citaPaciente.idDoctor;
+
+            // intentamos insertar la nueva Cita
+            try
+            {
+                // establecemos la conexión
+                conn.EstablecerConexion();
+
+                // ejecutamos el comando
+                cmd.ExecuteNonQuery();
+
+                return true;
+
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return false;
+            }
+            finally
+            {
+                conn.CerrarConexion();
+            }
+
+        }
+
+        public bool Eliminar(Cita citaPaciente)
+        {
+            Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+
+            // enviamos y especificamos el comando a ejecutar
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_EliminarCitas");
+            cmd.CommandType = CommandType.StoredProcedure;
+
+
+            // agregamos los parámetros que son requeridos
+
+            cmd.Parameters.Add(new SqlParameter("@IdCita", SqlDbType.Int));
+            cmd.Parameters["@IdCita"].Value = citaPaciente.idCita;
+
+            // intentamos eliminar la cita
+            try
+            {
+                // establecemos la conexión
+                conn.EstablecerConexion();
+
+                // ejecutamos el comando
+                cmd.ExecuteNonQuery();
+
+                return true;
+
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return false;
+            }
+            finally
+            {
+                conn.CerrarConexion();
+            }
+        }
     }
 }
