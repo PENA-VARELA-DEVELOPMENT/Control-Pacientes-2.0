@@ -51,7 +51,7 @@
   <ItemGroup>
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\CustomException.cs" />
-    <Compile Include="Clases\Usuarios.cs" />
+    <Compile Include="Clases\Odontogramas.cs" />
     <Compile Include="FormulariosDoctores\ActualizarDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +143,12 @@
     <Compile Include="FormulariosPaciente\ListarPaciente.Designer.cs">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulariosPaciente\Odontograma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\Odontograma.Designer.cs">
+      <DependentUpon>Odontograma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\ListarPaciente.resx">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\Odontograma.resx">
+      <DependentUpon>Odontograma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -341,6 +350,13 @@
     <None Include="Resources\inhabilitadoP.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Aqua.png" />
+    <None Include="Resources\Azul.png" />
+    <None Include="Resources\cuadrado-de-forma-redondeada-negra.png" />
+    <None Include="Resources\MOrado.png" />
+    <None Include="Resources\Rojo.png" />
+    <None Include="Resources\Verde.png" />
+    <None Include="Resources\cuadrado-de-forma-redondeada-negra1.png" />
     <Content Include="Sql\Clinica_Machado_create.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
