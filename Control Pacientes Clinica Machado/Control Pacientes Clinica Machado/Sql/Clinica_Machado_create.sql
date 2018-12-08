@@ -93,10 +93,10 @@ GO
 CREATE TABLE ControlPacientes.HistoriaMedica (
     IdHistoria int IDENTITY(1,1),
     PadeceEnfermedad bit,
-    TmMedico bit  NOT NULL,
+    TmMedico varchar(500) NOT NULL,
     TomaMedicamentos varchar(500),
-    IntervenidoQuirurgicamente varchar(500),
-    HospitalizadoAlgunaVez varchar(500),
+    IntervenidoQuirurgicamente bit,
+    HospitalizadoAlgunaVez bit,
     Alergias varchar(500)  NOT NULL,
     EnfermedadCardiaca bit  NOT NULL,
     Diabetico bit  NOT NULL,
