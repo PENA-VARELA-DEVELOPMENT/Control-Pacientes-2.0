@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.BtnDarDeBaja = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -50,20 +50,20 @@
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
-            // BtnAceptar
+            // BtnDarDeBaja
             // 
-            this.BtnAceptar.FlatAppearance.BorderSize = 0;
-            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
-            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(246, 342);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(203, 39);
-            this.BtnAceptar.TabIndex = 6;
-            this.BtnAceptar.Text = "Dar de baja";
-            this.BtnAceptar.UseVisualStyleBackColor = true;
+            this.BtnDarDeBaja.FlatAppearance.BorderSize = 0;
+            this.BtnDarDeBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDarDeBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDarDeBaja.ForeColor = System.Drawing.Color.White;
+            this.BtnDarDeBaja.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
+            this.BtnDarDeBaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDarDeBaja.Location = new System.Drawing.Point(246, 342);
+            this.BtnDarDeBaja.Name = "BtnDarDeBaja";
+            this.BtnDarDeBaja.Size = new System.Drawing.Size(203, 39);
+            this.BtnDarDeBaja.TabIndex = 6;
+            this.BtnDarDeBaja.Text = "Dar de baja";
+            this.BtnDarDeBaja.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -92,7 +92,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
             this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnAceptar);
+            this.Controls.Add(this.BtnDarDeBaja);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nombreTxt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -106,7 +106,7 @@
         #endregion
 
         private System.Windows.Forms.Button BtnCancelar;
-        private System.Windows.Forms.Button BtnAceptar;
+        private System.Windows.Forms.Button BtnDarDeBaja;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox nombreTxt;
     }

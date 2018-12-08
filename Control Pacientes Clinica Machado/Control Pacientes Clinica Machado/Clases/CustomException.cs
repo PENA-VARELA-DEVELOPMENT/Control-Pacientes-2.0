@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATM_CRUD.Models
+namespace Control_Pacientes_Clinica_Machado.Clases
 {
     class CustomException : Exception
     {

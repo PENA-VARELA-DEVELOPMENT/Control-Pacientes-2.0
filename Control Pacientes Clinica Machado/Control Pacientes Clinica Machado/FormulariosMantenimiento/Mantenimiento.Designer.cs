@@ -41,17 +41,17 @@
             // 
             this.PanelCrud.Location = new System.Drawing.Point(17, 140);
             this.PanelCrud.Name = "PanelCrud";
-            this.PanelCrud.Size = new System.Drawing.Size(867, 443);
+            this.PanelCrud.Size = new System.Drawing.Size(905, 443);
             this.PanelCrud.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lemon/Milk", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(366, 23);
+            this.label1.Location = new System.Drawing.Point(389, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 30);
+            this.label1.Size = new System.Drawing.Size(153, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "Mantenimiento";
             // 
@@ -59,7 +59,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Cerrar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(895, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(908, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.TabIndex = 15;
@@ -94,7 +94,7 @@
             this.habilitarPxBtn.Name = "habilitarPxBtn";
             this.habilitarPxBtn.Size = new System.Drawing.Size(198, 38);
             this.habilitarPxBtn.TabIndex = 11;
-            this.habilitarPxBtn.Text = "Habilitar Paciente";
+            this.habilitarPxBtn.Text = "Habilitar paciente";
             this.habilitarPxBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.habilitarPxBtn.UseVisualStyleBackColor = true;
             this.habilitarPxBtn.Click += new System.EventHandler(this.habilitarPxBtn_Click);

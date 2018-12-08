@@ -4,35 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Data;
+using System.Data.SqlClient;
+
 namespace Control_Pacientes_Clinica_Machado.Clases
 {
     class Paciente
     {
         // Propiedades para la clase
-        public int id { get; set; }
-        public string nombres { get; set; }
-        public string apellidos { get; set; }
+        public string tipo { get; set; }
+        public DateTime fechaCreacion { get; set; }
         public string identidad { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public int edad { get; set; }
         public string direccion { get; set; }
-        public string telefono { get; set; }
-        public string celular { get; set; }
+        public int telefono { get; set; }
+        public string ciudad { get; set; }
+        public string fechaNacimiento { get; set; }
+        public string ocupacion { get; set; }
+        public string tutor { get; set; }
+        public string observaciones { get; set; }
+        public string nombreDelDoctorQueRefiere { get; set; }
+        public int Estado { get; set; }
 
-        // Métodos
         /// <summary>
-        /// Obtiene un cliente desde la tabla ATM.Cliente
+        /// Obtiene un solo paciente de la tabla pacientes
         /// </summary>
-        /// <param name="identidad">La identidad del cliente (13 caracteres)</param>
-        /// <returns>Un objeto de tipo Cliente.</returns>
-        public static Cliente ObtenerCliente(string identidad)
+        /// <param name="identidad"></param>
+        /// <returns></returns>
+        public Paciente ObtenerPaciente(string identidad)
         {
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
             string sql;
-            Cliente resultado = new Cliente();
+            Paciente resultado = new Paciente();
 
             // Query SQL
-            sql = @"SELECT *
-                    FROM ATM.Cliente
-                    WHERE identidad = @identidad";
+            sql = @"SELECT * FROM [ControlPacientes].[Paciente] WHERE Identidad = @identidad";
 
             SqlCommand cmd = conexion.EjecutarComando(sql);
             SqlDataReader rdr;
@@ -41,29 +49,36 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             {
                 using (cmd)
                 {
-                    cmd.Parameters.Add("@identidad", SqlDbType.Char, 13).Value = identidad;
+                    cmd.Parameters.Add("@identidad", SqlDbType.Char, 15).Value = identidad;
 
                     rdr = cmd.ExecuteReader();
                 }
 
                 while (rdr.Read())
                 {
-                    resultado.id = rdr.GetInt32(0);
-                    resultado.nombres = rdr.GetString(1);
-                    resultado.apellidos = rdr.GetString(2);
-                    resultado.identidad = rdr.GetString(3);
-                    resultado.direccion = rdr.GetString(4);
-                    resultado.telefono = rdr.GetString(5);
-                    resultado.celular = rdr.GetString(6);
-
-                    // Remover espacios en blanco
+                    
+                    resultado.tipo = rdr.GetString(0);
+                    resultado.fechaCreacion = rdr.GetDateTime(1);
+                    resultado.identidad = rdr.GetString(2);
+                    resultado.nombre = rdr.GetString(3);
+                    resultado.apellido = rdr.GetString(4);
+                    resultado.edad = rdr.GetInt32(5);
+                    resultado.direccion = rdr.GetString(6);
+                    resultado.telefono = rdr.GetInt32(7);
+                    resultado.ciudad = rdr.GetString(8);
+                    resultado.fechaNacimiento = rdr.GetString(9);
+                    resultado.ocupacion = rdr.GetString(10);
+                    resultado.tutor = rdr.GetString(11);
+                    resultado.observaciones = rdr.GetString(12);
+                    resultado.nombreDelDoctorQueRefiere = rdr.GetString(13);
+                    resultado.Estado = Convert.ToInt32(rdr.GetValue(14));
 
                 }
-
                 return resultado;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return resultado;
             }
             finally
@@ -71,148 +86,126 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 conexion.CerrarConexion();
             }
         }
-
-        public static Cliente ObtenerClienteNombre(string Nombre)
-        {
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
-            string sql;
-            Cliente resultado = new Cliente();
-
-            // Query SQL
-            sql = @"SELECT *
-                    FROM ATM.Cliente
-                    WHERE nombres = @Nombre";
-
-            SqlCommand cmd = conexion.EjecutarComando(sql);
-            SqlDataReader rdr;
-
-            try
-            {
-                using (cmd)
-                {
-                    cmd.Parameters.Add("@Nombre", SqlDbType.Char, 13).Value = Nombre;
-
-                    rdr = cmd.ExecuteReader();
-                }
-
-                while (rdr.Read())
-                {
-                    resultado.id = rdr.GetInt32(0);
-                    resultado.nombres = rdr.GetString(1);
-                    resultado.apellidos = rdr.GetString(2);
-                    resultado.identidad = rdr.GetString(3);
-                    resultado.direccion = rdr.GetString(4);
-                    resultado.telefono = rdr.GetString(5);
-                    resultado.celular = rdr.GetString(6);
-
-                    // Remover espacios en blanco
-
-                }
-
-                return resultado;
-            }
-            catch (SqlException)
-            {
-                return resultado;
-            }
-            finally
-            {
-                conexion.CerrarConexion();
-            }
-        }
-
-
 
         /// <summary>
-        /// lista todos los cliente que se encuentran almacenados en la tabla ATM.cliente
+        /// Lista un paciente
         /// </summary>
         /// <returns></returns>
-        public static List<Cliente> LeerTodos()
+        public List<Paciente> ListarPaciente()
         {
-            // Lista una de tipo de clientes
-            List<Cliente> resultados = new List<Cliente>();
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+            string sql;
+            List<Paciente> Lista = new List<Paciente>();
 
-            //instanciamos la conexion
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
-            string sql = @"SELECT identidad, nombres
-                    FROM ATM.Cliente";
+            // Query SQL
+            sql = @"SELECT * FROM [ControlPacientes].[Paciente]";
 
             SqlCommand cmd = conexion.EjecutarComando(sql);
+            SqlDataReader rdr;
 
             try
             {
-                // Establecer la conexión
-                conexion.EstablecerConexion();
+                rdr = cmd.ExecuteReader();
 
-                // Ejecutar el query via un ExecuteReader
-                SqlDataReader rdr = cmd.ExecuteReader();
-
-                //Recorremos los elementos que se encuentra guardados
-                // en la lista tipo cliente
                 while (rdr.Read())
                 {
-                    Cliente cli = new Cliente();
-                    // Asignar los valores de Reader al objeto Cliente
-                    cli.identidad = rdr.GetString(0);
-                    cli.nombres = rdr.GetString(1);
+                    Paciente resultado = new Paciente();
+                    resultado.tipo = rdr.GetString(0);
+                    resultado.fechaCreacion = rdr.GetDateTime(1);
+                    resultado.identidad = rdr.GetString(2);
+                    resultado.nombre = rdr.GetString(3);
+                    resultado.apellido = rdr.GetString(4);
+                    resultado.edad = rdr.GetInt32(5);
+                    resultado.direccion = rdr.GetString(6);
+                    resultado.telefono = rdr.GetInt32(7);
+                    resultado.ciudad = rdr.GetString(8);
+                    resultado.fechaNacimiento = rdr.GetString(9);
+                    resultado.ocupacion = rdr.GetString(10);
+                    resultado.tutor = rdr.GetString(11);
+                    resultado.observaciones = rdr.GetString(12);
+                    resultado.nombreDelDoctorQueRefiere = rdr.GetString(13);
+                    resultado.Estado = Convert.ToInt32(rdr.GetValue(14));
 
-                    // Agregar el Cliente a la List<Cliete>
-                    resultados.Add(cli);
+
+                    Lista.Add(resultado);
                 }
 
-                return resultados;
+                return Lista;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                return resultados;
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return Lista;
             }
             finally
             {
-                // Cerrar la conexión
                 conexion.CerrarConexion();
             }
         }
 
         /// <summary>
-        /// se encarga de guardar un nuevo cliente en la base de datos, recibe 
-        /// como parametros un objeto de tipo cliente.
+        /// se encarga de guardar un nuevo Paciente en la base de datos, recibe 
+        /// como parametros un objeto de tipo Paciente.
         /// </summary>
         /// <returns>true: si se insertó correctamente false: si ocurrió un error</returns>
-        public static bool InsertarCliente(Cliente elCliente)
+        public bool InsertarPaciente(Paciente elPaciente)
         {
 
-            Conexion conn = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("sp_InsertarCliente");
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_NuevaPaciente");
             cmd.CommandType = CommandType.StoredProcedure;
 
             // agregamos los parámetros que son requeridos
 
-            cmd.Parameters.Add(new SqlParameter("@identidad", SqlDbType.Char, 13));
-            cmd.Parameters["@identidad"].Value = elCliente.identidad;
+            cmd.Parameters.Add(new SqlParameter("@Identidad", SqlDbType.VarChar, 15));
+            cmd.Parameters["@identidad"].Value = elPaciente.identidad;
 
-            cmd.Parameters.Add(new SqlParameter("@nombre", SqlDbType.NVarChar, 100));
-            cmd.Parameters["@nombre"].Value = elCliente.nombres;
+            cmd.Parameters.Add(new SqlParameter("@Tipo", SqlDbType.VarChar, 10));
+            cmd.Parameters["@Tipo"].Value = elPaciente.tipo;
 
-            cmd.Parameters.Add(new SqlParameter("@apellido", SqlDbType.NVarChar, 100));
-            cmd.Parameters["@apellido"].Value = elCliente.apellidos;
+            cmd.Parameters.Add(new SqlParameter("@Nombre", SqlDbType.VarChar, 50));
+            cmd.Parameters["@Nombre"].Value = elPaciente.nombre;
 
-            cmd.Parameters.Add(new SqlParameter("@direccion", SqlDbType.NVarChar, 2000));
-            cmd.Parameters["@direccion"].Value = elCliente.direccion;
+            cmd.Parameters.Add(new SqlParameter("@Apellido", SqlDbType.VarChar, 100));
+            cmd.Parameters["@Apellido"].Value = elPaciente.apellido;
 
-            cmd.Parameters.Add(new SqlParameter("@telefono", SqlDbType.Char, 9));
-            cmd.Parameters["@telefono"].Value = elCliente.telefono;
+            cmd.Parameters.Add(new SqlParameter("@Edad", SqlDbType.Int));
+            cmd.Parameters["@Edad"].Value = elPaciente.edad;
 
-            cmd.Parameters.Add(new SqlParameter("@celular", SqlDbType.Char, 9));
-            cmd.Parameters["@celular"].Value = elCliente.celular;
+            cmd.Parameters.Add(new SqlParameter("@Direccion", SqlDbType.VarChar, 1000));
+            cmd.Parameters["@Direccion"].Value = elPaciente.direccion;
 
-            // intentamos insertar al nuevo cliente
+            cmd.Parameters.Add(new SqlParameter("@telefono", SqlDbType.Int));
+            cmd.Parameters["@Telefono"].Value = elPaciente.telefono;
+
+            cmd.Parameters.Add(new SqlParameter("@Ciudad", SqlDbType.Char, 9));
+            cmd.Parameters["@Ciudad"].Value = elPaciente.ciudad;
+
+            cmd.Parameters.Add(new SqlParameter("@FechaNacimineto", SqlDbType.VarChar, 20));
+            cmd.Parameters["@FechaNacimineto"].Value = elPaciente.fechaNacimiento;
+
+            cmd.Parameters.Add(new SqlParameter("@Ocupacion", SqlDbType.VarChar, 100));
+            cmd.Parameters["@Ocupacion"].Value = elPaciente.ocupacion;
+
+            cmd.Parameters.Add(new SqlParameter("@Tutor", SqlDbType.VarChar, 200));
+            cmd.Parameters["@Tutor"].Value = elPaciente.tutor;
+
+            cmd.Parameters.Add(new SqlParameter("@Observaciones", SqlDbType.VarChar, 2000));
+            cmd.Parameters["@Observaciones"].Value = elPaciente.observaciones;
+
+            cmd.Parameters.Add(new SqlParameter("@NombreDelDoctorQueRefiere", SqlDbType.VarChar, 200));
+            cmd.Parameters["@NombreDelDoctorQueRefiere"].Value = elPaciente.nombreDelDoctorQueRefiere;
+
+            cmd.Parameters.Add(new SqlParameter("@Estado", SqlDbType.Bit));
+            cmd.Parameters["@Estado"].Value = elPaciente.Estado;
+
+
+            // intentamos insertar al nuevo Paciente
             try
             {
-                // establecemos la conexión
-                conn.EstablecerConexion();
-
+                
                 // ejecutamos el comando
                 cmd.ExecuteNonQuery();
 
@@ -221,8 +214,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
-
-                MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return false;
             }
             finally
@@ -232,39 +224,67 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         }
 
         /// <summary>
-        /// Actualiza los datos de un cliente en particular
+        /// Actualiza los datos de un Paciente en particular
         /// </summary>
-        /// <param name="elcliente"></param>
+        /// <param name="elPaciente"></param>
         /// <returns></returns>
-        public static bool ActualizarCliente(Cliente elCliente)
+        public static bool ActualizarPaciente(Paciente elPaciente)
         {
-            Conexion conn = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("sp_ActualizarCliente");
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_ActualizarPaciente");
             cmd.CommandType = CommandType.StoredProcedure;
 
             // agregamos los parámetros que son requeridos
 
-            cmd.Parameters.Add(new SqlParameter("@identidad", SqlDbType.Char, 13));
-            cmd.Parameters["@identidad"].Value = elCliente.identidad;
+            cmd.Parameters.Add(new SqlParameter("@Identidad", SqlDbType.VarChar, 15));
+            cmd.Parameters["@identidad"].Value = elPaciente.identidad;
 
-            cmd.Parameters.Add(new SqlParameter("@nombre", SqlDbType.NVarChar, 100));
-            cmd.Parameters["@nombre"].Value = elCliente.nombres;
+            cmd.Parameters.Add(new SqlParameter("@Tipo", SqlDbType.VarChar, 10));
+            cmd.Parameters["@Tipo"].Value = elPaciente.tipo;
 
-            cmd.Parameters.Add(new SqlParameter("@apellido", SqlDbType.NVarChar, 100));
-            cmd.Parameters["@apellido"].Value = elCliente.apellidos;
+            cmd.Parameters.Add(new SqlParameter("@Nombre", SqlDbType.VarChar, 50));
+            cmd.Parameters["@Nombre"].Value = elPaciente.nombre;
 
-            cmd.Parameters.Add(new SqlParameter("@direccion", SqlDbType.NVarChar, 2000));
-            cmd.Parameters["@direccion"].Value = elCliente.direccion;
+            cmd.Parameters.Add(new SqlParameter("@Apellido", SqlDbType.VarChar, 100));
+            cmd.Parameters["@Apellido"].Value = elPaciente.apellido;
 
-            cmd.Parameters.Add(new SqlParameter("@telefono", SqlDbType.Char, 9));
-            cmd.Parameters["@telefono"].Value = elCliente.telefono;
+            cmd.Parameters.Add(new SqlParameter("@Edad", SqlDbType.Int));
+            cmd.Parameters["@Edad"].Value = elPaciente.edad;
 
-            cmd.Parameters.Add(new SqlParameter("@celular", SqlDbType.Char, 9));
-            cmd.Parameters["@celular"].Value = elCliente.celular;
+            cmd.Parameters.Add(new SqlParameter("@Direccion", SqlDbType.VarChar, 1000));
+            cmd.Parameters["@Direccion"].Value = elPaciente.direccion;
 
-            // intentamos insertar al nuevo cliente
+            cmd.Parameters.Add(new SqlParameter("@telefono", SqlDbType.Int));
+            cmd.Parameters["@Telefono"].Value = elPaciente.telefono;
+
+            cmd.Parameters.Add(new SqlParameter("@Ciudad", SqlDbType.Char, 9));
+            cmd.Parameters["@Ciudad"].Value = elPaciente.ciudad;
+
+            cmd.Parameters.Add(new SqlParameter("@FechaNacimiento", SqlDbType.VarChar, 20));
+            cmd.Parameters["@FechaNacimiento"].Value = elPaciente.fechaNacimiento;
+
+            cmd.Parameters.Add(new SqlParameter("@Ocupacion", SqlDbType.VarChar, 100));
+            cmd.Parameters["@Ocupacion"].Value = elPaciente.ocupacion;
+
+            cmd.Parameters.Add(new SqlParameter("@Tutor", SqlDbType.VarChar, 200));
+            cmd.Parameters["@Tutor"].Value = elPaciente.tutor;
+
+            cmd.Parameters.Add(new SqlParameter("@Ocupacion", SqlDbType.VarChar, 100));
+            cmd.Parameters["@Ocupacion"].Value = elPaciente.ocupacion;
+
+            cmd.Parameters.Add(new SqlParameter("@Observaciones", SqlDbType.VarChar, 2000));
+            cmd.Parameters["@Observaciones"].Value = elPaciente.observaciones;
+
+            cmd.Parameters.Add(new SqlParameter("@NombreDelDoctorQueRefiere", SqlDbType.VarChar, 200));
+            cmd.Parameters["@NombreDelDoctorQueRefiere"].Value = elPaciente.nombreDelDoctorQueRefiere;
+
+            cmd.Parameters.Add(new SqlParameter("@Estado", SqlDbType.Bit));
+            cmd.Parameters["@Estado"].Value = elPaciente.Estado;
+
+
+            // intentamos insertar al nuevo Paciente
             try
             {
                 // establecemos la conexión
@@ -278,8 +298,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
-
-                MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return false;
             }
             finally
@@ -289,23 +308,20 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
         }
 
-        public static bool EliminarCliente(Cliente elCliente)
+        public bool DarDeBaja(string elPaciente)
         {
-            Conexion conn = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("sp_EliminarCliente");
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd = conn.EjecutarComando("UPDATE ControlPacientes.Paciente SET Estado = 0 WHERE Identidad = @identidad");
+            
 
             // agregamos los parámetros que son requeridos
 
-            cmd.Parameters.Add(new SqlParameter("@identidad", SqlDbType.Char, 13));
-            cmd.Parameters["@identidad"].Value = elCliente.identidad;
+            cmd.Parameters.Add(new SqlParameter("@identidad", SqlDbType.Char, 15));
+            cmd.Parameters["@identidad"].Value = elPaciente;
 
-            cmd.Parameters.Add(new SqlParameter("@nombre", SqlDbType.NVarChar, 100));
-            cmd.Parameters["@nombre"].Value = elCliente.nombres;
-
-            // intentamos insertar al nuevo cliente
+            // intentamos insertar al nuevo Paciente
             try
             {
                 // establecemos la conexión
@@ -319,8 +335,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
-
-                MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return false;
             }
             finally

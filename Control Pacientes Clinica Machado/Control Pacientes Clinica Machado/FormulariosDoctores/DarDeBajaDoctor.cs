@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control_Pacientes_Clinica_Machado.Clases;
 
 namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 {
@@ -30,6 +31,14 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
             {
                 this.Close();
             }
+        }
+
+        private void BtnDarDeBaja_Click(object sender, EventArgs e)
+        {
+            Clases.Doctores DarDeBaja = new Clases.Doctores();
+            DarDeBaja.nombre = nombreTxt.Text;
+            DarDeBaja.apellido = nombreTxt.Text;
+            DarDeBaja.EliminarDoctor(DarDeBaja);
         }
     }
 }

@@ -32,12 +32,10 @@
             this.especialidadTxt = new System.Windows.Forms.TextBox();
             this.apellidoTxt = new System.Windows.Forms.TextBox();
             this.nombreTxt = new System.Windows.Forms.TextBox();
-            this.IDdoctorTxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -68,7 +66,7 @@
             this.apellidoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.apellidoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apellidoTxt.ForeColor = System.Drawing.Color.Black;
-            this.apellidoTxt.Location = new System.Drawing.Point(126, 231);
+            this.apellidoTxt.Location = new System.Drawing.Point(141, 178);
             this.apellidoTxt.Name = "apellidoTxt";
             this.apellidoTxt.Size = new System.Drawing.Size(251, 26);
             this.apellidoTxt.TabIndex = 29;
@@ -79,21 +77,10 @@
             this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTxt.ForeColor = System.Drawing.Color.Black;
-            this.nombreTxt.Location = new System.Drawing.Point(126, 184);
+            this.nombreTxt.Location = new System.Drawing.Point(141, 133);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(251, 26);
             this.nombreTxt.TabIndex = 28;
-            // 
-            // IDdoctorTxt
-            // 
-            this.IDdoctorTxt.AcceptsTab = true;
-            this.IDdoctorTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.IDdoctorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDdoctorTxt.ForeColor = System.Drawing.Color.Black;
-            this.IDdoctorTxt.Location = new System.Drawing.Point(127, 136);
-            this.IDdoctorTxt.Name = "IDdoctorTxt";
-            this.IDdoctorTxt.Size = new System.Drawing.Size(251, 26);
-            this.IDdoctorTxt.TabIndex = 27;
             // 
             // label9
             // 
@@ -122,7 +109,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(21, 228);
+            this.label3.Location = new System.Drawing.Point(36, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 24;
@@ -133,22 +120,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(21, 184);
+            this.label2.Location = new System.Drawing.Point(36, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 25;
             this.label2.Text = "Nombre";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "ID Doctor";
             // 
             // BtnCancelar
             // 
@@ -158,7 +134,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(468, 365);
+            this.BtnCancelar.Location = new System.Drawing.Point(443, 365);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(137, 39);
             this.BtnCancelar.TabIndex = 33;
@@ -175,13 +151,14 @@
             this.BtnAgregar.ForeColor = System.Drawing.Color.White;
             this.BtnAgregar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(305, 365);
+            this.BtnAgregar.Location = new System.Drawing.Point(280, 365);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(132, 39);
             this.BtnAgregar.TabIndex = 32;
             this.BtnAgregar.Text = "AGREGAR";
             this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // NuevoDoctor
             // 
@@ -195,12 +172,10 @@
             this.Controls.Add(this.especialidadTxt);
             this.Controls.Add(this.apellidoTxt);
             this.Controls.Add(this.nombreTxt);
-            this.Controls.Add(this.IDdoctorTxt);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoDoctor";
             this.Text = "NuevoDoctor";
@@ -215,12 +190,10 @@
         private System.Windows.Forms.TextBox especialidadTxt;
         private System.Windows.Forms.TextBox apellidoTxt;
         private System.Windows.Forms.TextBox nombreTxt;
-        private System.Windows.Forms.TextBox IDdoctorTxt;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnAgregar;
     }
