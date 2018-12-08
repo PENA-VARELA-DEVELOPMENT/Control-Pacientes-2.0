@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control_Pacientes_Clinica_Machado.Clases;
 
 namespace Control_Pacientes_Clinica_Machado
 {
@@ -30,6 +31,14 @@ namespace Control_Pacientes_Clinica_Machado
                 this.Close();
 
             }
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+            Paciente DarDeBaja = new Paciente();
+            DarDeBaja.identidad = "0318-1999-00191";
+            DarDeBaja.nombre = nombreTxt.Text;
+            DarDeBaja.DarDeBaja(DarDeBaja);
         }
     }
 }

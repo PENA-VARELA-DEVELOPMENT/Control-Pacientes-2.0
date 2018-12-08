@@ -28,19 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dvgListarPaciente = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgListarPaciente)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dvgListarPaciente
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(843, 419);
-            this.dataGridView1.TabIndex = 0;
+            this.dvgListarPaciente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.dvgListarPaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgListarPaciente.Location = new System.Drawing.Point(12, 12);
+            this.dvgListarPaciente.Name = "dvgListarPaciente";
+            this.dvgListarPaciente.Size = new System.Drawing.Size(851, 419);
+            this.dvgListarPaciente.TabIndex = 0;
             // 
             // ListarPaciente
             // 
@@ -48,17 +47,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(875, 443);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dvgListarPaciente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListarPaciente";
             this.Text = "ListarPaciente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ListarPaciente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgListarPaciente)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvgListarPaciente;
     }
 }

@@ -43,38 +43,38 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             cmd.Parameters.Add(new SqlParameter("@TomaMedicamentos", SqlDbType.VarChar, 500));
             cmd.Parameters["@TomaMedicamentos"].Value = HMedica.TomaMedicamentos;
 
-            cmd.Parameters.Add(new SqlParameter("@Apellido", SqlDbType.VarChar, 100));
-            cmd.Parameters["@Apellido"].Value = HMedica.apellido;
+            //cmd.Parameters.Add(new SqlParameter("@Apellido", SqlDbType.VarChar, 100));
+            //cmd.Parameters["@Apellido"].Value = HMedica.apellido;
 
-            cmd.Parameters.Add(new SqlParameter("@Edad", SqlDbType.Int));
-            cmd.Parameters["@Edad"].Value = HMedica.edad;
+            //cmd.Parameters.Add(new SqlParameter("@Edad", SqlDbType.Int));
+            //cmd.Parameters["@Edad"].Value = HMedica.edad;
 
-            cmd.Parameters.Add(new SqlParameter("@Direccion", SqlDbType.VarChar, 1000));
-            cmd.Parameters["@Direccion"].Value = HMedica.direccion;
+            //cmd.Parameters.Add(new SqlParameter("@Direccion", SqlDbType.VarChar, 1000));
+            //cmd.Parameters["@Direccion"].Value = HMedica.direccion;
 
-            cmd.Parameters.Add(new SqlParameter("@telefono", SqlDbType.Int));
-            cmd.Parameters["@Telefono"].Value = HMedica.telefono;
+            //cmd.Parameters.Add(new SqlParameter("@telefono", SqlDbType.Int));
+            //cmd.Parameters["@Telefono"].Value = HMedica.telefono;
 
-            cmd.Parameters.Add(new SqlParameter("@Ciudad", SqlDbType.Char, 9));
-            cmd.Parameters["@Ciudad"].Value = HMedica.ciudad;
+            //cmd.Parameters.Add(new SqlParameter("@Ciudad", SqlDbType.Char, 9));
+            //cmd.Parameters["@Ciudad"].Value = HMedica.ciudad;
 
-            cmd.Parameters.Add(new SqlParameter("@FechaNacimineto", SqlDbType.VarChar, 20));
-            cmd.Parameters["@FechaNacimineto"].Value = HMedica.fechaNacimiento;
+            //cmd.Parameters.Add(new SqlParameter("@FechaNacimineto", SqlDbType.VarChar, 20));
+            //cmd.Parameters["@FechaNacimineto"].Value = HMedica.fechaNacimiento;
 
-            cmd.Parameters.Add(new SqlParameter("@Ocupacion", SqlDbType.VarChar, 100));
-            cmd.Parameters["@Ocupacion"].Value = HMedica.ocupacion;
+            //cmd.Parameters.Add(new SqlParameter("@Ocupacion", SqlDbType.VarChar, 100));
+            //cmd.Parameters["@Ocupacion"].Value = HMedica.ocupacion;
 
-            cmd.Parameters.Add(new SqlParameter("@Tutor", SqlDbType.VarChar, 200));
-            cmd.Parameters["@Tutor"].Value = HMedica.tutor;
+            //cmd.Parameters.Add(new SqlParameter("@Tutor", SqlDbType.VarChar, 200));
+            //cmd.Parameters["@Tutor"].Value = HMedica.tutor;
 
-            cmd.Parameters.Add(new SqlParameter("@Observaciones", SqlDbType.VarChar, 2000));
-            cmd.Parameters["@Observaciones"].Value = HMedica.observaciones;
+            //cmd.Parameters.Add(new SqlParameter("@Observaciones", SqlDbType.VarChar, 2000));
+            //cmd.Parameters["@Observaciones"].Value = HMedica.observaciones;
 
-            cmd.Parameters.Add(new SqlParameter("@NombreDelDoctorQueRefiere", SqlDbType.VarChar, 200));
-            cmd.Parameters["@NombreDelDoctorQueRefiere"].Value = HMedica.nombreDelDoctorQueRefiere;
+            //cmd.Parameters.Add(new SqlParameter("@NombreDelDoctorQueRefiere", SqlDbType.VarChar, 200));
+            //cmd.Parameters["@NombreDelDoctorQueRefiere"].Value = HMedica.nombreDelDoctorQueRefiere;
 
-            cmd.Parameters.Add(new SqlParameter("@Estado", SqlDbType.Bit));
-            cmd.Parameters["@Estado"].Value = HMedica.Estado;
+            //cmd.Parameters.Add(new SqlParameter("@Estado", SqlDbType.Bit));
+            //cmd.Parameters["@Estado"].Value = HMedica.Estado;
 
 
             // intentamos insertar al nuevo Paciente

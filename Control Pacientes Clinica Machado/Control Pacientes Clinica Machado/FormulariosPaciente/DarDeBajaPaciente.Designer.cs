@@ -68,6 +68,7 @@
             this.BtnAceptar.TabIndex = 2;
             this.BtnAceptar.Text = "Dar de baja";
             this.BtnAceptar.UseVisualStyleBackColor = true;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // BtnCancelar
             // 
