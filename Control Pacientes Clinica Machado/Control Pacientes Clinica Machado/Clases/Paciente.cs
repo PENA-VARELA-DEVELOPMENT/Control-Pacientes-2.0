@@ -35,7 +35,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         /// <returns></returns>
         public Paciente ObtenerPaciente(string identidad)
         {
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
             string sql;
             Paciente resultado = new Paciente();
 
@@ -49,7 +49,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             {
                 using (cmd)
                 {
-                    cmd.Parameters.Add("@identidad", SqlDbType.Char, 13).Value = identidad;
+                    cmd.Parameters.Add("@identidad", SqlDbType.Char, 15).Value = identidad;
 
                     rdr = cmd.ExecuteReader();
                 }
@@ -308,21 +308,18 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
         }
 
-        public bool DarDeBaja(Paciente elPaciente)
+        public bool DarDeBaja(string elPaciente)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("UPDATE ControlPacientes.Paciente SET Estado = 0 WHERE Identidad = @identidad or Nombre = @nombre");
+            SqlCommand cmd = conn.EjecutarComando("UPDATE ControlPacientes.Paciente SET Estado = 0 WHERE Identidad = @identidad");
             
 
             // agregamos los parámetros que son requeridos
 
-            cmd.Parameters.Add(new SqlParameter("@identidad", SqlDbType.Char, 13));
-            cmd.Parameters["@identidad"].Value = elPaciente.identidad;
-
-            cmd.Parameters.Add(new SqlParameter("@nombre", SqlDbType.NVarChar, 100));
-            cmd.Parameters["@nombre"].Value = elPaciente.nombre;
+            cmd.Parameters.Add(new SqlParameter("@identidad", SqlDbType.Char, 15));
+            cmd.Parameters["@identidad"].Value = elPaciente;
 
             // intentamos insertar al nuevo Paciente
             try

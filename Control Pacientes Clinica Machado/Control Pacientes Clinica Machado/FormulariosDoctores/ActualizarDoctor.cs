@@ -31,5 +31,10 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 
             }
         }
+
+        private void BtnActualizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

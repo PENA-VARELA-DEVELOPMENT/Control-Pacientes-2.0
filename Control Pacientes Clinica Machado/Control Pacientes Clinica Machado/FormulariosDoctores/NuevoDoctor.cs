@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control_Pacientes_Clinica_Machado.Clases;
 
 namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 {
@@ -30,6 +31,25 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
                 this.Close();
 
             }
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            Clases.Doctores Nuevo = new Clases.Doctores();
+            Nuevo.nombre = nombreTxt.Text;
+            Nuevo.apellido = apellidoTxt.Text;
+            Nuevo.especialidad = especialidadTxt.Text;
+            Nuevo.numeroColegiacion = Convert.ToInt32(colegiacionTxt.Text);
+
+            if (Nuevo.InsertarDoctor(Nuevo))
+            {
+                MessageBox.Show("Exito");
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+
         }
     }
 }

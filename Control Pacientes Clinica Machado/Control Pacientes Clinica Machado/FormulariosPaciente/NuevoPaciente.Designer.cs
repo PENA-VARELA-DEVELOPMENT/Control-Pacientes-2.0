@@ -58,9 +58,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -78,7 +76,6 @@
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -90,6 +87,14 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.TipoTxt = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).BeginInit();
             this.SuspendLayout();
             // 
@@ -343,6 +348,7 @@
             this.edadNmr.Name = "edadNmr";
             this.edadNmr.Size = new System.Drawing.Size(254, 26);
             this.edadNmr.TabIndex = 4;
+            this.edadNmr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // BtnCancelar
             // 
@@ -352,7 +358,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(479, 2119);
+            this.BtnCancelar.Location = new System.Drawing.Point(476, 2112);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(149, 39);
             this.BtnCancelar.TabIndex = 14;
@@ -369,7 +375,7 @@
             this.BtnAgregar.ForeColor = System.Drawing.Color.White;
             this.BtnAgregar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(304, 2119);
+            this.BtnAgregar.Location = new System.Drawing.Point(305, 2112);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(144, 39);
             this.BtnAgregar.TabIndex = 13;
@@ -394,7 +400,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(26, 540);
+            this.label15.Location = new System.Drawing.Point(27, 587);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(267, 20);
             this.label15.TabIndex = 17;
@@ -403,7 +409,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(78, 583);
+            this.checkBox1.Location = new System.Drawing.Point(55, 624);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(36, 17);
             this.checkBox1.TabIndex = 18;
@@ -413,54 +419,33 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(173, 583);
+            this.checkBox2.Location = new System.Drawing.Point(149, 624);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(42, 17);
             this.checkBox2.TabIndex = 19;
             this.checkBox2.Text = "NO";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(26, 632);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(194, 20);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "¿Toma medicamentos?";
-            // 
             // richTextBox1
             // 
             this.richTextBox1.AcceptsTab = true;
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.richTextBox1.Location = new System.Drawing.Point(30, 664);
+            this.richTextBox1.Location = new System.Drawing.Point(30, 699);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(297, 60);
             this.richTextBox1.TabIndex = 21;
             this.richTextBox1.Text = "";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.AcceptsTab = true;
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.richTextBox2.Location = new System.Drawing.Point(30, 796);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(297, 60);
-            this.richTextBox2.TabIndex = 23;
-            this.richTextBox2.Text = "";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(26, 736);
+            this.label17.Location = new System.Drawing.Point(26, 799);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(540, 20);
+            this.label17.Size = new System.Drawing.Size(339, 20);
             this.label17.TabIndex = 22;
-            this.label17.Text = "¿Ha sido intervenido(a) quirúrgicamente, ha sido hospitalizado(a)?";
+            this.label17.Text = "¿Ha sido intervenido(a) quirúrgicamente?";
             // 
             // richTextBox3
             // 
@@ -477,7 +462,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(26, 876);
+            this.label18.Location = new System.Drawing.Point(26, 874);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(219, 20);
             this.label18.TabIndex = 24;
@@ -628,21 +613,10 @@
             this.label23.TabIndex = 37;
             this.label23.Text = "¿Ha tenido problemas con algun tipo de sangrado?";
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(26, 1423);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(129, 20);
-            this.label24.TabIndex = 40;
-            this.label24.Text = "Historia Dental";
-            // 
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(173, 1509);
+            this.checkBox11.Location = new System.Drawing.Point(173, 1523);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(42, 17);
             this.checkBox11.TabIndex = 43;
@@ -652,7 +626,7 @@
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(56, 1509);
+            this.checkBox12.Location = new System.Drawing.Point(56, 1523);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(36, 17);
             this.checkBox12.TabIndex = 42;
@@ -664,7 +638,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(26, 1466);
+            this.label25.Location = new System.Drawing.Point(26, 1480);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(475, 20);
             this.label25.TabIndex = 41;
@@ -674,7 +648,7 @@
             // 
             this.richTextBox5.AcceptsTab = true;
             this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.richTextBox5.Location = new System.Drawing.Point(30, 1571);
+            this.richTextBox5.Location = new System.Drawing.Point(30, 1585);
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.Size = new System.Drawing.Size(297, 60);
             this.richTextBox5.TabIndex = 45;
@@ -685,7 +659,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(26, 1539);
+            this.label26.Location = new System.Drawing.Point(26, 1553);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(65, 20);
             this.label26.TabIndex = 44;
@@ -696,7 +670,7 @@
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(52, 1754);
+            this.label28.Location = new System.Drawing.Point(52, 1778);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(118, 20);
             this.label28.TabIndex = 47;
@@ -730,7 +704,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.label14.Location = new System.Drawing.Point(330, 1701);
+            this.label14.Location = new System.Drawing.Point(330, 1724);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(171, 25);
             this.label14.TabIndex = 50;
@@ -757,13 +731,105 @@
             this.TipoTxt.Size = new System.Drawing.Size(254, 26);
             this.TipoTxt.TabIndex = 52;
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.label31.Location = new System.Drawing.Point(372, 1427);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(168, 25);
+            this.label31.TabIndex = 53;
+            this.label31.Text = "Historia Dental";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(26, 510);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(274, 20);
+            this.label24.TabIndex = 54;
+            this.label24.Text = "¿Padece de alguna enfermedad?";
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(149, 545);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(42, 17);
+            this.checkBox13.TabIndex = 56;
+            this.checkBox13.Text = "NO";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(55, 545);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(36, 17);
+            this.checkBox14.TabIndex = 55;
+            this.checkBox14.Text = "SI";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(27, 670);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(65, 20);
+            this.label32.TabIndex = 57;
+            this.label32.Text = "¿Cuál?";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(358, 862);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(223, 20);
+            this.label33.TabIndex = 58;
+            this.label33.Text = "¿Ha sido hospitalizado(a)?";
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(149, 841);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(42, 17);
+            this.checkBox15.TabIndex = 60;
+            this.checkBox15.Text = "NO";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(55, 841);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(36, 17);
+            this.checkBox16.TabIndex = 59;
+            this.checkBox16.Text = "SI";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
             // NuevoPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(892, 443);
+            this.ClientSize = new System.Drawing.Size(960, 443);
+            this.Controls.Add(this.checkBox15);
+            this.Controls.Add(this.checkBox16);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.checkBox13);
+            this.Controls.Add(this.checkBox14);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label31);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.TipoTxt);
             this.Controls.Add(this.label14);
@@ -775,7 +841,6 @@
             this.Controls.Add(this.checkBox11);
             this.Controls.Add(this.checkBox12);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.label24);
             this.Controls.Add(this.checkBox9);
             this.Controls.Add(this.checkBox10);
             this.Controls.Add(this.label23);
@@ -792,10 +857,8 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label15);
@@ -866,9 +929,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Label label18;
@@ -886,7 +947,6 @@
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.CheckBox checkBox12;
         private System.Windows.Forms.Label label25;
@@ -898,5 +958,13 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox TipoTxt;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBox16;
     }
 }
