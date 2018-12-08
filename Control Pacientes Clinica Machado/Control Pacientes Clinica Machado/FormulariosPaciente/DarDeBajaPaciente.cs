@@ -13,6 +13,8 @@ namespace Control_Pacientes_Clinica_Machado
 {
     public partial class DarDeBajaPaciente : Form
     {
+        string PacienteIdentidad;
+        
         public DarDeBajaPaciente()
         {
             InitializeComponent();
@@ -33,12 +35,24 @@ namespace Control_Pacientes_Clinica_Machado
             }
         }
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            Paciente Buscar = new Paciente();
+            Buscar.nombre = nombreTxt.Text;
+            Buscar.ObtenerPaciente(Buscar.nombre);
+        }
+
+        private void BtnDarBaja_Click(object sender, EventArgs e)
         {
             Paciente DarDeBaja = new Paciente();
-            DarDeBaja.identidad = "0318-1999-00191";
             DarDeBaja.nombre = nombreTxt.Text;
-            DarDeBaja.DarDeBaja(DarDeBaja);
+            DarDeBaja.DarDeBaja(PacienteIdentidad);
+        }
+
+        private void dgvDarBaja_SelectionChanged(object sender, EventArgs e)
+        {
+            PacienteIdentidad = dgvDarBaja.CurrentRow.Cells["Identidad"].Value.ToString();
         }
     }
 }

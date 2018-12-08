@@ -28,47 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.nombreTxt = new System.Windows.Forms.TextBox();
-            this.BtnAceptar = new System.Windows.Forms.Button();
+            this.BtnDarBaja = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.dgvDarBaja = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.nombreTxt = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDarBaja)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // BtnDarBaja
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(237, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
-            // 
-            // nombreTxt
-            // 
-            this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreTxt.Location = new System.Drawing.Point(348, 134);
-            this.nombreTxt.Name = "nombreTxt";
-            this.nombreTxt.Size = new System.Drawing.Size(254, 26);
-            this.nombreTxt.TabIndex = 1;
-            // 
-            // BtnAceptar
-            // 
-            this.BtnAceptar.FlatAppearance.BorderSize = 0;
-            this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
-            this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(229, 352);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(203, 39);
-            this.BtnAceptar.TabIndex = 2;
-            this.BtnAceptar.Text = "Dar de baja";
-            this.BtnAceptar.UseVisualStyleBackColor = true;
-            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
+            this.BtnDarBaja.FlatAppearance.BorderSize = 0;
+            this.BtnDarBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDarBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDarBaja.ForeColor = System.Drawing.Color.White;
+            this.BtnDarBaja.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
+            this.BtnDarBaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnDarBaja.Location = new System.Drawing.Point(444, 382);
+            this.BtnDarBaja.Name = "BtnDarBaja";
+            this.BtnDarBaja.Size = new System.Drawing.Size(203, 39);
+            this.BtnDarBaja.TabIndex = 2;
+            this.BtnDarBaja.Text = "Dar de baja";
+            this.BtnDarBaja.UseVisualStyleBackColor = true;
+            this.BtnDarBaja.Click += new System.EventHandler(this.BtnDarBaja_Click);
             // 
             // BtnCancelar
             // 
@@ -78,7 +61,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(478, 352);
+            this.BtnCancelar.Location = new System.Drawing.Point(663, 382);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(190, 39);
             this.BtnCancelar.TabIndex = 3;
@@ -86,29 +69,81 @@
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
+            // dgvDarBaja
+            // 
+            this.dgvDarBaja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.dgvDarBaja.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvDarBaja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDarBaja.Location = new System.Drawing.Point(13, 84);
+            this.dgvDarBaja.Name = "dgvDarBaja";
+            this.dgvDarBaja.Size = new System.Drawing.Size(851, 276);
+            this.dgvDarBaja.TabIndex = 4;
+            this.dgvDarBaja.SelectionChanged += new System.EventHandler(this.dgvDarBaja_SelectionChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(39, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre";
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.FlatAppearance.BorderSize = 0;
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
+            this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBuscar.Location = new System.Drawing.Point(727, 26);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(126, 39);
+            this.BtnBuscar.TabIndex = 5;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // nombreTxt
+            // 
+            this.nombreTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreTxt.Location = new System.Drawing.Point(138, 39);
+            this.nombreTxt.Name = "nombreTxt";
+            this.nombreTxt.Size = new System.Drawing.Size(307, 26);
+            this.nombreTxt.TabIndex = 6;
+            // 
             // DarDeBajaPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(875, 443);
-            this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnAceptar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.nombreTxt);
+            this.Controls.Add(this.BtnBuscar);
+            this.Controls.Add(this.dgvDarBaja);
+            this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.BtnDarBaja);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DarDeBajaPaciente";
             this.Text = "Dar de baja";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDarBaja)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox nombreTxt;
-        private System.Windows.Forms.Button BtnAceptar;
+        private System.Windows.Forms.Button BtnDarBaja;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.DataGridView dgvDarBaja;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.TextBox nombreTxt;
     }
 }
