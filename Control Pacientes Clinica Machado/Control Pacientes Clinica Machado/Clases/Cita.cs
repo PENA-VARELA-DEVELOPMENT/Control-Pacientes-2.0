@@ -56,7 +56,6 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 }
 
                 return resultado;
-
             }
             catch (SqlException)
             {
@@ -68,9 +67,10 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 conexion.CerrarConexion();
             }
 
-            // metodo para obtener las listas 
-            public List<Cita> ListarCitas()
-            {
+        }
+        // metodo para obtener las listas 
+        public List<Cita> ListarCitas()
+        {
                 Conexion conexion = new Conexion();
                 string sql;
                 //Cita resultado = new Cita();
@@ -130,8 +130,9 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
                 cmd.Parameters.Add(new SqlParameter("@paciente_Identidad", SqlDbType.VarChar, 15));
                 cmd.Parameters["@paciente_Identidad"].Value = citaPaciente.pacienteIdentidad;
+                return true;
 
             }
-        }
     }
 }
+
