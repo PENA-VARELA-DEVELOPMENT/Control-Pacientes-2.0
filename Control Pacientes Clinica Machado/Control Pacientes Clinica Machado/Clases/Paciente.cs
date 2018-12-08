@@ -33,16 +33,14 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         /// </summary>
         /// <param name="identidad"></param>
         /// <returns></returns>
-        public static Paciente ObtenerPaciente(string identidad)
+        public Paciente ObtenerPaciente(string identidad)
         {
             Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
             string sql;
             Paciente resultado = new Paciente();
 
             // Query SQL
-            sql = @"SELECT *
-                    FROM ATM.Paciente
-                    WHERE identidad = @identidad";
+            sql = @"SELECT * FROM [ControlPacientes].[Paciente] WHERE Identidad = @identidad";
 
             SqlCommand cmd = conexion.EjecutarComando(sql);
             SqlDataReader rdr;
@@ -58,22 +56,29 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
                 while (rdr.Read())
                 {
-                    //resultado.id = rdr.GetInt32(0);
-                    //resultado.nombres = rdr.GetString(1);
-                    //resultado.apellidos = rdr.GetString(2);
-                    //resultado.identidad = rdr.GetString(3);
-                    //resultado.direccion = rdr.GetString(4);
-                    //resultado.telefono = rdr.GetString(5);
-                    //resultado.celular = rdr.GetString(6);
-
-                    // Remover espacios en blanco
+                    
+                    resultado.tipo = rdr.GetString(0);
+                    resultado.fechaCreacion = rdr.GetDateTime(1);
+                    resultado.identidad = rdr.GetString(2);
+                    resultado.nombre = rdr.GetString(3);
+                    resultado.apellido = rdr.GetString(4);
+                    resultado.edad = rdr.GetInt32(5);
+                    resultado.direccion = rdr.GetString(6);
+                    resultado.telefono = rdr.GetInt32(7);
+                    resultado.ciudad = rdr.GetString(8);
+                    resultado.fechaNacimiento = rdr.GetString(9);
+                    resultado.ocupacion = rdr.GetString(10);
+                    resultado.tutor = rdr.GetString(11);
+                    resultado.observaciones = rdr.GetString(12);
+                    resultado.nombreDelDoctorQueRefiere = rdr.GetString(13);
+                    resultado.Estado = Convert.ToInt32(rdr.GetValue(14));
 
                 }
-
                 return resultado;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return resultado;
             }
             finally
@@ -129,6 +134,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return Lista;
             }
             finally
@@ -292,7 +298,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
-         
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return false;
             }
             finally
@@ -302,13 +308,13 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
         }
 
-        public static bool EliminarPaciente(Paciente elPaciente)
+        public bool DarDeBaja(Paciente elPaciente)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("sp_EliminarPaciente");
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd = conn.EjecutarComando("UPDATE ControlPacientes.Paciente SET Estado = 0 WHERE Identidad = @identidad or Nombre = @nombre");
+            
 
             // agregamos los parámetros que son requeridos
 
@@ -332,7 +338,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
-
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return false;
             }
             finally
