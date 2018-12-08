@@ -7,15 +7,69 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control_Pacientes_Clinica_Machado.Clases;
 
 namespace Control_Pacientes_Clinica_Machado
 {
     public partial class Odontograma : Form
     {
         string ColorSeleccionado;
+        Odontogramas Diente18 = new Odontogramas();
+        Odontogramas Diente17 = new Odontogramas();
+        Odontogramas Diente16 = new Odontogramas();
+        Odontogramas Diente15 = new Odontogramas();
+        Odontogramas Diente14 = new Odontogramas();
+        Odontogramas Diente13 = new Odontogramas();
+        Odontogramas Diente12 = new Odontogramas();
+        Odontogramas Diente11 = new Odontogramas();
+        Odontogramas Diente21 = new Odontogramas();
+        Odontogramas Diente22 = new Odontogramas();
+        Odontogramas Diente23 = new Odontogramas();
+        Odontogramas Diente24 = new Odontogramas();
+        Odontogramas Diente25 = new Odontogramas();
+        Odontogramas Diente26 = new Odontogramas();
+        Odontogramas Diente27 = new Odontogramas();
+        Odontogramas Diente28 = new Odontogramas();
+        Odontogramas Diente51 = new Odontogramas();
+        Odontogramas Diente52 = new Odontogramas();
+        Odontogramas Diente53 = new Odontogramas();
+        Odontogramas Diente54 = new Odontogramas();
+        Odontogramas Diente55 = new Odontogramas();
+        Odontogramas Diente61 = new Odontogramas();
+        Odontogramas Diente62 = new Odontogramas();
+        Odontogramas Diente63 = new Odontogramas();
+        Odontogramas Diente64 = new Odontogramas();
+        Odontogramas Diente65 = new Odontogramas();
+        Odontogramas Diente85 = new Odontogramas();
+        Odontogramas Diente84 = new Odontogramas();
+        Odontogramas Diente83 = new Odontogramas();
+        Odontogramas Diente82 = new Odontogramas();
+        Odontogramas Diente81 = new Odontogramas();
+        Odontogramas Diente71 = new Odontogramas();
+        Odontogramas Diente72 = new Odontogramas();
+        Odontogramas Diente73 = new Odontogramas();
+        Odontogramas Diente74 = new Odontogramas();
+        Odontogramas Diente75 = new Odontogramas();
+        Odontogramas Diente41 = new Odontogramas();
+        Odontogramas Diente42 = new Odontogramas();
+        Odontogramas Diente43 = new Odontogramas();
+        Odontogramas Diente44 = new Odontogramas();
+        Odontogramas Diente45 = new Odontogramas();
+        Odontogramas Diente46 = new Odontogramas();
+        Odontogramas Diente47 = new Odontogramas();
+        Odontogramas Diente48 = new Odontogramas();
+        Odontogramas Diente31 = new Odontogramas();
+        Odontogramas Diente32 = new Odontogramas();
+        Odontogramas Diente33 = new Odontogramas();
+        Odontogramas Diente34 = new Odontogramas();
+        Odontogramas Diente35 = new Odontogramas();
+        Odontogramas Diente36 = new Odontogramas();
+        Odontogramas Diente37 = new Odontogramas();
+        Odontogramas Diente38 = new Odontogramas();
+
         public Odontograma()
         {
-            InitializeComponent();
+            InitializeComponent();          
         }
 
         private void btnDiente28_4_Click(object sender, EventArgs e)

@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace Control_Pacientes_Clinica_Machado.Clases
 {
-    class Conexion
+    public class Conexion
     {
         // Propiedades
         private string servidor;
