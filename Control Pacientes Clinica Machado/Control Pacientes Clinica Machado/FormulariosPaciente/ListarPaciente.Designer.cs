@@ -51,13 +51,13 @@
             this.btnVerExpediente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnVerExpediente.FlatAppearance.BorderSize = 0;
             this.btnVerExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerExpediente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.btnVerExpediente.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.reload;
             this.btnVerExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerExpediente.Location = new System.Drawing.Point(95, 393);
+            this.btnVerExpediente.Location = new System.Drawing.Point(26, 393);
             this.btnVerExpediente.Name = "btnVerExpediente";
-            this.btnVerExpediente.Size = new System.Drawing.Size(210, 38);
+            this.btnVerExpediente.Size = new System.Drawing.Size(193, 38);
             this.btnVerExpediente.TabIndex = 4;
             this.btnVerExpediente.Text = "Ver expediente";
             this.btnVerExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

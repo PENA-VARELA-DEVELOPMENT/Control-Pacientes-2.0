@@ -17,7 +17,6 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         public DateTime hora { get; set; }
         public string pacienteIdentidad { get; set; }
         public int idDoctor { get; set; }
-        //public int Estado { get; set; }
 
         /// <summary>
         /// Obtiene un solo paciente de la tabla pacientes
@@ -73,44 +72,44 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             // metodo para obtener las listas 
         public List<Cita> ListarCitas()
         {
-         Conexion conexion = new Conexion();
-                string sql;
-                //Cita resultado = new Cita();
+            Conexion conexion = new Conexion();
+            string sql;
+            //Cita resultado = new Cita();
 
-                List<Cita> Lista = new List<Cita>();
+            List<Cita> Lista = new List<Cita>();
 
-                // Query SQL
-                sql = @"SELECT * FROM [ControlPacientes].[Cita]";
+            // Query SQL
+            sql = @"SELECT * FROM [ControlPacientes].[Cita]";
 
-                SqlCommand cmd = conexion.EjecutarComando(sql);
-                SqlDataReader rdr;
+            SqlCommand cmd = conexion.EjecutarComando(sql);
+            SqlDataReader rdr;
 
-                try
-                {
-                    rdr = cmd.ExecuteReader();
+            try
+            {
+                rdr = cmd.ExecuteReader();
 
-                    while (rdr.Read())
-                    {
-                        Cita resultado = new Cita();
-                        resultado.idCita = rdr.GetInt32(0);
-                        resultado.fecha = rdr.GetDateTime(1);
-                        resultado.hora = rdr.GetDateTime(2);
-                        resultado.pacienteIdentidad = rdr.GetString(4);
-                        resultado.idDoctor = rdr.GetInt32(5);
-                        Lista.Add(resultado);
-                    }
+                 while (rdr.Read())
+                 {
+                    Cita resultado = new Cita();
+                    resultado.idCita = rdr.GetInt32(0);
+                    resultado.fecha = rdr.GetDateTime(1);
+                    resultado.hora = rdr.GetDateTime(2);
+                    resultado.pacienteIdentidad = rdr.GetString(4);
+                    resultado.idDoctor = rdr.GetInt32(5);
+                    Lista.Add(resultado);
+                 }
 
-                    return Lista;
-                }
-                catch (SqlException)
-                {
+                return Lista;
+            }
+            catch (SqlException)
+            {
 
-                    return Lista;
-                }
-                finally
-                {
-                    conexion.CerrarConexion();
-                }
+                return Lista;
+            }
+            finally
+            {
+                conexion.CerrarConexion();
+            }
         }
 
         // 
@@ -207,7 +206,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
         }
 
-        public bool Eliminar(Cita citaPaciente)
+        public bool Eliminar(string citaPaciente)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
@@ -218,7 +217,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
             // agregamos los parámetros que son requeridos
             cmd.Parameters.Add(new SqlParameter("@IdCita", SqlDbType.Int));
-            cmd.Parameters["@IdCita"].Value = citaPaciente.idCita;
+            cmd.Parameters["@IdCita"].Value = citaPaciente;
 
             // intentamos eliminar la cita
             try

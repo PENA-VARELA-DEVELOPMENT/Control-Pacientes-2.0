@@ -31,5 +31,23 @@ namespace Control_Pacientes_Clinica_Machado
 
             }
         }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+            Clases.Cita Actualizar = new Clases.Cita();
+            Actualizar.fecha = dateTimeFecha.Value;
+            Actualizar.hora = dateTimeFecha.Value;
+            Actualizar.pacienteIdentidad = pacienteComBox.Text;
+            Actualizar.idDoctor = Convert.ToInt32(doctorComBox.Text);
+
+            if (Actualizar.InsertarCita(Actualizar))
+            {
+                MessageBox.Show("Exito");
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+        }
     }
 }

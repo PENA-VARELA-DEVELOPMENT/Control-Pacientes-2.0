@@ -31,5 +31,22 @@ namespace Control_Pacientes_Clinica_Machado
 
             }
         }
+
+        private void BtnAgregarCita_Click(object sender, EventArgs e)
+        {
+            //Clases.Cita Nueva = new Clases.Cita();
+            //Nueva.fecha = dateTimeNuevaCita.MaxDate;
+            //Nueva.pacienteIdentidad = pacienteTxt.Text;
+            //Nueva.idDoctor = Convert.ToInt32(doctorTxt.Text); 
+
+            //if (Nueva.InsertarCita(Nueva))
+            //{
+            //    MessageBox.Show("Exito");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Error");
+            //}
+        }
     }
 }
