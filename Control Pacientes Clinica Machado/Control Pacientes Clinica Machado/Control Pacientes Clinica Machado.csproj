@@ -137,6 +137,12 @@
     <Compile Include="FormulariosCitas\ListarCitas.Designer.cs">
       <DependentUpon>ListarCitas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulariosPaciente\Expendiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\Expendiente.Designer.cs">
+      <DependentUpon>Expendiente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulariosPaciente\ListarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosCitas\ListarCitas.resx">
       <DependentUpon>ListarCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\Expendiente.resx">
+      <DependentUpon>Expendiente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\ListarPaciente.resx">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
@@ -357,6 +366,8 @@
     <None Include="Resources\Rojo.png" />
     <None Include="Resources\Verde.png" />
     <None Include="Resources\cuadrado-de-forma-redondeada-negra1.png" />
+    <None Include="Resources\photo32.png" />
+    <None Include="Resources\picture32.png" />
     <Content Include="Sql\Clinica_Machado_create.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
