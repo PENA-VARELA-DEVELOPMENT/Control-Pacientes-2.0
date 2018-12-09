@@ -71,6 +71,12 @@
     <Compile Include="FormulariosDoctores\Doctores.Designer.cs">
       <DependentUpon>Doctores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulariosDoctores\AgendaDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\AgendaDoctor.designer.cs">
+      <DependentUpon>AgendaDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulariosDoctores\ListarDoctores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\Doctores.resx">
       <DependentUpon>Doctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\AgendaDoctor.resx">
+      <DependentUpon>AgendaDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\ListarDoctores.resx">
       <DependentUpon>ListarDoctores.cs</DependentUpon>

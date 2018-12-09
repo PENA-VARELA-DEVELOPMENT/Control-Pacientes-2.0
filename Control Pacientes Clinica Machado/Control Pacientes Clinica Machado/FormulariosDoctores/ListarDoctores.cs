@@ -24,5 +24,11 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
             Clases.Doctores listar = new Clases.Doctores();
             dgvListarDoctores.DataSource = listar.ListarDoctores();
         }
+
+        private void modificarDoctorBtn_Click(object sender, EventArgs e)
+        {
+            AgendaDoctor vista = new AgendaDoctor();
+            vista.ShowDialog();
+        }
     }
 }

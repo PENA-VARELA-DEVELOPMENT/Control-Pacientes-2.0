@@ -34,6 +34,9 @@
             // 
             // logoPict01
             // 
+            this.logoPict01.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.logoPict01.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Vector_clinica;
             this.logoPict01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logoPict01.Location = new System.Drawing.Point(18, 77);
