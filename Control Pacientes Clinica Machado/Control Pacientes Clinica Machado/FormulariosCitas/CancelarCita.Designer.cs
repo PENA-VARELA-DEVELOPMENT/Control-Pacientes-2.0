@@ -77,6 +77,7 @@
             this.BtnAceptar.Text = "ACEPTAR";
             this.BtnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAceptar.UseVisualStyleBackColor = true;
+            this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // nombrePacienteCombox
             // 
