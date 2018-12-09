@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvListarDoctores = new System.Windows.Forms.DataGridView();
+            this.modificarDoctorBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListarDoctores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,8 +42,26 @@
             this.dgvListarDoctores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListarDoctores.Location = new System.Drawing.Point(12, 12);
             this.dgvListarDoctores.Name = "dgvListarDoctores";
-            this.dgvListarDoctores.Size = new System.Drawing.Size(843, 419);
+            this.dgvListarDoctores.Size = new System.Drawing.Size(843, 366);
             this.dgvListarDoctores.TabIndex = 0;
+            // 
+            // modificarDoctorBtn
+            // 
+            this.modificarDoctorBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.modificarDoctorBtn.FlatAppearance.BorderSize = 0;
+            this.modificarDoctorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificarDoctorBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modificarDoctorBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.modificarDoctorBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.modificarDoctorBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.modificarDoctorBtn.Location = new System.Drawing.Point(12, 393);
+            this.modificarDoctorBtn.Name = "modificarDoctorBtn";
+            this.modificarDoctorBtn.Size = new System.Drawing.Size(210, 38);
+            this.modificarDoctorBtn.TabIndex = 20;
+            this.modificarDoctorBtn.Text = "Agenda doctor";
+            this.modificarDoctorBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.modificarDoctorBtn.UseVisualStyleBackColor = true;
+            this.modificarDoctorBtn.Click += new System.EventHandler(this.modificarDoctorBtn_Click);
             // 
             // ListarDoctores
             // 
@@ -50,6 +69,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
+            this.Controls.Add(this.modificarDoctorBtn);
             this.Controls.Add(this.dgvListarDoctores);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListarDoctores";
@@ -62,5 +82,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvListarDoctores;
+        private System.Windows.Forms.Button modificarDoctorBtn;
     }
 }
