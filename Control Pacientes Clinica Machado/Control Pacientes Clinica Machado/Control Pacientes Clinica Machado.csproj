@@ -113,12 +113,6 @@
     <Compile Include="FormulariosPaciente\ActualizarPaciente.Designer.cs">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormulariosCitas\CancelarCita.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosCitas\CancelarCita.Designer.cs">
-      <DependentUpon>CancelarCita.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormulariosCitas\Citas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,9 +241,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\ActualizarPaciente.resx">
       <DependentUpon>ActualizarPaciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosCitas\CancelarCita.resx">
-      <DependentUpon>CancelarCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosCitas\Citas.resx">
       <DependentUpon>Citas.cs</DependentUpon>

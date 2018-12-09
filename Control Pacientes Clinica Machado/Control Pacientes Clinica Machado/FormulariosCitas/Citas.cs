@@ -46,10 +46,5 @@ namespace Control_Pacientes_Clinica_Machado
         {
             AbrirFormHija(new ModificarCita());
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new CancelarCita());
-        }
     }
 }

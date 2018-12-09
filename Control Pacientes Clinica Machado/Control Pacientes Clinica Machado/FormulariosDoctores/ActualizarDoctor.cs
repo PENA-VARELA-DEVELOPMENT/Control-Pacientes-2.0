@@ -34,7 +34,20 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
+            Clases.Doctores Actualizar = new Clases.Doctores();
+            Actualizar.nombre = nombreTxt.Text;
+            Actualizar.apellido = apellidoTxt.Text;
+            Actualizar.especialidad = especialidadTxt.Text;
+            Actualizar.numeroColegiacion = Convert.ToInt32(colegiacionTxt.Text);
 
+            if (Actualizar.InsertarDoctor(Actualizar))
+            {
+                MessageBox.Show("Exito");
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }
