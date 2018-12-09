@@ -12,9 +12,12 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
 {
     public partial class InsertarImagenPaciente : Form
     {
-        public InsertarImagenPaciente()
+        string identidad;
+        public InsertarImagenPaciente(string x)
         {
             InitializeComponent();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            identidad = x;
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -35,10 +38,20 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
         private void button1_Click(object sender, EventArgs e)
         {
             Clases.FotosPaciente nueva = new Clases.FotosPaciente();
+            nueva.Paciente_Identidad = identidad;
             nueva.nombre = nombreTxt.Text;
             nueva.comentario = observacionesTxt.Text;
             pictureBox1.Image.Save(nueva.Foto, GetPng());
-            nueva.InsertarFoto(nueva);
+            if (nueva.InsertarFoto(nueva))
+            {
+                MessageBox.Show("Exito!");
+            }
+            else
+            {
+                MessageBox.Show("Exito!");
+            }
+
+            
         }
 
         private static System.Drawing.Imaging.ImageFormat GetPng()

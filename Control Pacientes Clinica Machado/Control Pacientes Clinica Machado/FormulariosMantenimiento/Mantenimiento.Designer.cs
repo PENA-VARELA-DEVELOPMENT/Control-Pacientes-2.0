@@ -39,6 +39,9 @@
             // 
             // PanelCrud
             // 
+            this.PanelCrud.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCrud.Location = new System.Drawing.Point(17, 140);
             this.PanelCrud.Name = "PanelCrud";
             this.PanelCrud.Size = new System.Drawing.Size(905, 443);
@@ -46,6 +49,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
@@ -57,6 +61,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Cerrar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(908, 5);
@@ -68,6 +73,7 @@
             // 
             // inventarioBtn
             // 
+            this.inventarioBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.inventarioBtn.FlatAppearance.BorderSize = 0;
             this.inventarioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inventarioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,6 +90,7 @@
             // 
             // habilitarPxBtn
             // 
+            this.habilitarPxBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.habilitarPxBtn.FlatAppearance.BorderSize = 0;
             this.habilitarPxBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.habilitarPxBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,6 +121,7 @@
             this.UsuariosBtn.Text = "Usuarios";
             this.UsuariosBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.UsuariosBtn.UseVisualStyleBackColor = true;
+            this.UsuariosBtn.Click += new System.EventHandler(this.UsuariosBtn_Click);
             // 
             // Mantenimiento
             // 

@@ -237,10 +237,11 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(433, 102);
+            this.label8.Location = new System.Drawing.Point(497, 99);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(153, 20);
             this.label8.TabIndex = 0;
@@ -249,19 +250,21 @@
             // fechaNacimientoTxt
             // 
             this.fechaNacimientoTxt.AcceptsTab = true;
+            this.fechaNacimientoTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fechaNacimientoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.fechaNacimientoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fechaNacimientoTxt.Location = new System.Drawing.Point(598, 96);
+            this.fechaNacimientoTxt.Location = new System.Drawing.Point(662, 93);
             this.fechaNacimientoTxt.Name = "fechaNacimientoTxt";
             this.fechaNacimientoTxt.Size = new System.Drawing.Size(254, 26);
             this.fechaNacimientoTxt.TabIndex = 8;
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(433, 138);
+            this.label9.Location = new System.Drawing.Point(497, 135);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(94, 20);
             this.label9.TabIndex = 0;
@@ -270,19 +273,21 @@
             // ocupacionTxt
             // 
             this.ocupacionTxt.AcceptsTab = true;
+            this.ocupacionTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ocupacionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ocupacionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ocupacionTxt.Location = new System.Drawing.Point(598, 132);
+            this.ocupacionTxt.Location = new System.Drawing.Point(662, 129);
             this.ocupacionTxt.Name = "ocupacionTxt";
             this.ocupacionTxt.Size = new System.Drawing.Size(254, 26);
             this.ocupacionTxt.TabIndex = 9;
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(433, 174);
+            this.label10.Location = new System.Drawing.Point(497, 171);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 20);
             this.label10.TabIndex = 0;
@@ -291,19 +296,21 @@
             // tutorTxt
             // 
             this.tutorTxt.AcceptsTab = true;
+            this.tutorTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tutorTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.tutorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tutorTxt.Location = new System.Drawing.Point(598, 168);
+            this.tutorTxt.Location = new System.Drawing.Point(662, 165);
             this.tutorTxt.Name = "tutorTxt";
             this.tutorTxt.Size = new System.Drawing.Size(254, 26);
             this.tutorTxt.TabIndex = 10;
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(431, 210);
+            this.label11.Location = new System.Drawing.Point(495, 207);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(155, 20);
             this.label11.TabIndex = 0;
@@ -312,19 +319,21 @@
             // doctorRefTxt
             // 
             this.doctorRefTxt.AcceptsTab = true;
+            this.doctorRefTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.doctorRefTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.doctorRefTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doctorRefTxt.Location = new System.Drawing.Point(598, 204);
+            this.doctorRefTxt.Location = new System.Drawing.Point(662, 201);
             this.doctorRefTxt.Name = "doctorRefTxt";
             this.doctorRefTxt.Size = new System.Drawing.Size(254, 26);
             this.doctorRefTxt.TabIndex = 11;
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(433, 301);
+            this.label12.Location = new System.Drawing.Point(497, 298);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(127, 20);
             this.label12.TabIndex = 0;
@@ -333,8 +342,9 @@
             // observacionesTxt
             // 
             this.observacionesTxt.AcceptsTab = true;
+            this.observacionesTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.observacionesTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.observacionesTxt.Location = new System.Drawing.Point(598, 301);
+            this.observacionesTxt.Location = new System.Drawing.Point(662, 298);
             this.observacionesTxt.Name = "observacionesTxt";
             this.observacionesTxt.Size = new System.Drawing.Size(254, 109);
             this.observacionesTxt.TabIndex = 12;
@@ -386,10 +396,11 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.label13.Location = new System.Drawing.Point(334, 24);
+            this.label13.Location = new System.Drawing.Point(351, 9);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(188, 25);
             this.label13.TabIndex = 15;
@@ -678,10 +689,11 @@
             // 
             // label30
             // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.label30.Location = new System.Drawing.Point(330, 469);
+            this.label30.Location = new System.Drawing.Point(351, 477);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(176, 25);
             this.label30.TabIndex = 49;
@@ -689,10 +701,11 @@
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.label14.Location = new System.Drawing.Point(330, 1724);
+            this.label14.Location = new System.Drawing.Point(351, 1722);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(171, 25);
             this.label14.TabIndex = 50;
@@ -700,10 +713,11 @@
             // 
             // label27
             // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(431, 246);
+            this.label27.Location = new System.Drawing.Point(495, 243);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(43, 20);
             this.label27.TabIndex = 51;
@@ -712,19 +726,21 @@
             // TipoTxt
             // 
             this.TipoTxt.AcceptsTab = true;
+            this.TipoTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TipoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.TipoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TipoTxt.Location = new System.Drawing.Point(598, 240);
+            this.TipoTxt.Location = new System.Drawing.Point(662, 237);
             this.TipoTxt.Name = "TipoTxt";
             this.TipoTxt.Size = new System.Drawing.Size(254, 26);
             this.TipoTxt.TabIndex = 52;
             // 
             // label31
             // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.label31.Location = new System.Drawing.Point(372, 1427);
+            this.label31.Location = new System.Drawing.Point(351, 1427);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(168, 25);
             this.label31.TabIndex = 53;
@@ -805,9 +821,12 @@
             // 
             // panelContenedorOdontograma
             // 
-            this.panelContenedorOdontograma.Location = new System.Drawing.Point(45, 1811);
+            this.panelContenedorOdontograma.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContenedorOdontograma.Location = new System.Drawing.Point(2, 1811);
             this.panelContenedorOdontograma.Name = "panelContenedorOdontograma";
-            this.panelContenedorOdontograma.Size = new System.Drawing.Size(851, 483);
+            this.panelContenedorOdontograma.Size = new System.Drawing.Size(936, 483);
             this.panelContenedorOdontograma.TabIndex = 61;
             // 
             // NuevoPaciente
@@ -817,6 +836,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(960, 443);
+            this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.panelContenedorOdontograma);
             this.Controls.Add(this.checkBox15);
             this.Controls.Add(this.checkBox16);
@@ -858,8 +879,6 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.edadNmr);
             this.Controls.Add(this.observacionesTxt);
             this.Controls.Add(this.label12);
