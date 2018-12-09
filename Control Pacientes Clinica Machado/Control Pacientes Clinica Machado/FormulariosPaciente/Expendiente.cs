@@ -26,13 +26,13 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
         private void BtnAgregarImagen_Click(object sender, EventArgs e)
         {
             FormulariosPaciente.InsertarImagenPaciente vista = new FormulariosPaciente.InsertarImagenPaciente(identidad);
-            vista.Show();
+            vista.ShowDialog();
         }
 
         private void BtnVerImagenes_Click(object sender, EventArgs e)
         {
             FormulariosPaciente.VerFotos vista = new FormulariosPaciente.VerFotos(identidad);
-            vista.Show();
+            vista.ShowDialog();
         }
 
         private void Expendiente_Load(object sender, EventArgs e)

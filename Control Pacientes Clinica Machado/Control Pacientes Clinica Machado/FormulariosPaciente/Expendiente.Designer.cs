@@ -774,7 +774,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Cerrar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(864, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(894, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.TabIndex = 120;
@@ -839,7 +839,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(926, 443);
+            this.ClientSize = new System.Drawing.Size(934, 590);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnVerImagenes);

@@ -16,6 +16,7 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
         public InsertarImagenPaciente(string x)
         {
             InitializeComponent();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             identidad = x;
         }
 
@@ -41,7 +42,16 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
             nueva.nombre = nombreTxt.Text;
             nueva.comentario = observacionesTxt.Text;
             pictureBox1.Image.Save(nueva.Foto, GetPng());
-            nueva.InsertarFoto(nueva);
+            if (nueva.InsertarFoto(nueva))
+            {
+                MessageBox.Show("Exito!");
+            }
+            else
+            {
+                MessageBox.Show("Exito!");
+            }
+
+            
         }
 
         private static System.Drawing.Imaging.ImageFormat GetPng()
