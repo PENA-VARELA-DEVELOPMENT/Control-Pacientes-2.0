@@ -111,10 +111,9 @@ namespace Control_Pacientes_Clinica_Machado
             AbrirFormHija(new FormulariosMantenimiento.Mantenimiento());
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        public void abrirExpediente(string x)
         {
-            FormulariosPaciente.InsertarImagenPaciente vista = new FormulariosPaciente.InsertarImagenPaciente();
-            vista.Show();
+            AbrirFormHija(new FormulariosPaciente.Expendiente(x));
         }
     }
 }

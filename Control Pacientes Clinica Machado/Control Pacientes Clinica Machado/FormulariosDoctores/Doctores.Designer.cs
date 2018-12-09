@@ -40,6 +40,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
@@ -51,6 +52,9 @@
             // 
             // PanelCrudDoctor
             // 
+            this.PanelCrudDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCrudDoctor.Location = new System.Drawing.Point(34, 135);
             this.PanelCrudDoctor.Name = "PanelCrudDoctor";
             this.PanelCrudDoctor.Size = new System.Drawing.Size(867, 443);
@@ -58,6 +62,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Cerrar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(907, 5);
@@ -68,6 +73,7 @@
             // 
             // modificarDoctorBtn
             // 
+            this.modificarDoctorBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.modificarDoctorBtn.FlatAppearance.BorderSize = 0;
             this.modificarDoctorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modificarDoctorBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,6 +91,7 @@
             // 
             // darBajaBtn
             // 
+            this.darBajaBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.darBajaBtn.FlatAppearance.BorderSize = 0;
             this.darBajaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.darBajaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,6 +109,7 @@
             // 
             // nuevaDoctorBtn
             // 
+            this.nuevaDoctorBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nuevaDoctorBtn.FlatAppearance.BorderSize = 0;
             this.nuevaDoctorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nuevaDoctorBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

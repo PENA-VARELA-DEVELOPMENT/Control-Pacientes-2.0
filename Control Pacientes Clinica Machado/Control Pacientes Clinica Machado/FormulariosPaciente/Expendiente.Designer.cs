@@ -95,6 +95,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnVerImagenes = new System.Windows.Forms.Button();
             this.BtnAgregarImagen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,7 +106,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(436, 252);
+            this.label27.Location = new System.Drawing.Point(459, 249);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(43, 20);
             this.label27.TabIndex = 78;
@@ -115,7 +117,7 @@
             this.TipoTxt.AcceptsTab = true;
             this.TipoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.TipoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TipoTxt.Location = new System.Drawing.Point(603, 246);
+            this.TipoTxt.Location = new System.Drawing.Point(626, 243);
             this.TipoTxt.Name = "TipoTxt";
             this.TipoTxt.Size = new System.Drawing.Size(254, 26);
             this.TipoTxt.TabIndex = 79;
@@ -145,7 +147,7 @@
             // 
             this.observacionesTxt.AcceptsTab = true;
             this.observacionesTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.observacionesTxt.Location = new System.Drawing.Point(603, 307);
+            this.observacionesTxt.Location = new System.Drawing.Point(626, 304);
             this.observacionesTxt.Name = "observacionesTxt";
             this.observacionesTxt.Size = new System.Drawing.Size(254, 109);
             this.observacionesTxt.TabIndex = 76;
@@ -156,7 +158,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(438, 307);
+            this.label12.Location = new System.Drawing.Point(461, 304);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(127, 20);
             this.label12.TabIndex = 62;
@@ -167,7 +169,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(436, 216);
+            this.label11.Location = new System.Drawing.Point(459, 213);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(155, 20);
             this.label11.TabIndex = 61;
@@ -178,7 +180,7 @@
             this.doctorRefTxt.AcceptsTab = true;
             this.doctorRefTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.doctorRefTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doctorRefTxt.Location = new System.Drawing.Point(603, 210);
+            this.doctorRefTxt.Location = new System.Drawing.Point(626, 207);
             this.doctorRefTxt.Name = "doctorRefTxt";
             this.doctorRefTxt.Size = new System.Drawing.Size(254, 26);
             this.doctorRefTxt.TabIndex = 75;
@@ -188,7 +190,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(438, 180);
+            this.label10.Location = new System.Drawing.Point(461, 177);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 20);
             this.label10.TabIndex = 59;
@@ -199,7 +201,7 @@
             this.tutorTxt.AcceptsTab = true;
             this.tutorTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.tutorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tutorTxt.Location = new System.Drawing.Point(603, 174);
+            this.tutorTxt.Location = new System.Drawing.Point(626, 171);
             this.tutorTxt.Name = "tutorTxt";
             this.tutorTxt.Size = new System.Drawing.Size(254, 26);
             this.tutorTxt.TabIndex = 74;
@@ -209,7 +211,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(438, 144);
+            this.label9.Location = new System.Drawing.Point(461, 141);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(94, 20);
             this.label9.TabIndex = 58;
@@ -220,7 +222,7 @@
             this.ocupacionTxt.AcceptsTab = true;
             this.ocupacionTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ocupacionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ocupacionTxt.Location = new System.Drawing.Point(603, 138);
+            this.ocupacionTxt.Location = new System.Drawing.Point(626, 135);
             this.ocupacionTxt.Name = "ocupacionTxt";
             this.ocupacionTxt.Size = new System.Drawing.Size(254, 26);
             this.ocupacionTxt.TabIndex = 73;
@@ -230,7 +232,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(438, 108);
+            this.label8.Location = new System.Drawing.Point(461, 105);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(153, 20);
             this.label8.TabIndex = 57;
@@ -241,7 +243,7 @@
             this.fechaNacimientoTxt.AcceptsTab = true;
             this.fechaNacimientoTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.fechaNacimientoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fechaNacimientoTxt.Location = new System.Drawing.Point(603, 102);
+            this.fechaNacimientoTxt.Location = new System.Drawing.Point(626, 99);
             this.fechaNacimientoTxt.Name = "fechaNacimientoTxt";
             this.fechaNacimientoTxt.Size = new System.Drawing.Size(254, 26);
             this.fechaNacimientoTxt.TabIndex = 72;
@@ -772,11 +774,12 @@
             // 
             this.pictureBox1.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Cerrar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(835, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(864, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.TabIndex = 120;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // BtnVerImagenes
             // 
@@ -792,6 +795,7 @@
             this.BtnVerImagenes.Text = "Ver imágenes";
             this.BtnVerImagenes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnVerImagenes.UseVisualStyleBackColor = true;
+            this.BtnVerImagenes.Click += new System.EventHandler(this.BtnVerImagenes_Click);
             // 
             // BtnAgregarImagen
             // 
@@ -807,6 +811,27 @@
             this.BtnAgregarImagen.Text = "Agregar imágenes";
             this.BtnAgregarImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAgregarImagen.UseVisualStyleBackColor = true;
+            this.BtnAgregarImagen.Click += new System.EventHandler(this.BtnAgregarImagen_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.photo32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(207, 1741);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(226, 42);
+            this.button1.TabIndex = 121;
+            this.button1.Text = "Imprimir";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage_1);
             // 
             // Expendiente
             // 
@@ -814,7 +839,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(909, 443);
+            this.ClientSize = new System.Drawing.Size(926, 443);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnVerImagenes);
             this.Controls.Add(this.BtnAgregarImagen);
@@ -884,7 +910,9 @@
             this.Controls.Add(this.identidadTxt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Expendiente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expendiente";
+            this.Load += new System.EventHandler(this.Expendiente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -961,5 +989,7 @@
         private System.Windows.Forms.Button BtnAgregarImagen;
         private System.Windows.Forms.Button BtnVerImagenes;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
