@@ -40,6 +40,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(204, 135);
@@ -50,6 +51,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(204, 180);
@@ -60,6 +62,7 @@
             // 
             // pacienteTxt
             // 
+            this.pacienteTxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pacienteTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.pacienteTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pacienteTxt.Location = new System.Drawing.Point(346, 180);
@@ -69,6 +72,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(204, 225);
@@ -79,6 +83,7 @@
             // 
             // doctorTxt
             // 
+            this.doctorTxt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.doctorTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.doctorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorTxt.Location = new System.Drawing.Point(346, 224);
@@ -88,6 +93,7 @@
             // 
             // dateTimeDTP
             // 
+            this.dateTimeDTP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateTimeDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeDTP.Location = new System.Drawing.Point(346, 136);
             this.dateTimeDTP.Name = "dateTimeDTP";
@@ -96,6 +102,7 @@
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnCancelar.FlatAppearance.BorderSize = 0;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +120,7 @@
             // 
             // BtnAgregarCita
             // 
+            this.BtnAgregarCita.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnAgregarCita.FlatAppearance.BorderSize = 0;
             this.BtnAgregarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarCita.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

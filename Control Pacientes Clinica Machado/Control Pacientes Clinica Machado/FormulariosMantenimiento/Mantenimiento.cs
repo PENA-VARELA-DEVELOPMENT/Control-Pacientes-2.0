@@ -40,7 +40,12 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosMantenimiento
 
         private void habilitarPxBtn_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new FormulariosMantenimiento.HabilitarPaciente());
+            AbrirFormHija(new HabilitarPaciente());
+        }
+
+        private void UsuariosBtn_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new MantenimientoUsuarios());
         }
     }
 }

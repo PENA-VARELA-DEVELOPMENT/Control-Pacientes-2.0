@@ -12,6 +12,7 @@ namespace Control_Pacientes_Clinica_Machado
 {
     public partial class Login : Form
     {
+        Menu menu = new Menu();
         public Login()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace Control_Pacientes_Clinica_Machado
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bienvenido al Sistema", "Clínica Dental Machado", MessageBoxButtons.OK);
-            Menu menu = new Menu();
+            
 
             menu.Show();
             this.Hide();

@@ -39,7 +39,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(57, 61);
+            this.label2.Location = new System.Drawing.Point(8, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(213, 24);
             this.label2.TabIndex = 24;
@@ -47,13 +47,14 @@
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCancelar.FlatAppearance.BorderSize = 0;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(586, 374);
+            this.BtnCancelar.Location = new System.Drawing.Point(705, 392);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(150, 39);
             this.BtnCancelar.TabIndex = 3;
@@ -64,13 +65,14 @@
             // 
             // BtnAceptar
             // 
+            this.BtnAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnAceptar.FlatAppearance.BorderSize = 0;
             this.BtnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAceptar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAceptar.ForeColor = System.Drawing.Color.White;
             this.BtnAceptar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAceptar.Location = new System.Drawing.Point(398, 374);
+            this.BtnAceptar.Location = new System.Drawing.Point(517, 392);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(139, 39);
             this.BtnAceptar.TabIndex = 2;
@@ -84,18 +86,21 @@
             this.nombrePacienteCombox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.nombrePacienteCombox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombrePacienteCombox.FormattingEnabled = true;
-            this.nombrePacienteCombox.Location = new System.Drawing.Point(24, 98);
+            this.nombrePacienteCombox.Location = new System.Drawing.Point(12, 45);
             this.nombrePacienteCombox.Name = "nombrePacienteCombox";
             this.nombrePacienteCombox.Size = new System.Drawing.Size(288, 32);
             this.nombrePacienteCombox.TabIndex = 1;
             // 
             // listView1
             // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.listView1.ForeColor = System.Drawing.Color.Black;
-            this.listView1.Location = new System.Drawing.Point(330, 61);
+            this.listView1.Location = new System.Drawing.Point(330, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(503, 283);
+            this.listView1.Size = new System.Drawing.Size(525, 283);
             this.listView1.TabIndex = 25;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 

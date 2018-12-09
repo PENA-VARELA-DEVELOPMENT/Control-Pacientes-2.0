@@ -40,6 +40,9 @@
             // 
             // PanelCrud
             // 
+            this.PanelCrud.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCrud.Location = new System.Drawing.Point(32, 135);
             this.PanelCrud.Name = "PanelCrud";
             this.PanelCrud.Size = new System.Drawing.Size(867, 443);
@@ -47,6 +50,7 @@
             // 
             // modificarCitaBtn
             // 
+            this.modificarCitaBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.modificarCitaBtn.FlatAppearance.BorderSize = 0;
             this.modificarCitaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modificarCitaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -63,6 +67,7 @@
             // 
             // cancelarCitaBtn
             // 
+            this.cancelarCitaBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelarCitaBtn.FlatAppearance.BorderSize = 0;
             this.cancelarCitaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelarCitaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,6 +85,7 @@
             // 
             // nuevaCitaBtn
             // 
+            this.nuevaCitaBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nuevaCitaBtn.FlatAppearance.BorderSize = 0;
             this.nuevaCitaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nuevaCitaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +119,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Cerrar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(910, 2);
@@ -123,6 +130,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lemon/Milk", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));

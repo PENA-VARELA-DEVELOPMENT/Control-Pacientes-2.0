@@ -35,7 +35,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 cmd.Parameters["@nombre"].Value = laFoto.nombre;
                 cmd.Parameters["@comentario"].Value = laFoto.comentario;
                 cmd.Parameters["@Foto"].Value = laFoto.Foto.GetBuffer();
-                cmd.Parameters["@Paciente_Identidad"].Value = "0318-1997-02291";
+                cmd.Parameters["@Paciente_Identidad"].Value = laFoto.Paciente_Identidad;
             try
             {
 
@@ -53,6 +53,52 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             finally
             {
                 conn.CerrarConexion();
+            }
+
+
+        }
+
+        public FotosPaciente ListarFotosPaciente(string nombre)
+        {
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+            string sql;
+            FotosPaciente resultado = new FotosPaciente();
+
+            // Query SQL
+            sql = @"SELECT * FROM [ControlPacientes].[FotoPaciente] 
+                            WHERE  ([nombre] = @nombre) ";
+
+            SqlCommand cmd = conexion.EjecutarComando(sql);
+            SqlDataReader rdr;
+
+            try
+            {
+                using (cmd)
+                {
+                    cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 80).Value = nombre;
+
+                    rdr = cmd.ExecuteReader();
+                }
+
+                while (rdr.Read())
+                {
+
+                    resultado.nombre = rdr.GetString(1);
+                    resultado.comentario = rdr.GetString(2);                   
+                    resultado.Foto = (MemoryStream)rdr.GetStream(3);
+
+
+                }
+                return resultado;
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return resultado;
+            }
+            finally
+            {
+                conexion.CerrarConexion();
             }
         }
     }
