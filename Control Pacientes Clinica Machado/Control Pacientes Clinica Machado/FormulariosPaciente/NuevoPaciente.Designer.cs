@@ -82,7 +82,6 @@
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -95,6 +94,7 @@
             this.label33 = new System.Windows.Forms.Label();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.panelContenedorOdontograma = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).BeginInit();
             this.SuspendLayout();
             // 
@@ -358,7 +358,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(476, 2112);
+            this.BtnCancelar.Location = new System.Drawing.Point(476, 2331);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(149, 39);
             this.BtnCancelar.TabIndex = 14;
@@ -375,7 +375,7 @@
             this.BtnAgregar.ForeColor = System.Drawing.Color.White;
             this.BtnAgregar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(305, 2112);
+            this.BtnAgregar.Location = new System.Drawing.Point(305, 2331);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(144, 39);
             this.BtnAgregar.TabIndex = 13;
@@ -676,18 +676,6 @@
             this.label28.TabIndex = 47;
             this.label28.Text = "Odontograma";
             // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(88, 1887);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(711, 55);
-            this.label29.TabIndex = 48;
-            this.label29.Text = "AQUI VA EL ODONTOGRAMA";
-            this.label29.Click += new System.EventHandler(this.label29_Click);
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
@@ -789,7 +777,7 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(358, 862);
+            this.label33.Location = new System.Drawing.Point(371, 799);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(223, 20);
             this.label33.TabIndex = 58;
@@ -815,6 +803,13 @@
             this.checkBox16.Text = "SI";
             this.checkBox16.UseVisualStyleBackColor = true;
             // 
+            // panelContenedorOdontograma
+            // 
+            this.panelContenedorOdontograma.Location = new System.Drawing.Point(45, 1811);
+            this.panelContenedorOdontograma.Name = "panelContenedorOdontograma";
+            this.panelContenedorOdontograma.Size = new System.Drawing.Size(851, 483);
+            this.panelContenedorOdontograma.TabIndex = 61;
+            // 
             // NuevoPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -822,6 +817,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(960, 443);
+            this.Controls.Add(this.panelContenedorOdontograma);
             this.Controls.Add(this.checkBox15);
             this.Controls.Add(this.checkBox16);
             this.Controls.Add(this.label33);
@@ -834,7 +830,6 @@
             this.Controls.Add(this.TipoTxt);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.richTextBox5);
             this.Controls.Add(this.label26);
@@ -892,6 +887,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoPaciente";
             this.Text = "NuevoPaciente";
+            this.Load += new System.EventHandler(this.NuevoPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.edadNmr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -953,7 +949,6 @@
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label27;
@@ -966,5 +961,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.CheckBox checkBox15;
         private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.Panel panelContenedorOdontograma;
     }
 }
