@@ -37,8 +37,13 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
             Clases.FotosPaciente nueva = new Clases.FotosPaciente();
             nueva.nombre = nombreTxt.Text;
             nueva.comentario = observacionesTxt.Text;
-            pictureBox1.Image.Save(nueva.Foto, System.Drawing.Imaging.ImageFormat.Jpeg);
+            pictureBox1.Image.Save(nueva.Foto, GetPng());
             nueva.InsertarFoto(nueva);
+        }
+
+        private static System.Drawing.Imaging.ImageFormat GetPng()
+        {
+            return System.Drawing.Imaging.ImageFormat.Png;
         }
     }
 }
