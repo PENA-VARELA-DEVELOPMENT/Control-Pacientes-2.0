@@ -13,7 +13,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
     {
         public string nombre { get; set; }
         public string comentario { get; set; }
-        public MemoryStream Foto  { get; set; }
+        public MemoryStream Foto = new MemoryStream();
         public string Paciente_Identidad { get; set; }
 
         public bool InsertarFoto(FotosPaciente laFoto)
@@ -27,14 +27,16 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
                 // Creando los parámetros necesarios
 
-                cmd.Parameters.Add("@name", System.Data.SqlDbType.VarChar, 80);  
+                cmd.Parameters.Add("@nombre", System.Data.SqlDbType.VarChar, 80);  
                 cmd.Parameters.Add("@comentario", System.Data.SqlDbType.VarChar, 2000); 
-                cmd.Parameters.Add("@image", System.Data.SqlDbType.Image);
+                cmd.Parameters.Add("@Foto", System.Data.SqlDbType.Image);
+                cmd.Parameters.Add("@Paciente_Identidad", System.Data.SqlDbType.VarChar, 15);
 
-                cmd.Parameters["@name"].Value = laFoto.nombre;
+                cmd.Parameters["@nombre"].Value = laFoto.nombre;
                 cmd.Parameters["@comentario"].Value = laFoto.comentario;
-                cmd.Parameters["@image"].Value = laFoto.Foto.GetBuffer();
-        try
+                cmd.Parameters["@Foto"].Value = laFoto.Foto.GetBuffer();
+                cmd.Parameters["@Paciente_Identidad"].Value = "0318-1997-02291";
+            try
             {
 
                 // ejecutamos el comando

@@ -138,18 +138,19 @@
     <Compile Include="FormulariosCitas\ListarCitas.Designer.cs">
       <DependentUpon>ListarCitas.cs</DependentUpon>
     </Compile>
-	<Compile Include="FormulariosPaciente\InsertarImagenPaciente.cs">
+    <Compile Include="FormulariosPaciente\InsertarImagenPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulariosPaciente\InsertarImagenPaciente.Designer.cs">
       <DependentUpon>InsertarImagenPaciente.cs</DependentUpon>
     </Compile>
-	<Compile Include="FormulariosPaciente\Expendiente.cs">
+    <Compile Include="FormulariosPaciente\Expendiente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulariosPaciente\Expendiente.Designer.cs">
       <DependentUpon>Expendiente.cs</DependentUpon>
-    </Compile>    <Compile Include="FormulariosPaciente\ListarPaciente.cs">
+    </Compile>
+    <Compile Include="FormulariosPaciente\ListarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulariosPaciente\ListarPaciente.Designer.cs">
@@ -160,6 +161,12 @@
     </Compile>
     <Compile Include="FormulariosPaciente\Odontograma.Designer.cs">
       <DependentUpon>Odontograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosPaciente\VerFotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\VerFotos.Designer.cs">
+      <DependentUpon>VerFotos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -244,17 +251,20 @@
     <EmbeddedResource Include="FormulariosCitas\ListarCitas.resx">
       <DependentUpon>ListarCitas.cs</DependentUpon>
     </EmbeddedResource>
-	<EmbeddedResource Include="FormulariosPaciente\InsertarImagenPaciente.resx">
+    <EmbeddedResource Include="FormulariosPaciente\InsertarImagenPaciente.resx">
       <DependentUpon>InsertarImagenPaciente.cs</DependentUpon>
     </EmbeddedResource>
-	<EmbeddedResource Include="FormulariosPaciente\Expendiente.resx">
+    <EmbeddedResource Include="FormulariosPaciente\Expendiente.resx">
       <DependentUpon>Expendiente.cs</DependentUpon>
     </EmbeddedResource>
-	  <EmbeddedResource Include="FormulariosPaciente\ListarPaciente.resx">
+    <EmbeddedResource Include="FormulariosPaciente\ListarPaciente.resx">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\Odontograma.resx">
       <DependentUpon>Odontograma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\VerFotos.resx">
+      <DependentUpon>VerFotos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
