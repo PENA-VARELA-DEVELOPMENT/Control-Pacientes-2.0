@@ -217,7 +217,6 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
 
             // agregamos los parámetros que son requeridos
-
             cmd.Parameters.Add(new SqlParameter("@IdCita", SqlDbType.Int));
             cmd.Parameters["@IdCita"].Value = citaPaciente.idCita;
 
