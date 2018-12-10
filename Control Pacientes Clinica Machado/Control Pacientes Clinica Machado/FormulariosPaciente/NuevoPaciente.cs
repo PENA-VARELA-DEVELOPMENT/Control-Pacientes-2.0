@@ -55,111 +55,119 @@ namespace Control_Pacientes_Clinica_Machado
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            Paciente Nuevo = new Paciente();
-            Nuevo.identidad = identidadTxt.Text;
-            Nuevo.nombre = nombreTxt.Text;
-            Nuevo.apellido = apellidoTxt.Text;
-            Nuevo.edad = Convert.ToInt32(edadNmr.Value);
-            Nuevo.direccion = direccionTxt.Text;
-            Nuevo.telefono = Convert.ToInt32(telefonoTxt.Text);
-            Nuevo.ciudad = CiudadTxt.Text;
-            Nuevo.fechaNacimiento = fechaNacimientoTxt.Text;
-            Nuevo.ocupacion = ocupacionTxt.Text;
-            Nuevo.tutor = tutorTxt.Text;
-            Nuevo.nombreDelDoctorQueRefiere = doctorRefTxt.Text;
-            Nuevo.observaciones = observacionesTxt.Text;
-            Nuevo.Estado = 1;
-            Nuevo.tipo = TipoTxt.Text;
 
-            if (Nuevo.InsertarPaciente(Nuevo))
+            if (identidadTxt.Text.Trim() == "" || nombreTxt.Text.Trim() == "" || apellidoTxt.Text.Trim() == "" || edadNmr.Value == 0 || direccionTxt.Text.Trim() == "" || telefonoTxt.Text.Trim() == "" || CiudadTxt.Text.Trim() == "" || fechaNacimientoTxt.Text.Trim() == "" || ocupacionTxt.Text.Trim() == "" || tutorTxt.Text.Trim() == "" || doctorRefTxt.Text.Trim() == "" || observacionesTxt.Text.Trim() == "" || TipoTxt.Text.Trim() == "")
             {
-                MessageBox.Show("Exito");
+                MessageBox.Show("Debe llenar todos los datos!");
             }
             else
             {
-                MessageBox.Show("Error");
-            }
+                Paciente Nuevo = new Paciente();
+                Nuevo.identidad = identidadTxt.Text;
+                Nuevo.nombre = nombreTxt.Text;
+                Nuevo.apellido = apellidoTxt.Text;
+                Nuevo.edad = Convert.ToInt32(edadNmr.Value);
+                Nuevo.direccion = direccionTxt.Text;
+                Nuevo.telefono = Convert.ToInt32(telefonoTxt.Text);
+                Nuevo.ciudad = CiudadTxt.Text;
+                Nuevo.fechaNacimiento = fechaNacimientoTxt.Text;
+                Nuevo.ocupacion = ocupacionTxt.Text;
+                Nuevo.tutor = tutorTxt.Text;
+                Nuevo.nombreDelDoctorQueRefiere = doctorRefTxt.Text;
+                Nuevo.observaciones = observacionesTxt.Text;
+                Nuevo.Estado = 1;
+                Nuevo.tipo = TipoTxt.Text;
 
-            HistoriaMedica NuevaHMedica = new HistoriaMedica();
+                if (Nuevo.InsertarPaciente(Nuevo))
+                {
+                    MessageBox.Show("Exito");
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
 
-            if (checkBox14.Checked)
-            {
-                NuevaHMedica.padeceEnfermedad = 1;
-            }
-            else if (checkBox13.Checked)
-            {
-                NuevaHMedica.padeceEnfermedad = 0;
-            }
-            NuevaHMedica.tmMedico = richTextBox1.Text;
-            NuevaHMedica.tomaMedicamentos = richTextBox2.Text;
-            if (checkBox16.Checked)
-            {
-                NuevaHMedica.intervenidoQuirurgicamente = 1;
-            }
-            else if (checkBox15.Checked)
-            {
-                NuevaHMedica.intervenidoQuirurgicamente = 0;
-            }
+                HistoriaMedica NuevaHMedica = new HistoriaMedica();
 
-            if (checkBox18.Checked)
-            {
-                NuevaHMedica.hospitalizadoAlgunaVez = 1;
-            }
-            else if (checkBox17.Checked)
-            {
-                NuevaHMedica.hospitalizadoAlgunaVez = 0;
-            }
+                if (checkBox14.Checked)
+                {
+                    NuevaHMedica.padeceEnfermedad = 1;
+                }
+                else if (checkBox13.Checked)
+                {
+                    NuevaHMedica.padeceEnfermedad = 0;
+                }
+                NuevaHMedica.tmMedico = richTextBox1.Text;
+                NuevaHMedica.tomaMedicamentos = richTextBox2.Text;
+                if (checkBox16.Checked)
+                {
+                    NuevaHMedica.intervenidoQuirurgicamente = 1;
+                }
+                else if (checkBox15.Checked)
+                {
+                    NuevaHMedica.intervenidoQuirurgicamente = 0;
+                }
 
-            NuevaHMedica.alergias = richTextBox3.Text;
+                if (checkBox18.Checked)
+                {
+                    NuevaHMedica.hospitalizadoAlgunaVez = 1;
+                }
+                else if (checkBox17.Checked)
+                {
+                    NuevaHMedica.hospitalizadoAlgunaVez = 0;
+                }
 
-            if (checkBox20.Checked)
-            {
-                NuevaHMedica.enfermedadCardiaca = 1;
-            }
-            else if (checkBox19.Checked)
-            {
-                NuevaHMedica.enfermedadCardiaca = 0;
-            }
+                NuevaHMedica.alergias = richTextBox3.Text;
 
-            if (checkBox4.Checked)
-            {
-                NuevaHMedica.diabetico = 1;
-            }
-            else if (checkBox3.Checked)
-            {
-                NuevaHMedica.diabetico = 0;
-            }
+                if (checkBox20.Checked)
+                {
+                    NuevaHMedica.enfermedadCardiaca = 1;
+                }
+                else if (checkBox19.Checked)
+                {
+                    NuevaHMedica.enfermedadCardiaca = 0;
+                }
 
-            if (checkBox6.Checked)
-            {
-                NuevaHMedica.tuberculosisPulmonar = 1;
-            }
-            else if (checkBox5.Checked)
-            {
-                NuevaHMedica.tuberculosisPulmonar = 0;
-            }
-            if (checkBox8.Checked)
-            {
-                NuevaHMedica.enfermedadHepatica = 1;
-            }
-            else if (checkBox7.Checked)
-            {
-                NuevaHMedica.enfermedadHepatica = 0;
-            }
+                if (checkBox4.Checked)
+                {
+                    NuevaHMedica.diabetico = 1;
+                }
+                else if (checkBox3.Checked)
+                {
+                    NuevaHMedica.diabetico = 0;
+                }
 
-            if (checkBox10.Checked)
-            {
-                NuevaHMedica.problemasSangrado = 1;
+                if (checkBox6.Checked)
+                {
+                    NuevaHMedica.tuberculosisPulmonar = 1;
+                }
+                else if (checkBox5.Checked)
+                {
+                    NuevaHMedica.tuberculosisPulmonar = 0;
+                }
+                if (checkBox8.Checked)
+                {
+                    NuevaHMedica.enfermedadHepatica = 1;
+                }
+                else if (checkBox7.Checked)
+                {
+                    NuevaHMedica.enfermedadHepatica = 0;
+                }
+
+                if (checkBox10.Checked)
+                {
+                    NuevaHMedica.problemasSangrado = 1;
+                }
+                else if (checkBox9.Checked)
+                {
+                    NuevaHMedica.problemasSangrado = 0;
+                }
+
+                NuevaHMedica.paciente_Identidad = identidadTxt.Text;
+
+                NuevaHMedica.InsertarHistoriaMedica(NuevaHMedica);
+
             }
-            else if (checkBox9.Checked)
-            {
-                NuevaHMedica.problemasSangrado = 0;
-            }
-
-            NuevaHMedica.paciente_Identidad = identidadTxt.Text;
-
-            NuevaHMedica.InsertarHistoriaMedica(NuevaHMedica);
-
 
 
         }
