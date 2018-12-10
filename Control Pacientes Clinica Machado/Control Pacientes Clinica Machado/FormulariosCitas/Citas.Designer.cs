@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.PanelCrud = new System.Windows.Forms.Panel();
-            this.modificarCitaBtn = new System.Windows.Forms.Button();
-            this.cancelarCitaBtn = new System.Windows.Forms.Button();
             this.nuevaCitaBtn = new System.Windows.Forms.Button();
             this.buscarCitaBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,53 +38,24 @@
             // 
             // PanelCrud
             // 
+            this.PanelCrud.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCrud.Location = new System.Drawing.Point(32, 135);
             this.PanelCrud.Name = "PanelCrud";
             this.PanelCrud.Size = new System.Drawing.Size(867, 443);
             this.PanelCrud.TabIndex = 14;
             // 
-            // modificarCitaBtn
-            // 
-            this.modificarCitaBtn.FlatAppearance.BorderSize = 0;
-            this.modificarCitaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modificarCitaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modificarCitaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.modificarCitaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
-            this.modificarCitaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.modificarCitaBtn.Location = new System.Drawing.Point(470, 80);
-            this.modificarCitaBtn.Name = "modificarCitaBtn";
-            this.modificarCitaBtn.Size = new System.Drawing.Size(210, 38);
-            this.modificarCitaBtn.TabIndex = 3;
-            this.modificarCitaBtn.Text = "Modificar cita";
-            this.modificarCitaBtn.UseVisualStyleBackColor = true;
-            this.modificarCitaBtn.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // cancelarCitaBtn
-            // 
-            this.cancelarCitaBtn.FlatAppearance.BorderSize = 0;
-            this.cancelarCitaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelarCitaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelarCitaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.cancelarCitaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
-            this.cancelarCitaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancelarCitaBtn.Location = new System.Drawing.Point(719, 80);
-            this.cancelarCitaBtn.Name = "cancelarCitaBtn";
-            this.cancelarCitaBtn.Size = new System.Drawing.Size(180, 38);
-            this.cancelarCitaBtn.TabIndex = 4;
-            this.cancelarCitaBtn.Text = "Cancelar cita";
-            this.cancelarCitaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cancelarCitaBtn.UseVisualStyleBackColor = true;
-            this.cancelarCitaBtn.Click += new System.EventHandler(this.button2_Click);
-            // 
             // nuevaCitaBtn
             // 
+            this.nuevaCitaBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nuevaCitaBtn.FlatAppearance.BorderSize = 0;
             this.nuevaCitaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nuevaCitaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nuevaCitaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.nuevaCitaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.insert;
             this.nuevaCitaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.nuevaCitaBtn.Location = new System.Drawing.Point(251, 80);
+            this.nuevaCitaBtn.Location = new System.Drawing.Point(607, 80);
             this.nuevaCitaBtn.Name = "nuevaCitaBtn";
             this.nuevaCitaBtn.Size = new System.Drawing.Size(158, 38);
             this.nuevaCitaBtn.TabIndex = 2;
@@ -103,7 +72,7 @@
             this.buscarCitaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.buscarCitaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
             this.buscarCitaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buscarCitaBtn.Location = new System.Drawing.Point(32, 80);
+            this.buscarCitaBtn.Location = new System.Drawing.Point(151, 80);
             this.buscarCitaBtn.Name = "buscarCitaBtn";
             this.buscarCitaBtn.Size = new System.Drawing.Size(180, 38);
             this.buscarCitaBtn.TabIndex = 1;
@@ -113,6 +82,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = global::Control_Pacientes_Clinica_Machado.Properties.Resources.Cerrar;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(910, 2);
@@ -120,15 +90,17 @@
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lemon/Milk", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(405, 23);
+            this.label1.Location = new System.Drawing.Point(425, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 30);
+            this.label1.Size = new System.Drawing.Size(61, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "Citas";
             // 
@@ -140,8 +112,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PanelCrud);
-            this.Controls.Add(this.modificarCitaBtn);
-            this.Controls.Add(this.cancelarCitaBtn);
             this.Controls.Add(this.nuevaCitaBtn);
             this.Controls.Add(this.buscarCitaBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -157,8 +127,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel PanelCrud;
-        private System.Windows.Forms.Button modificarCitaBtn;
-        private System.Windows.Forms.Button cancelarCitaBtn;
         private System.Windows.Forms.Button nuevaCitaBtn;
         private System.Windows.Forms.Button buscarCitaBtn;
         private System.Windows.Forms.Label label1;

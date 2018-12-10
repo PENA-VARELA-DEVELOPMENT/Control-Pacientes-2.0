@@ -44,12 +44,12 @@ namespace Control_Pacientes_Clinica_Machado
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new ModificarCita());
+           
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new CancelarCita());
+            this.Close();
         }
     }
 }

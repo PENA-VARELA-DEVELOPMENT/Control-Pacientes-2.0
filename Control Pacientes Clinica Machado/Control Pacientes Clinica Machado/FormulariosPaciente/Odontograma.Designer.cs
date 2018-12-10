@@ -3653,7 +3653,7 @@
             this.btnCaries.Name = "btnCaries";
             this.btnCaries.Size = new System.Drawing.Size(60, 20);
             this.btnCaries.TabIndex = 584;
-            this.btnCaries.Text = "Carìes";
+            this.btnCaries.Text = "Caríes";
             this.btnCaries.Click += new System.EventHandler(this.btnCaries_Click);
             // 
             // btnObturado
@@ -3677,7 +3677,7 @@
             this.btnExtraccion.Name = "btnExtraccion";
             this.btnExtraccion.Size = new System.Drawing.Size(165, 20);
             this.btnExtraccion.TabIndex = 586;
-            this.btnExtraccion.Text = "Extracciòn indicada";
+            this.btnExtraccion.Text = "Extracción indicada";
             this.btnExtraccion.Click += new System.EventHandler(this.btnExtraccion_Click);
             // 
             // btnProtesis
@@ -3689,7 +3689,7 @@
             this.btnProtesis.Name = "btnProtesis";
             this.btnProtesis.Size = new System.Drawing.Size(103, 20);
             this.btnProtesis.TabIndex = 589;
-            this.btnProtesis.Text = "Pròtesis fija";
+            this.btnProtesis.Text = "Prótesis fija";
             this.btnProtesis.Click += new System.EventHandler(this.btnProtesis_Click);
             // 
             // btnFractura

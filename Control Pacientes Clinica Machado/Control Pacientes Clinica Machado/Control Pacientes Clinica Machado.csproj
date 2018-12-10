@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\mayno\Desktop\Ejecutable Sistema Control Pacientes\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,12 +48,29 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AD892058D3D0A23159982C228C5FC9B60017A5AD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Control Pacientes Clinica Machado_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Vector clinica.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,26 +82,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcercaDeNosotros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDeNosotros.Designer.cs">
+      <DependentUpon>AcercaDeNosotros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\CustomException.cs" />
+    <Compile Include="Clases\FotosPaciente.cs" />
     <Compile Include="Clases\Odontogramas.cs" />
+    <Compile Include="Clases\Usuarios.cs" />
     <Compile Include="FormulariosDoctores\ActualizarDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulariosDoctores\ActualizarDoctor.Designer.cs">
       <DependentUpon>ActualizarDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.Designer.cs">
-      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormulariosDoctores\Doctores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulariosDoctores\Doctores.Designer.cs">
       <DependentUpon>Doctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosDoctores\AgendaDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosDoctores\AgendaDoctor.designer.cs">
+      <DependentUpon>AgendaDoctor.cs</DependentUpon>
     </Compile>
     <Compile Include="FormulariosDoctores\ListarDoctores.cs">
       <SubType>Form</SubType>
@@ -88,6 +129,12 @@
     <Compile Include="FormulariosMantenimiento\HabilitarPaciente.Designer.cs">
       <DependentUpon>HabilitarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormulariosMantenimiento\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosMantenimiento\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulariosMantenimiento\Mantenimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,18 +147,6 @@
     <Compile Include="FormulariosMantenimiento\MantenimientoUsuarios.Designer.cs">
       <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormulariosPaciente\ActualizarPaciente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosPaciente\ActualizarPaciente.Designer.cs">
-      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormulariosCitas\CancelarCita.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosCitas\CancelarCita.Designer.cs">
-      <DependentUpon>CancelarCita.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormulariosCitas\Citas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,21 +156,26 @@
     <Compile Include="Clases\Cita.cs" />
     <Compile Include="Clases\DetalleCita.cs" />
     <Compile Include="Clases\Doctores.cs" />
-    <Compile Include="Clases\ExamenDental.cs" />
     <Compile Include="Clases\HistorialDental.cs" />
     <Compile Include="Clases\HistoriaMedica.cs" />
     <Compile Include="Clases\Paciente.cs" />
-    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.Designer.cs">
-      <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormulariosCitas\ListarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormulariosCitas\ListarCitas.Designer.cs">
       <DependentUpon>ListarCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosPaciente\InsertarImagenPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\InsertarImagenPaciente.Designer.cs">
+      <DependentUpon>InsertarImagenPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosPaciente\Expendiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\Expendiente.Designer.cs">
+      <DependentUpon>Expendiente.cs</DependentUpon>
     </Compile>
     <Compile Include="FormulariosPaciente\ListarPaciente.cs">
       <SubType>Form</SubType>
@@ -148,6 +188,12 @@
     </Compile>
     <Compile Include="FormulariosPaciente\Odontograma.Designer.cs">
       <DependentUpon>Odontograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosPaciente\VerFotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosPaciente\VerFotos.Designer.cs">
+      <DependentUpon>VerFotos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -193,14 +239,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\ReporteCita.cs" />
+    <Compile Include="Reportes\ReportesCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesCitas.Designer.cs">
+      <DependentUpon>ReportesCitas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcercaDeNosotros.resx">
+      <DependentUpon>AcercaDeNosotros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\ActualizarDoctor.resx">
       <DependentUpon>ActualizarDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosDoctores\DarDeBajaDoctor.resx">
-      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\Doctores.resx">
       <DependentUpon>Doctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosDoctores\AgendaDoctor.resx">
+      <DependentUpon>AgendaDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\ListarDoctores.resx">
       <DependentUpon>ListarDoctores.cs</DependentUpon>
@@ -211,32 +267,35 @@
     <EmbeddedResource Include="FormulariosMantenimiento\HabilitarPaciente.resx">
       <DependentUpon>HabilitarPaciente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosMantenimiento\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosMantenimiento\Mantenimiento.resx">
       <DependentUpon>Mantenimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosMantenimiento\MantenimientoUsuarios.resx">
       <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosPaciente\ActualizarPaciente.resx">
-      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosCitas\CancelarCita.resx">
-      <DependentUpon>CancelarCita.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosCitas\Citas.resx">
       <DependentUpon>Citas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosPaciente\DarDeBajaPaciente.resx">
-      <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosCitas\ListarCitas.resx">
       <DependentUpon>ListarCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\InsertarImagenPaciente.resx">
+      <DependentUpon>InsertarImagenPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\Expendiente.resx">
+      <DependentUpon>Expendiente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\ListarPaciente.resx">
       <DependentUpon>ListarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosPaciente\Odontograma.resx">
       <DependentUpon>Odontograma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosPaciente\VerFotos.resx">
+      <DependentUpon>VerFotos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -269,6 +328,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\ReportesCitas.resx">
+      <DependentUpon>ReportesCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Control Pacientes Clinica Machado_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -350,6 +413,7 @@
     <None Include="Resources\inhabilitadoP.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Vector clinica.ico" />
     <None Include="Resources\Aqua.png" />
     <None Include="Resources\Azul.png" />
     <None Include="Resources\cuadrado-de-forma-redondeada-negra.png" />
@@ -357,7 +421,26 @@
     <None Include="Resources\Rojo.png" />
     <None Include="Resources\Verde.png" />
     <None Include="Resources\cuadrado-de-forma-redondeada-negra1.png" />
+    <None Include="Resources\photo32.png" />
+    <None Include="Resources\picture32.png" />
+    <None Include="Resources\folder_find.ico" />
+    <None Include="Resources\print.ico" />
+    <None Include="Resources\date_32x32-32.ico" />
+    <None Include="Resources\reportes.png" />
+    <None Include="Resources\AcercaNosotros.png" />
     <Content Include="Sql\Clinica_Machado_create.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

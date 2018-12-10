@@ -28,112 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimeDTP = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.doctorTxt = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.PacienteTxt = new System.Windows.Forms.TextBox();
+            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.IdComBox = new System.Windows.Forms.ComboBox();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnModificar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // dateTimeDTP
+            // dateTimeFecha
             // 
-            this.dateTimeDTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeDTP.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.dateTimeDTP.CalendarTitleBackColor = System.Drawing.Color.Indigo;
-            this.dateTimeDTP.CalendarTitleForeColor = System.Drawing.Color.ForestGreen;
-            this.dateTimeDTP.CalendarTrailingForeColor = System.Drawing.Color.LightSalmon;
-            this.dateTimeDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeDTP.Location = new System.Drawing.Point(333, 135);
-            this.dateTimeDTP.Name = "dateTimeDTP";
-            this.dateTimeDTP.Size = new System.Drawing.Size(312, 26);
-            this.dateTimeDTP.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(186, 227);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Doctor";
-            // 
-            // doctorTxt
-            // 
-            this.doctorTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.doctorTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doctorTxt.Location = new System.Drawing.Point(333, 223);
-            this.doctorTxt.Name = "doctorTxt";
-            this.doctorTxt.Size = new System.Drawing.Size(312, 26);
-            this.doctorTxt.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(186, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Paciente";
-            // 
-            // PacienteTxt
-            // 
-            this.PacienteTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.PacienteTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PacienteTxt.Location = new System.Drawing.Point(333, 179);
-            this.PacienteTxt.Name = "PacienteTxt";
-            this.PacienteTxt.Size = new System.Drawing.Size(312, 26);
-            this.PacienteTxt.TabIndex = 3;
+            this.dateTimeFecha.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateTimeFecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFecha.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.dateTimeFecha.CalendarTitleBackColor = System.Drawing.Color.Indigo;
+            this.dateTimeFecha.CalendarTitleForeColor = System.Drawing.Color.ForestGreen;
+            this.dateTimeFecha.CalendarTrailingForeColor = System.Drawing.Color.LightSalmon;
+            this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFecha.Location = new System.Drawing.Point(319, 153);
+            this.dateTimeFecha.Name = "dateTimeFecha";
+            this.dateTimeFecha.Size = new System.Drawing.Size(312, 26);
+            this.dateTimeFecha.TabIndex = 2;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(186, 137);
+            this.label1.Location = new System.Drawing.Point(221, 158);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 20);
+            this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha y hora";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(186, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "ID Cita";
-            // 
-            // IdComBox
-            // 
-            this.IdComBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.IdComBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdComBox.FormattingEnabled = true;
-            this.IdComBox.Location = new System.Drawing.Point(333, 90);
-            this.IdComBox.Name = "IdComBox";
-            this.IdComBox.Size = new System.Drawing.Size(312, 28);
-            this.IdComBox.TabIndex = 1;
+            this.label1.Text = "Fecha";
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnCancelar.FlatAppearance.BorderSize = 0;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(460, 344);
+            this.BtnCancelar.Location = new System.Drawing.Point(462, 374);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(153, 39);
             this.BtnCancelar.TabIndex = 6;
@@ -144,19 +82,41 @@
             // 
             // BtnModificar
             // 
+            this.BtnModificar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnModificar.FlatAppearance.BorderSize = 0;
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnModificar.ForeColor = System.Drawing.Color.White;
-            this.BtnModificar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.BtnModificar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.reload;
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificar.Location = new System.Drawing.Point(254, 344);
+            this.BtnModificar.Location = new System.Drawing.Point(267, 374);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(160, 39);
             this.BtnModificar.TabIndex = 5;
             this.BtnModificar.Text = "MODIFICAR";
             this.BtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(221, 206);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Hora ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(319, 206);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(312, 26);
+            this.textBox1.TabIndex = 10;
             // 
             // ModificarCita
             // 
@@ -164,19 +124,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnModificar);
-            this.Controls.Add(this.IdComBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimeDTP);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.doctorTxt);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.PacienteTxt);
+            this.Controls.Add(this.dateTimeFecha);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(168)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModificarCita";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarCita";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -185,15 +142,11 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimeDTP;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox doctorTxt;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox PacienteTxt;
+        private System.Windows.Forms.DateTimePicker dateTimeFecha;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox IdComBox;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

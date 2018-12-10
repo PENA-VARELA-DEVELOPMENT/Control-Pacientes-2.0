@@ -101,6 +101,7 @@
             this.PasswTbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(225)))), ((int)(((byte)(168)))));
             this.PasswTbox.Location = new System.Drawing.Point(277, 106);
             this.PasswTbox.Name = "PasswTbox";
+            this.PasswTbox.PasswordChar = '*';
             this.PasswTbox.Size = new System.Drawing.Size(243, 27);
             this.PasswTbox.TabIndex = 2;
             this.PasswTbox.Text = "Contraseña";

@@ -55,12 +55,12 @@ namespace Control_Pacientes_Clinica_Machado
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new ActualizarPaciente());
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new DarDeBajaPaciente());
+            
         }
 
         private void button4_Click(object sender, EventArgs e)

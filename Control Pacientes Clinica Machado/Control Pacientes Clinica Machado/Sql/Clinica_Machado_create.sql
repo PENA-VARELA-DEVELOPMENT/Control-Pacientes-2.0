@@ -45,8 +45,8 @@ CREATE TABLE ControlPacientes.FotoPaciente
 -- Table: Citas
 CREATE TABLE ControlPacientes.Citas (
     IdCita int IDENTITY(1,1),
-    Fecha date  NOT NULL,
-    Hora datetime  NOT NULL,
+    Fecha date NOT NULL,
+    Hora varchar(20) NOT NULL,
     paciente_Identidad varchar(15)  NOT NULL,
     Doctores_IdDoctor int  NOT NULL,
     CONSTRAINT Citas_pk PRIMARY KEY  (IdCita)
@@ -134,7 +134,7 @@ GO
 
 CREATE TABLE ControlPacientes.Usuarios (
     IdUsuarios int IDENTITY(1,1),
-    NombreUsuario varchar(64), 
+    NombreUsuario varchar(64) UNIQUE, 
     Contraseña varchar(64),
     CONSTRAINT Usuarios_pk PRIMARY KEY  (IdUsuarios)
 );
@@ -220,7 +220,7 @@ GO
 
 CREATE PROC [ControlPacientes].[sp_NuevaCita] 
     @Fecha date,
-    @Hora datetime,
+    @Hora  varchar(20),
     @paciente_Identidad varchar(15),
     @Doctores_IdDoctor int
 AS 
@@ -236,14 +236,13 @@ GO
 CREATE PROC [ControlPacientes].[sp_ActualizarCita] 
     @IdCita int,
     @Fecha date,
-    @Hora datetime,
-    @paciente_Identidad varchar(15),
-    @Doctores_IdDoctor int
+    @Hora varchar
+
 AS 
 BEGIN
 
     UPDATE [ControlPacientes].[Citas]
-    SET    [Fecha] = @Fecha, [Hora] = @Hora, [paciente_Identidad] = @paciente_Identidad, [Doctores_IdDoctor] = @Doctores_IdDoctor
+    SET    [Fecha] = @Fecha, [Hora] = @Hora
     WHERE  [IdCita] = @IdCita
     
 END
@@ -569,10 +568,10 @@ GO
 
 CREATE PROC [ControlPacientes].[sp_NuevaHistoriaMedica] 
     @PadeceEnfermedad bit = NULL,
-    @TmMedico bit,
+    @TmMedico varchar(500),
     @TomaMedicamentos varchar(500) = NULL,
-    @IntervenidoQuirurgicamente varchar(500) = NULL,
-    @HospitalizadoAlgunaVez varchar(500) = NULL,
+    @IntervenidoQuirurgicamente bit= NULL,
+    @HospitalizadoAlgunaVez bit = NULL,
     @Alergias varchar(500),
     @EnfermedadCardiaca bit,
     @Diabetico bit,
@@ -591,12 +590,11 @@ GO
 
 
 CREATE PROC [ControlPacientes].[sp_ActualizarHistoriaMedica] 
-    @IdHistoria int,
     @PadeceEnfermedad bit = NULL,
-    @TmMedico bit,
+    @TmMedico varchar(500),
     @TomaMedicamentos varchar(500) = NULL,
-    @IntervenidoQuirurgicamente varchar(500) = NULL,
-    @HospitalizadoAlgunaVez varchar(500) = NULL,
+    @IntervenidoQuirurgicamente bit = NULL,
+    @HospitalizadoAlgunaVez bit = NULL,
     @Alergias varchar(500),
     @EnfermedadCardiaca bit,
     @Diabetico bit,
@@ -609,7 +607,7 @@ BEGIN
 
     UPDATE [ControlPacientes].[HistoriaMedica]
     SET    [PadeceEnfermedad] = @PadeceEnfermedad, [TmMedico] = @TmMedico, [TomaMedicamentos] = @TomaMedicamentos, [IntervenidoQuirurgicamente] = @IntervenidoQuirurgicamente, [HospitalizadoAlgunaVez] = @HospitalizadoAlgunaVez, [Alergias] = @Alergias, [EnfermedadCardiaca] = @EnfermedadCardiaca, [Diabetico] = @Diabetico, [TuberculosisPulmonar] = @TuberculosisPulmonar, [EnfermedadHepatica] = @EnfermedadHepatica, [ProblemasSangrado] = @ProblemasSangrado, [Paciente_Identidad] = @Paciente_Identidad
-    WHERE  [IdHistoria] = @IdHistoria
+    WHERE  [Paciente_Identidad] = @Paciente_Identidad
 
 END
 GO
@@ -749,13 +747,12 @@ CREATE PROC [ControlPacientes].[sp_ActualizarPaciente]
     @Ocupacion varchar(100),
     @Tutor varchar(200),
     @Observaciones varchar(2000) = NULL,
-    @NombreDelDoctorQueRefiere varchar(200) = NULL,
-    @Estado bit
+    @NombreDelDoctorQueRefiere varchar(200) = NULL
 AS 
 BEGIN
 
     UPDATE [ControlPacientes].[Paciente]
-    SET    [Tipo] = @Tipo, [Nombre] = @Nombre, [Apellido] = @Apellido, [Edad] = @Edad, [Direccion] = @Direccion, [Telefono] = @Telefono, [Ciudad] = @Ciudad, [FechaNacimineto] = @FechaNacimineto, [Ocupacion] = @Ocupacion, [Tutor] = @Tutor, [Observaciones] = @Observaciones, [NombreDelDoctorQueRefiere] = @NombreDelDoctorQueRefiere, [Estado] = @Estado
+    SET    [Tipo] = @Tipo, [Nombre] = @Nombre, [Apellido] = @Apellido, [Edad] = @Edad, [Direccion] = @Direccion, [Telefono] = @Telefono, [Ciudad] = @Ciudad, [FechaNacimineto] = @FechaNacimineto, [Ocupacion] = @Ocupacion, [Tutor] = @Tutor, [Observaciones] = @Observaciones, [NombreDelDoctorQueRefiere] = @NombreDelDoctorQueRefiere
     WHERE  [Identidad] = @Identidad
 
 END
@@ -832,6 +829,13 @@ GO
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 
+INSERT INTO [ControlPacientes].[Usuarios]
+           ([NombreUsuario]
+           ,[Contraseña])
+     VALUES
+           ('Admin'
+           ,'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a')
+GO
 
 -- End of file.
 
