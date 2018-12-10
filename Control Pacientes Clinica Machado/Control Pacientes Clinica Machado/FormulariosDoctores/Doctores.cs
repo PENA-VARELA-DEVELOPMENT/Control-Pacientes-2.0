@@ -41,5 +41,10 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
         {
             AbrirFormHija(new FormulariosDoctores.NuevoDoctor());
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -89,7 +89,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.maDate);
@@ -283,6 +283,7 @@
             // 
             this.lundi.AutoSize = true;
             this.lundi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lundi.ForeColor = System.Drawing.Color.White;
             this.lundi.Location = new System.Drawing.Point(60, 119);
             this.lundi.Name = "lundi";
             this.lundi.Size = new System.Drawing.Size(51, 16);
@@ -293,6 +294,7 @@
             // 
             this.mardi.AutoSize = true;
             this.mardi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mardi.ForeColor = System.Drawing.Color.White;
             this.mardi.Location = new System.Drawing.Point(164, 119);
             this.mardi.Name = "mardi";
             this.mardi.Size = new System.Drawing.Size(51, 16);
@@ -303,6 +305,7 @@
             // 
             this.mercredi.AutoSize = true;
             this.mercredi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mercredi.ForeColor = System.Drawing.Color.White;
             this.mercredi.Location = new System.Drawing.Point(264, 119);
             this.mercredi.Name = "mercredi";
             this.mercredi.Size = new System.Drawing.Size(51, 16);
@@ -313,6 +316,7 @@
             // 
             this.jeudi.AutoSize = true;
             this.jeudi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jeudi.ForeColor = System.Drawing.Color.White;
             this.jeudi.Location = new System.Drawing.Point(362, 119);
             this.jeudi.Name = "jeudi";
             this.jeudi.Size = new System.Drawing.Size(51, 16);
@@ -323,6 +327,7 @@
             // 
             this.vendredi.AutoSize = true;
             this.vendredi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vendredi.ForeColor = System.Drawing.Color.White;
             this.vendredi.Location = new System.Drawing.Point(464, 119);
             this.vendredi.Name = "vendredi";
             this.vendredi.Size = new System.Drawing.Size(51, 16);
@@ -333,6 +338,7 @@
             // 
             this.samedi.AutoSize = true;
             this.samedi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.samedi.ForeColor = System.Drawing.Color.White;
             this.samedi.Location = new System.Drawing.Point(560, 119);
             this.samedi.Name = "samedi";
             this.samedi.Size = new System.Drawing.Size(59, 16);
@@ -343,6 +349,7 @@
             // 
             this.dimanche.AutoSize = true;
             this.dimanche.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dimanche.ForeColor = System.Drawing.Color.White;
             this.dimanche.Location = new System.Drawing.Point(662, 119);
             this.dimanche.Name = "dimanche";
             this.dimanche.Size = new System.Drawing.Size(59, 16);
@@ -359,15 +366,17 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.dateEvent);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(4, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(746, 86);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Events";
+            this.groupBox1.Text = "Eventos";
             // 
             // displayEvent
             // 
+            this.displayEvent.BackColor = System.Drawing.Color.White;
             this.displayEvent.Location = new System.Drawing.Point(441, 19);
             this.displayEvent.Multiline = true;
             this.displayEvent.Name = "displayEvent";
@@ -378,12 +387,14 @@
             // 
             // addEvent
             // 
-            this.addEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addEvent.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEvent.ForeColor = System.Drawing.Color.White;
             this.addEvent.Location = new System.Drawing.Point(359, 19);
             this.addEvent.Name = "addEvent";
             this.addEvent.Size = new System.Drawing.Size(75, 49);
             this.addEvent.TabIndex = 7;
-            this.addEvent.Text = "addEvent";
+            this.addEvent.Text = "Añadir evento";
             this.addEvent.UseVisualStyleBackColor = true;
             this.addEvent.Click += new System.EventHandler(this.addEvent_Click);
             // 
@@ -409,20 +420,22 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(8, 51);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 13);
+            this.label7.Size = new System.Drawing.Size(87, 13);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Time event : ";
+            this.label7.Text = "Tiempo evento : ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 25);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(3, 25);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
+            this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Date event : ";
+            this.label6.Text = "Fecha evento";
             // 
             // dateEvent
             // 

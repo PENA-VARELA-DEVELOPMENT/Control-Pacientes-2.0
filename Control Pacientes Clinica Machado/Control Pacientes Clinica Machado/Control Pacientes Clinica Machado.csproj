@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcercaDeNosotros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDeNosotros.Designer.cs">
+      <DependentUpon>AcercaDeNosotros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\CustomException.cs" />
     <Compile Include="Clases\FotosPaciente.cs" />
@@ -193,6 +199,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercaDeNosotros.resx">
+      <DependentUpon>AcercaDeNosotros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\ActualizarDoctor.resx">
       <DependentUpon>ActualizarDoctor.cs</DependentUpon>
     </EmbeddedResource>
@@ -361,6 +370,9 @@
     <None Include="Resources\picture32.png" />
     <None Include="Resources\folder_find.ico" />
     <None Include="Resources\print.ico" />
+    <None Include="Resources\date_32x32-32.ico" />
+    <None Include="Resources\reportes.png" />
+    <None Include="Resources\AcercaNosotros.png" />
     <Content Include="Sql\Clinica_Machado_create.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

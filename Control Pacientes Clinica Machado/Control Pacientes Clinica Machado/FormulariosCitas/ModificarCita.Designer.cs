@@ -71,7 +71,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(455, 374);
+            this.BtnCancelar.Location = new System.Drawing.Point(462, 374);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(153, 39);
             this.BtnCancelar.TabIndex = 6;
@@ -87,9 +87,9 @@
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnModificar.ForeColor = System.Drawing.Color.White;
-            this.BtnModificar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.BtnModificar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.reload;
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificar.Location = new System.Drawing.Point(271, 374);
+            this.BtnModificar.Location = new System.Drawing.Point(267, 374);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(160, 39);
             this.BtnModificar.TabIndex = 5;
@@ -112,9 +112,10 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(319, 206);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(312, 20);
+            this.textBox1.Size = new System.Drawing.Size(312, 26);
             this.textBox1.TabIndex = 10;
             // 
             // ModificarCita

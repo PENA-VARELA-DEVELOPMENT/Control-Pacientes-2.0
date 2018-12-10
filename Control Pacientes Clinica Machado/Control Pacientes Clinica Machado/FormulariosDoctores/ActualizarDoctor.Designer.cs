@@ -155,7 +155,7 @@
             this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnActualizar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnActualizar.ForeColor = System.Drawing.Color.White;
-            this.BtnActualizar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
+            this.BtnActualizar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.reload;
             this.BtnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnActualizar.Location = new System.Drawing.Point(264, 363);
             this.BtnActualizar.Name = "BtnActualizar";

@@ -69,7 +69,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(701, 381);
+            this.BtnCancelar.Location = new System.Drawing.Point(700, 381);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(154, 39);
             this.BtnCancelar.TabIndex = 74;
@@ -87,7 +87,7 @@
             this.BtnEliminar.ForeColor = System.Drawing.Color.White;
             this.BtnEliminar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
             this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminar.Location = new System.Drawing.Point(351, 381);
+            this.BtnEliminar.Location = new System.Drawing.Point(369, 381);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(139, 39);
             this.BtnEliminar.TabIndex = 75;
@@ -105,7 +105,7 @@
             this.BtnModificar.ForeColor = System.Drawing.Color.White;
             this.BtnModificar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificar.Location = new System.Drawing.Point(514, 381);
+            this.BtnModificar.Location = new System.Drawing.Point(524, 381);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(160, 39);
             this.BtnModificar.TabIndex = 76;
@@ -121,6 +121,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvListarCita.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListarCita.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.dgvListarCita.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvListarCita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListarCita.GridColor = System.Drawing.SystemColors.Control;
             this.dgvListarCita.Location = new System.Drawing.Point(374, 25);

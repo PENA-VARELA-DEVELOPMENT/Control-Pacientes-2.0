@@ -49,7 +49,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(692, 392);
+            this.BtnCancelar.Location = new System.Drawing.Point(484, 373);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(154, 39);
             this.BtnCancelar.TabIndex = 72;
@@ -67,7 +67,7 @@
             this.BtnAgregarCita.ForeColor = System.Drawing.Color.White;
             this.BtnAgregarCita.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnAgregarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregarCita.Location = new System.Drawing.Point(481, 392);
+            this.BtnAgregarCita.Location = new System.Drawing.Point(263, 373);
             this.BtnAgregarCita.Name = "BtnAgregarCita";
             this.BtnAgregarCita.Size = new System.Drawing.Size(189, 39);
             this.BtnAgregarCita.TabIndex = 71;
@@ -86,7 +86,7 @@
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.LightSalmon;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(339, 124);
+            this.dateTimePicker1.Location = new System.Drawing.Point(339, 128);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(312, 26);
@@ -98,7 +98,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(241, 129);
+            this.label5.Location = new System.Drawing.Point(242, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 20);
             this.label5.TabIndex = 75;
@@ -124,7 +124,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(241, 81);
+            this.label2.Location = new System.Drawing.Point(242, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 73;
@@ -136,7 +136,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(241, 186);
+            this.label3.Location = new System.Drawing.Point(242, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 78;
@@ -148,7 +148,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(241, 234);
+            this.label4.Location = new System.Drawing.Point(242, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 77;
@@ -160,7 +160,7 @@
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(339, 183);
+            this.comboBox1.Location = new System.Drawing.Point(339, 180);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(312, 28);
             this.comboBox1.TabIndex = 79;

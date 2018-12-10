@@ -45,7 +45,7 @@
             this.dvgListarPaciente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.dvgListarPaciente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dvgListarPaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgListarPaciente.Location = new System.Drawing.Point(12, 47);
+            this.dvgListarPaciente.Location = new System.Drawing.Point(13, 53);
             this.dvgListarPaciente.Name = "dvgListarPaciente";
             this.dvgListarPaciente.Size = new System.Drawing.Size(851, 334);
             this.dvgListarPaciente.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.btnVerExpediente.ForeColor = System.Drawing.Color.White;
             this.btnVerExpediente.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.folder_find;
             this.btnVerExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerExpediente.Location = new System.Drawing.Point(450, 393);
+            this.btnVerExpediente.Location = new System.Drawing.Point(481, 393);
             this.btnVerExpediente.Name = "btnVerExpediente";
             this.btnVerExpediente.Size = new System.Drawing.Size(193, 38);
             this.btnVerExpediente.TabIndex = 4;
@@ -78,24 +78,24 @@
             this.BtnDarBaja.ForeColor = System.Drawing.Color.White;
             this.BtnDarBaja.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
             this.BtnDarBaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDarBaja.Location = new System.Drawing.Point(661, 393);
+            this.BtnDarBaja.Location = new System.Drawing.Point(691, 393);
             this.BtnDarBaja.Name = "BtnDarBaja";
-            this.BtnDarBaja.Size = new System.Drawing.Size(203, 38);
+            this.BtnDarBaja.Size = new System.Drawing.Size(172, 38);
             this.BtnDarBaja.TabIndex = 5;
             this.BtnDarBaja.Text = "Dar de baja";
+            this.BtnDarBaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnDarBaja.UseVisualStyleBackColor = true;
             this.BtnDarBaja.Click += new System.EventHandler(this.BtnDarBaja_Click);
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnBuscar.FlatAppearance.BorderSize = 0;
             this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBuscar.ForeColor = System.Drawing.Color.White;
             this.BtnBuscar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
             this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscar.Location = new System.Drawing.Point(707, 2);
+            this.BtnBuscar.Location = new System.Drawing.Point(498, 5);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(126, 39);
             this.BtnBuscar.TabIndex = 8;
@@ -109,7 +109,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 9);
+            this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 25);
             this.label1.TabIndex = 7;
@@ -117,10 +117,12 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(113, 12);
+            this.comboBox1.Location = new System.Drawing.Point(125, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(277, 21);
+            this.comboBox1.Size = new System.Drawing.Size(355, 28);
             this.comboBox1.TabIndex = 9;
             this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 

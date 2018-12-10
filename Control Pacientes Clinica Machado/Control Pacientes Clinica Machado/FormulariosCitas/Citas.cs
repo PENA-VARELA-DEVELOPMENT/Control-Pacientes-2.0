@@ -46,5 +46,10 @@ namespace Control_Pacientes_Clinica_Machado
         {
            
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -115,5 +115,11 @@ namespace Control_Pacientes_Clinica_Machado
         {
             AbrirFormHija(new FormulariosPaciente.Expendiente(x));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AcercaDeNosotros vista = new AcercaDeNosotros();
+            vista.ShowDialog();
+        }
     }
 }
