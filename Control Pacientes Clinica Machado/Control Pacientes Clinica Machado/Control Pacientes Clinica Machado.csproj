@@ -60,6 +60,9 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Vector clinica.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -410,6 +413,7 @@
     <None Include="Resources\inhabilitadoP.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Vector clinica.ico" />
     <None Include="Resources\Aqua.png" />
     <None Include="Resources\Azul.png" />
     <None Include="Resources\cuadrado-de-forma-redondeada-negra.png" />
