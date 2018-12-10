@@ -51,6 +51,7 @@ namespace Control_Pacientes_Clinica_Machado
             if (Actualizar.ActualizarCita(Actualizar))
             {
                 MessageBox.Show("Exito");
+                this.Close();
             }
             else
             {

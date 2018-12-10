@@ -100,8 +100,7 @@ namespace Control_Pacientes_Clinica_Machado
             Clases.Cita Nueva = new Clases.Cita();
             Nueva.fecha = dateTimeDTP.Value;
             Nueva.hora = dateTimePicker1.Text;
-            Nueva.pacienteIdentidad = idPaciente;
-            MessageBox.Show(idPaciente);
+            Nueva.pacienteIdentidad = idPaciente;           
             Nueva.idDoctor = Convert.ToInt32(idDoctor);
 
             if (Nueva.InsertarCita(Nueva))
