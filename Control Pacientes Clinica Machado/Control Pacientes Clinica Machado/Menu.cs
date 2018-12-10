@@ -121,5 +121,10 @@ namespace Control_Pacientes_Clinica_Machado
             AcercaDeNosotros vista = new AcercaDeNosotros();
             vista.ShowDialog();
         }
+
+        private void ContaBtn_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Reportes.ReportesCitas());
+        }
     }
 }
