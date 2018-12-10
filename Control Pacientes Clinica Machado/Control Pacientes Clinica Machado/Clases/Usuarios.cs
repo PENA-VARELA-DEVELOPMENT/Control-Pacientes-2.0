@@ -54,11 +54,12 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
         }
 
-        public Usuarios ObtenerUsuarios1()
+        public List<Usuarios> ObtenerUsuarios1()
         {
             Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
             string sql;
-            Usuarios resultado = new Usuarios();
+            List<Usuarios> Lista = new List<Usuarios>();
+            
 
             // Query SQL
             sql = @"SELECT NombreUsuario, Contraseña FROM [ControlPacientes].[Usuarios]";
@@ -71,17 +72,18 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 rdr = cmd.ExecuteReader();
                 while (rdr.Read())
                 {
-
+                    Usuarios resultado = new Usuarios();
                     resultado.NombreUsuario = rdr.GetString(0);
                     resultado.Contrasena = rdr.GetString(1);
+                    Lista.Add(resultado);
 
                 }
-                return resultado;
+                return Lista;
             }
             catch (SqlException ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
-                return resultado;
+                return Lista;
             }
             finally
             {

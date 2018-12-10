@@ -60,9 +60,7 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosMantenimiento
         private void MantenimientoUsuarios_Load(object sender, EventArgs e)
         {
             Usuarios nuevo = new Usuarios();
-            List<Usuarios> lista1 = new List<Usuarios>();
-            lista1.Add(nuevo.ObtenerUsuarios1());
-            suariosDataGridView.DataSource = lista1;
+            suariosDataGridView.DataSource = nuevo.ObtenerUsuarios1();
         }
     }
 }
