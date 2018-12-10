@@ -184,7 +184,9 @@
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ActualizarDoctor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarDoctor";
+            this.Load += new System.EventHandler(this.ActualizarDoctor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

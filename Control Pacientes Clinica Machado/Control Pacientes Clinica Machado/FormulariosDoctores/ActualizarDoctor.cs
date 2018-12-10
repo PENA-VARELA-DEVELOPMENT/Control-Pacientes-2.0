@@ -12,9 +12,11 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
 {
     public partial class ActualizarDoctor : Form
     {
-        public ActualizarDoctor()
+        string id;
+        public ActualizarDoctor(string x)
         {
             InitializeComponent();
+            id = x;
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -35,19 +37,31 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
             Clases.Doctores Actualizar = new Clases.Doctores();
+            Actualizar.idDoctor = Convert.ToInt32(id);
             Actualizar.nombre = nombreTxt.Text;
             Actualizar.apellido = apellidoTxt.Text;
             Actualizar.especialidad = especialidadTxt.Text;
             Actualizar.numeroColegiacion = Convert.ToInt32(colegiacionTxt.Text);
 
-            if (Actualizar.InsertarDoctor(Actualizar))
+            if (Actualizar.ActualizarDoctor(Actualizar))
             {
                 MessageBox.Show("Exito");
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Error");
             }
+        }
+
+        private void ActualizarDoctor_Load(object sender, EventArgs e)
+        {
+            Clases.Doctores listar = new Clases.Doctores();
+            listar = listar.ObtenerDoctor(Convert.ToInt32(id));
+            nombreTxt.Text = listar.nombre;
+            apellidoTxt.Text = listar.apellido;
+            especialidadTxt.Text = listar.especialidad;
+            colegiacionTxt.Text = Convert.ToString(listar.numeroColegiacion);
         }
     }
 }

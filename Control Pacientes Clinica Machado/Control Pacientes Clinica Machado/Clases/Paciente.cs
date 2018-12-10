@@ -28,6 +28,61 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         public string nombreDelDoctorQueRefiere { get; set; }
         public int Estado { get; set; }
 
+        public List<Paciente> ObtenerPaciente1(string identidad)
+        {
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+            string sql;
+            List<Paciente> Lista = new List<Paciente>();
+
+
+            // Query SQL
+            sql = @"SELECT * FROM [ControlPacientes].[Paciente] WHERE Identidad = @identidad";
+
+            SqlCommand cmd = conexion.EjecutarComando(sql);
+            SqlDataReader rdr;
+
+            try
+            {
+                using (cmd)
+                {
+                    cmd.Parameters.Add("@identidad", SqlDbType.Char, 15).Value = identidad;
+
+                    rdr = cmd.ExecuteReader();
+                }
+
+                while (rdr.Read())
+                {
+                    Paciente resultado = new Paciente();
+                    resultado.tipo = rdr.GetString(0);
+                    resultado.fechaCreacion = rdr.GetDateTime(1);
+                    resultado.identidad = rdr.GetString(2);
+                    resultado.nombre = rdr.GetString(3);
+                    resultado.apellido = rdr.GetString(4);
+                    resultado.edad = rdr.GetInt32(5);
+                    resultado.direccion = rdr.GetString(6);
+                    resultado.telefono = rdr.GetInt32(7);
+                    resultado.ciudad = rdr.GetString(8);
+                    resultado.fechaNacimiento = rdr.GetString(9);
+                    resultado.ocupacion = rdr.GetString(10);
+                    resultado.tutor = rdr.GetString(11);
+                    resultado.observaciones = rdr.GetString(12);
+                    resultado.nombreDelDoctorQueRefiere = rdr.GetString(13);
+                    resultado.Estado = Convert.ToInt32(rdr.GetValue(14));
+                    Lista.Add(resultado);
+                }
+                return Lista;
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return Lista;
+            }
+            finally
+            {
+                conexion.CerrarConexion();
+            }
+        }
+
         /// <summary>
         /// Obtiene un solo paciente de la tabla pacientes
         /// </summary>
@@ -98,7 +153,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             List<Paciente> Lista = new List<Paciente>();
 
             // Query SQL
-            sql = @"SELECT * FROM [ControlPacientes].[Paciente]";
+            sql = @"SELECT * FROM [ControlPacientes].[Paciente] WHERE Estado = 1";
 
             SqlCommand cmd = conexion.EjecutarComando(sql);
             SqlDataReader rdr;
@@ -228,7 +283,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         /// </summary>
         /// <param name="elPaciente"></param>
         /// <returns></returns>
-        public static bool ActualizarPaciente(Paciente elPaciente)
+        public bool ActualizarPaciente(Paciente elPaciente)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
@@ -262,8 +317,8 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             cmd.Parameters.Add(new SqlParameter("@Ciudad", SqlDbType.Char, 9));
             cmd.Parameters["@Ciudad"].Value = elPaciente.ciudad;
 
-            cmd.Parameters.Add(new SqlParameter("@FechaNacimiento", SqlDbType.VarChar, 20));
-            cmd.Parameters["@FechaNacimiento"].Value = elPaciente.fechaNacimiento;
+            cmd.Parameters.Add(new SqlParameter("@FechaNacimineto", SqlDbType.VarChar, 20));
+            cmd.Parameters["@FechaNacimineto"].Value = elPaciente.fechaNacimiento;
 
             cmd.Parameters.Add(new SqlParameter("@Ocupacion", SqlDbType.VarChar, 100));
             cmd.Parameters["@Ocupacion"].Value = elPaciente.ocupacion;
@@ -271,17 +326,13 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             cmd.Parameters.Add(new SqlParameter("@Tutor", SqlDbType.VarChar, 200));
             cmd.Parameters["@Tutor"].Value = elPaciente.tutor;
 
-            cmd.Parameters.Add(new SqlParameter("@Ocupacion", SqlDbType.VarChar, 100));
-            cmd.Parameters["@Ocupacion"].Value = elPaciente.ocupacion;
-
             cmd.Parameters.Add(new SqlParameter("@Observaciones", SqlDbType.VarChar, 2000));
             cmd.Parameters["@Observaciones"].Value = elPaciente.observaciones;
 
             cmd.Parameters.Add(new SqlParameter("@NombreDelDoctorQueRefiere", SqlDbType.VarChar, 200));
             cmd.Parameters["@NombreDelDoctorQueRefiere"].Value = elPaciente.nombreDelDoctorQueRefiere;
 
-            cmd.Parameters.Add(new SqlParameter("@Estado", SqlDbType.Bit));
-            cmd.Parameters["@Estado"].Value = elPaciente.Estado;
+
 
 
             // intentamos insertar al nuevo Paciente
@@ -320,6 +371,42 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
             cmd.Parameters.Add(new SqlParameter("@identidad", SqlDbType.Char, 15));
             cmd.Parameters["@identidad"].Value = elPaciente;
+
+            // intentamos insertar al nuevo Paciente
+            try
+            {
+                // establecemos la conexión
+                conn.EstablecerConexion();
+
+                // ejecutamos el comando
+                cmd.ExecuteNonQuery();
+
+                return true;
+
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return false;
+            }
+            finally
+            {
+                conn.CerrarConexion();
+            }
+        }
+
+        public bool Habilitar(string elPaciente)
+        {
+            Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+
+            // enviamos y especificamos el comando a ejecutar
+            SqlCommand cmd = conn.EjecutarComando("UPDATE ControlPacientes.Paciente SET Estado = 1 WHERE nombre = @nombre");
+
+
+            // agregamos los parámetros que son requeridos
+
+            cmd.Parameters.Add(new SqlParameter("@nombre", SqlDbType.VarChar, 80));
+            cmd.Parameters["@nombre"].Value = elPaciente;
 
             // intentamos insertar al nuevo Paciente
             try

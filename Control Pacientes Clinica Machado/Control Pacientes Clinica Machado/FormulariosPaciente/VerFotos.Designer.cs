@@ -98,6 +98,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbNombres);
             this.Name = "VerFotos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VerFotos";
             this.Load += new System.EventHandler(this.VerFotos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -45,6 +45,7 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
             if (nueva.InsertarFoto(nueva))
             {
                 MessageBox.Show("Exito!");
+                this.Close();
             }
             else
             {

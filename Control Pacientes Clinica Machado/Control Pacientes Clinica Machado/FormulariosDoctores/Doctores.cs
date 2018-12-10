@@ -41,15 +41,5 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosDoctores
         {
             AbrirFormHija(new FormulariosDoctores.NuevoDoctor());
         }
-
-        private void modificarDoctorBtn_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new FormulariosDoctores.ActualizarDoctor());
-        }
-
-        private void darBajaBtn_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new FormulariosDoctores.DarDeBajaDoctor());
-        }
     }
 }

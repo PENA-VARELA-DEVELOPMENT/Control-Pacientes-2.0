@@ -263,6 +263,16 @@ namespace Control_Pacientes_Clinica_Machado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap folder_find {
+            get {
+                object obj = ResourceManager.GetObject("folder_find", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap habilitadoP {
             get {
                 object obj = ResourceManager.GetObject("habilitadoP", resourceCulture);
@@ -426,6 +436,16 @@ namespace Control_Pacientes_Clinica_Machado.Properties {
         internal static System.Drawing.Bitmap picture32 {
             get {
                 object obj = ResourceManager.GetObject("picture32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap print {
+            get {
+                object obj = ResourceManager.GetObject("print", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

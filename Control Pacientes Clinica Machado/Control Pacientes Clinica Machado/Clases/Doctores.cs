@@ -25,7 +25,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             List<Doctores> Lista = new List<Doctores>();
 
             // Query SQL
-            sql = @"SELECT * FROM [ControlPacientes].[Paciente] Order by IdDoctor"; 
+            sql = @"SELECT * FROM [ControlPacientes].[Doctores] Order by IdDoctor"; 
 
             SqlCommand cmd = conexion.EjecutarComando(sql);
             SqlDataReader rdr;
@@ -49,7 +49,51 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return Lista;
+            }
+            finally
+            {
+                conexion.CerrarConexion();
+            }
+        }
+
+        public Doctores ObtenerDoctor(int id)
+        {
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+            string sql;
+            Doctores resultado = new Doctores();
+
+            // Query SQL
+            sql = @"SELECT * FROM [ControlPacientes].[Doctores] WHERE IdDoctor = @id";
+
+            SqlCommand cmd = conexion.EjecutarComando(sql);
+            SqlDataReader rdr;
+
+            try
+            {
+                using (cmd)
+                {
+                    cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                }
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    
+                    resultado.idDoctor = rdr.GetInt32(0);
+                    resultado.nombre = rdr.GetString(1);
+                    resultado.apellido = rdr.GetString(2);
+                    resultado.especialidad = rdr.GetString(3);
+                    resultado.numeroColegiacion = rdr.GetInt32(4);                   
+                }
+
+                return resultado;
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return resultado;
             }
             finally
             {
@@ -110,15 +154,19 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         /// </summary>
         /// <param name="elPaciente"></param>
         /// <returns></returns>
-        public static bool ActualizarDoctor(Doctores doctor)
+        public bool ActualizarDoctor(Doctores doctor)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("sp_ActualizarDoctores");
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_ActualizarDoctores");
             cmd.CommandType = CommandType.StoredProcedure;
 
             // agregamos los parámetros que son requeridos
+
+            cmd.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
+            cmd.Parameters["@IdDoctor"].Value = doctor.idDoctor;
+
 
             cmd.Parameters.Add(new SqlParameter("@Nombre", SqlDbType.VarChar, 50));
             cmd.Parameters["@Nombre"].Value = doctor.nombre;
@@ -130,7 +178,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             cmd.Parameters["@Especialidad"].Value = doctor.especialidad;
 
             cmd.Parameters.Add(new SqlParameter("@NumeroColegiacion", SqlDbType.Int));
-            cmd.Parameters["@Apellido"].Value = doctor.numeroColegiacion;
+            cmd.Parameters["@NumeroColegiacion"].Value = doctor.numeroColegiacion;
 
             // intentamos insertar al nuevo Doctor
             try
@@ -146,7 +194,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
-
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return false;
             }
             finally
@@ -156,21 +204,19 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
         }
 
-        public bool EliminarDoctor(Doctores doctor)
+        public bool EliminarDoctor(int id)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
             // enviamos y especificamos el comando a ejecutar
-            SqlCommand cmd = conn.EjecutarComando("sp_EliminarDoctores");
+            SqlCommand cmd = conn.EjecutarComando("ControlPacientes.sp_EliminarDoctores");
             cmd.CommandType = CommandType.StoredProcedure;
 
             // agregamos los parámetros que son requeridos
 
             cmd.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
-            cmd.Parameters["@IdDoctor"].Value = doctor.idDoctor;
+            cmd.Parameters["@IdDoctor"].Value = id;
 
-            cmd.Parameters.Add(new SqlParameter("@Nombre", SqlDbType.VarChar, 50));
-            cmd.Parameters["@Nombre"].Value = doctor.nombre;
 
             // intentamos insertar al nuevo Doctor
             try
@@ -186,7 +232,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             }
             catch (SqlException ex)
             {
-
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return false;
             }
             finally

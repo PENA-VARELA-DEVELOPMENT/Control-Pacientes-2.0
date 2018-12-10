@@ -14,7 +14,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         // Propiedades para la clase 
         public int idCita { get; set; }
         public DateTime fecha { get; set; }
-        public DateTime hora { get; set; }
+        public string hora { get; set; }
         public string pacienteIdentidad { get; set; }
         public int idDoctor { get; set; }
 
@@ -49,7 +49,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 {
                     resultado.idCita = rdr.GetInt32(0);
                     resultado.fecha = rdr.GetDateTime(1);
-                    resultado.hora = rdr.GetDateTime(2);
+                    resultado.hora = rdr.GetString(2);
                     resultado.pacienteIdentidad = rdr.GetString(3);
                     resultado.idDoctor = rdr.GetInt32(4);
                 }
@@ -70,22 +70,26 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         }
 
             // metodo para obtener las listas 
-        public List<Cita> ListarCitas()
+        public List<Cita> ListarCitas(string id)
         {
-            Conexion conexion = new Conexion();
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
             string sql;
             //Cita resultado = new Cita();
 
             List<Cita> Lista = new List<Cita>();
 
             // Query SQL
-            sql = @"SELECT * FROM [ControlPacientes].[Cita]";
+            sql = @"SELECT * FROM [ControlPacientes].[Citas] WHERE Paciente_Identidad = @id";
 
             SqlCommand cmd = conexion.EjecutarComando(sql);
             SqlDataReader rdr;
 
             try
             {
+                using (cmd)
+                {
+                    cmd.Parameters.Add("@id", SqlDbType.VarChar, 15).Value = id;
+                }
                 rdr = cmd.ExecuteReader();
 
                  while (rdr.Read())
@@ -93,18 +97,62 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                     Cita resultado = new Cita();
                     resultado.idCita = rdr.GetInt32(0);
                     resultado.fecha = rdr.GetDateTime(1);
-                    resultado.hora = rdr.GetDateTime(2);
-                    resultado.pacienteIdentidad = rdr.GetString(4);
-                    resultado.idDoctor = rdr.GetInt32(5);
+                    resultado.hora = rdr.GetString(2);
+                    resultado.pacienteIdentidad = rdr.GetString(3);
+                    resultado.idDoctor = rdr.GetInt32(4);
                     Lista.Add(resultado);
                  }
 
                 return Lista;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
                 return Lista;
+            }
+            finally
+            {
+                conexion.CerrarConexion();
+            }
+        }
+
+        public Cita ListarCitas1(int id)
+        {
+            Conexion conexion = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
+            string sql;
+            //Cita resultado = new Cita();
+            Cita resultado = new Cita();
+            // Query SQL
+            sql = @"SELECT * FROM [ControlPacientes].[Citas] WHERE IdCita = @id";
+
+            SqlCommand cmd = conexion.EjecutarComando(sql);
+            SqlDataReader rdr;
+
+            try
+            {
+                using (cmd)
+                {
+                    cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                }
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    
+                    resultado.idCita = rdr.GetInt32(0);
+                    resultado.fecha = rdr.GetDateTime(1);
+                    resultado.hora = rdr.GetString(2);
+                    resultado.pacienteIdentidad = rdr.GetString(3);
+                    resultado.idDoctor = rdr.GetInt32(4);
+                    
+                }
+
+                return resultado;
+            }
+            catch (SqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.StackTrace + "Detalles de la excepción");
+                return resultado;
             }
             finally
             {
@@ -125,14 +173,14 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             cmd.Parameters.Add(new SqlParameter("@fecha", SqlDbType.Date));
             cmd.Parameters["@fecha"].Value = citaPaciente.fecha;
 
-            cmd.Parameters.Add(new SqlParameter("@hora", SqlDbType.DateTime));
+            cmd.Parameters.Add(new SqlParameter("@hora", SqlDbType.VarChar, 20));
             cmd.Parameters["@hora"].Value = citaPaciente.hora;
 
             cmd.Parameters.Add(new SqlParameter("@paciente_Identidad", SqlDbType.VarChar, 15));
             cmd.Parameters["@paciente_Identidad"].Value = citaPaciente.pacienteIdentidad;
 
-            cmd.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
-            cmd.Parameters["@IdDoctor"].Value = citaPaciente.idDoctor;
+            cmd.Parameters.Add(new SqlParameter("@Doctores_IdDoctor", SqlDbType.Int));
+            cmd.Parameters["@Doctores_IdDoctor"].Value = citaPaciente.idDoctor;
 
             // intentamos insertar la nueva cita
             try
@@ -160,7 +208,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         /// </summary>
         /// <param name="citaPaciente"></param>
         /// <returns></returns>
-        public static bool ActualizarCita(Cita citaPaciente)
+        public bool ActualizarCita(Cita citaPaciente)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
@@ -170,17 +218,15 @@ namespace Control_Pacientes_Clinica_Machado.Clases
 
             // agregamos los parámetros que son requeridos
 
+            cmd.Parameters.Add(new SqlParameter("@IdCita", SqlDbType.Int));
+            cmd.Parameters["@IdCita"].Value = citaPaciente.idCita;
+
             cmd.Parameters.Add(new SqlParameter("@fecha", SqlDbType.Date));
             cmd.Parameters["@fecha"].Value = citaPaciente.fecha;
 
-            cmd.Parameters.Add(new SqlParameter("@hora", SqlDbType.DateTime));
+            cmd.Parameters.Add(new SqlParameter("@hora", SqlDbType.VarChar, 20));
             cmd.Parameters["@hora"].Value = citaPaciente.hora;
 
-            cmd.Parameters.Add(new SqlParameter("@paciente_Identidad", SqlDbType.VarChar, 15));
-            cmd.Parameters["@paciente_Identidad"].Value = citaPaciente.pacienteIdentidad;
-
-            cmd.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
-            cmd.Parameters["@IdDoctor"].Value = citaPaciente.idDoctor;
 
             // intentamos insertar la nueva Cita
             try

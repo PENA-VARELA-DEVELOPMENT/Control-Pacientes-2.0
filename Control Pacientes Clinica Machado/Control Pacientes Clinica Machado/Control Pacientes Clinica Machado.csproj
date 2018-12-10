@@ -59,12 +59,6 @@
     <Compile Include="FormulariosDoctores\ActualizarDoctor.Designer.cs">
       <DependentUpon>ActualizarDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosDoctores\DarDeBajaDoctor.Designer.cs">
-      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormulariosDoctores\Doctores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,12 +101,6 @@
     <Compile Include="FormulariosMantenimiento\MantenimientoUsuarios.Designer.cs">
       <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormulariosPaciente\ActualizarPaciente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosPaciente\ActualizarPaciente.Designer.cs">
-      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormulariosCitas\Citas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,16 +110,9 @@
     <Compile Include="Clases\Cita.cs" />
     <Compile Include="Clases\DetalleCita.cs" />
     <Compile Include="Clases\Doctores.cs" />
-    <Compile Include="Clases\ExamenDental.cs" />
     <Compile Include="Clases\HistorialDental.cs" />
     <Compile Include="Clases\HistoriaMedica.cs" />
     <Compile Include="Clases\Paciente.cs" />
-    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormulariosPaciente\DarDeBajaPaciente.Designer.cs">
-      <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormulariosCitas\ListarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,9 +196,6 @@
     <EmbeddedResource Include="FormulariosDoctores\ActualizarDoctor.resx">
       <DependentUpon>ActualizarDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosDoctores\DarDeBajaDoctor.resx">
-      <DependentUpon>DarDeBajaDoctor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosDoctores\Doctores.resx">
       <DependentUpon>Doctores.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,14 +217,8 @@
     <EmbeddedResource Include="FormulariosMantenimiento\MantenimientoUsuarios.resx">
       <DependentUpon>MantenimientoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosPaciente\ActualizarPaciente.resx">
-      <DependentUpon>ActualizarPaciente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosCitas\Citas.resx">
       <DependentUpon>Citas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormulariosPaciente\DarDeBajaPaciente.resx">
-      <DependentUpon>DarDeBajaPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosCitas\ListarCitas.resx">
       <DependentUpon>ListarCitas.cs</DependentUpon>
@@ -387,6 +359,8 @@
     <None Include="Resources\cuadrado-de-forma-redondeada-negra1.png" />
     <None Include="Resources\photo32.png" />
     <None Include="Resources\picture32.png" />
+    <None Include="Resources\folder_find.ico" />
+    <None Include="Resources\print.ico" />
     <Content Include="Sql\Clinica_Machado_create.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

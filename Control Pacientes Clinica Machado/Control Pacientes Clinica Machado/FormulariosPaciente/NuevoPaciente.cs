@@ -59,7 +59,7 @@ namespace Control_Pacientes_Clinica_Machado
             Nuevo.identidad = identidadTxt.Text;
             Nuevo.nombre = nombreTxt.Text;
             Nuevo.apellido = apellidoTxt.Text;
-            Nuevo.edad = edadNmr.TabIndex;
+            Nuevo.edad = Convert.ToInt32(edadNmr.Value);
             Nuevo.direccion = direccionTxt.Text;
             Nuevo.telefono = Convert.ToInt32(telefonoTxt.Text);
             Nuevo.ciudad = CiudadTxt.Text;
@@ -79,7 +79,88 @@ namespace Control_Pacientes_Clinica_Machado
             {
                 MessageBox.Show("Error");
             }
-            
+
+            HistoriaMedica NuevaHMedica = new HistoriaMedica();
+
+            if (checkBox14.Checked)
+            {
+                NuevaHMedica.padeceEnfermedad = 1;
+            }
+            else if (checkBox13.Checked)
+            {
+                NuevaHMedica.padeceEnfermedad = 0;
+            }
+            NuevaHMedica.tmMedico = richTextBox1.Text;
+            NuevaHMedica.tomaMedicamentos = richTextBox2.Text;
+            if (checkBox16.Checked)
+            {
+                NuevaHMedica.intervenidoQuirurgicamente = 1;
+            }
+            else if (checkBox15.Checked)
+            {
+                NuevaHMedica.intervenidoQuirurgicamente = 0;
+            }
+
+            if (checkBox18.Checked)
+            {
+                NuevaHMedica.hospitalizadoAlgunaVez = 1;
+            }
+            else if (checkBox17.Checked)
+            {
+                NuevaHMedica.hospitalizadoAlgunaVez = 0;
+            }
+
+            NuevaHMedica.alergias = richTextBox3.Text;
+
+            if (checkBox20.Checked)
+            {
+                NuevaHMedica.enfermedadCardiaca = 1;
+            }
+            else if (checkBox19.Checked)
+            {
+                NuevaHMedica.enfermedadCardiaca = 0;
+            }
+
+            if (checkBox4.Checked)
+            {
+                NuevaHMedica.diabetico = 1;
+            }
+            else if (checkBox3.Checked)
+            {
+                NuevaHMedica.diabetico = 0;
+            }
+
+            if (checkBox6.Checked)
+            {
+                NuevaHMedica.tuberculosisPulmonar = 1;
+            }
+            else if (checkBox5.Checked)
+            {
+                NuevaHMedica.tuberculosisPulmonar = 0;
+            }
+            if (checkBox8.Checked)
+            {
+                NuevaHMedica.enfermedadHepatica = 1;
+            }
+            else if (checkBox7.Checked)
+            {
+                NuevaHMedica.enfermedadHepatica = 0;
+            }
+
+            if (checkBox10.Checked)
+            {
+                NuevaHMedica.problemasSangrado = 1;
+            }
+            else if (checkBox9.Checked)
+            {
+                NuevaHMedica.problemasSangrado = 0;
+            }
+
+            NuevaHMedica.paciente_Identidad = identidadTxt.Text;
+
+            NuevaHMedica.InsertarHistoriaMedica(NuevaHMedica);
+
+
 
         }
 
