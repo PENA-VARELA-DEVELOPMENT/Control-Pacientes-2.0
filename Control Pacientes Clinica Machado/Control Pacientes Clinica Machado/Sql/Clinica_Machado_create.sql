@@ -134,7 +134,7 @@ GO
 
 CREATE TABLE ControlPacientes.Usuarios (
     IdUsuarios int IDENTITY(1,1),
-    NombreUsuario varchar(64), 
+    NombreUsuario varchar(64) UNIQUE, 
     Contraseña varchar(64),
     CONSTRAINT Usuarios_pk PRIMARY KEY  (IdUsuarios)
 );
@@ -829,6 +829,13 @@ GO
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 
+INSERT INTO [ControlPacientes].[Usuarios]
+           ([NombreUsuario]
+           ,[Contraseña])
+     VALUES
+           ('Admin'
+           ,'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a')
+GO
 
 -- End of file.
 

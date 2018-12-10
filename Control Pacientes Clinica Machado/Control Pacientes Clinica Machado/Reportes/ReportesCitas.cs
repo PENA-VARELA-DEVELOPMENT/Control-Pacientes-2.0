@@ -29,10 +29,13 @@ namespace Control_Pacientes_Clinica_Machado.Reportes
         private void CaptureScreen()
         {
             Graphics myGraphics = this.CreateGraphics();
+            Size s1 = new Size();
+            s1.Height = 600;
+            s1.Width = 800;
             Size s = this.Size;
             memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
             Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+            memoryGraphics.CopyFromScreen(this.Location.X + 200 , this.Location.Y + 80, 0, 0, s1);
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -47,7 +50,8 @@ namespace Control_Pacientes_Clinica_Machado.Reportes
 
         private void ReportesCitas_Load(object sender, EventArgs e)
         {
-
+            ReporteCita listar = new ReporteCita();
+            dgvReporteCitas.DataSource = listar.ListarReporteCita();
         }
     }
 }

@@ -36,8 +36,8 @@
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
-            this.BtnBuscar = new System.Windows.Forms.Button();
-            this.BtnActualizar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.suariosDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +46,7 @@
             this.suariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.suariosDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.suariosDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.suariosDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.suariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -76,11 +77,10 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(56, 181);
+            this.label2.Location = new System.Drawing.Point(56, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 24);
             this.label2.TabIndex = 3;
@@ -88,10 +88,9 @@
             // 
             // contraseñaTxt
             // 
-            this.contraseñaTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.contraseñaTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.contraseñaTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contraseñaTxt.Location = new System.Drawing.Point(60, 214);
+            this.contraseñaTxt.Location = new System.Drawing.Point(60, 179);
             this.contraseñaTxt.Name = "contraseñaTxt";
             this.contraseñaTxt.Size = new System.Drawing.Size(287, 26);
             this.contraseñaTxt.TabIndex = 4;
@@ -105,7 +104,7 @@
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(730, 378);
+            this.BtnCancelar.Location = new System.Drawing.Point(552, 373);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(149, 39);
             this.BtnCancelar.TabIndex = 85;
@@ -122,13 +121,14 @@
             this.BtnAgregar.ForeColor = System.Drawing.Color.White;
             this.BtnAgregar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.insert;
             this.BtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAgregar.Location = new System.Drawing.Point(23, 378);
+            this.BtnAgregar.Location = new System.Drawing.Point(198, 373);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(144, 39);
             this.BtnAgregar.TabIndex = 84;
             this.BtnAgregar.Text = "AGREGAR";
             this.BtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnEliminar
             // 
@@ -139,7 +139,7 @@
             this.BtnEliminar.ForeColor = System.Drawing.Color.White;
             this.BtnEliminar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
             this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminar.Location = new System.Drawing.Point(537, 378);
+            this.BtnEliminar.Location = new System.Drawing.Point(370, 373);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(154, 39);
             this.BtnEliminar.TabIndex = 86;
@@ -147,39 +147,25 @@
             this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnEliminar.UseVisualStyleBackColor = true;
             // 
-            // BtnBuscar
+            // textBox1
             // 
-            this.BtnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnBuscar.FlatAppearance.BorderSize = 0;
-            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
-            this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscar.Location = new System.Drawing.Point(191, 378);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(126, 39);
-            this.BtnBuscar.TabIndex = 87;
-            this.BtnBuscar.Text = "BUSCAR";
-            this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(60, 264);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(287, 26);
+            this.textBox1.TabIndex = 90;
             // 
-            // BtnActualizar
+            // label3
             // 
-            this.BtnActualizar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnActualizar.FlatAppearance.BorderSize = 0;
-            this.BtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnActualizar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnActualizar.ForeColor = System.Drawing.Color.White;
-            this.BtnActualizar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.reload;
-            this.BtnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnActualizar.Location = new System.Drawing.Point(344, 378);
-            this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(164, 39);
-            this.BtnActualizar.TabIndex = 88;
-            this.BtnActualizar.Text = "ACTUALIZAR";
-            this.BtnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnActualizar.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(56, 231);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(189, 24);
+            this.label3.TabIndex = 89;
+            this.label3.Text = "Confirmar contraseña";
             // 
             // MantenimientoUsuarios
             // 
@@ -187,8 +173,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(905, 443);
-            this.Controls.Add(this.BtnActualizar);
-            this.Controls.Add(this.BtnBuscar);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnAgregar);
@@ -200,6 +186,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenimientoUsuarios";
             this.Text = "MantenimientoUsuarios";
+            this.Load += new System.EventHandler(this.MantenimientoUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.suariosDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -216,7 +203,7 @@
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnEliminar;
-        private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.Button BtnActualizar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
