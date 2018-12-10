@@ -47,5 +47,10 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosMantenimiento
         {
             AbrirFormHija(new MantenimientoUsuarios());
         }
+
+        private void inventarioBtn_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Inventario());
+        }
     }
 }

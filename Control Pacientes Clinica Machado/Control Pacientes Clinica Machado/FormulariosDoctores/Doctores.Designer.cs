@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PanelCrudDoctor = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.modificarDoctorBtn = new System.Windows.Forms.Button();
-            this.darBajaBtn = new System.Windows.Forms.Button();
             this.nuevaDoctorBtn = new System.Windows.Forms.Button();
             this.buscarDoctorBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,42 +68,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
-            // 
-            // modificarDoctorBtn
-            // 
-            this.modificarDoctorBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.modificarDoctorBtn.FlatAppearance.BorderSize = 0;
-            this.modificarDoctorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modificarDoctorBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modificarDoctorBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.modificarDoctorBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
-            this.modificarDoctorBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.modificarDoctorBtn.Location = new System.Drawing.Point(481, 84);
-            this.modificarDoctorBtn.Name = "modificarDoctorBtn";
-            this.modificarDoctorBtn.Size = new System.Drawing.Size(210, 38);
-            this.modificarDoctorBtn.TabIndex = 19;
-            this.modificarDoctorBtn.Text = "Modificar doctor";
-            this.modificarDoctorBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.modificarDoctorBtn.UseVisualStyleBackColor = true;
-            this.modificarDoctorBtn.Click += new System.EventHandler(this.modificarDoctorBtn_Click);
-            // 
-            // darBajaBtn
-            // 
-            this.darBajaBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.darBajaBtn.FlatAppearance.BorderSize = 0;
-            this.darBajaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.darBajaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.darBajaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.darBajaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
-            this.darBajaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.darBajaBtn.Location = new System.Drawing.Point(731, 84);
-            this.darBajaBtn.Name = "darBajaBtn";
-            this.darBajaBtn.Size = new System.Drawing.Size(170, 38);
-            this.darBajaBtn.TabIndex = 20;
-            this.darBajaBtn.Text = "Dar de baja ";
-            this.darBajaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.darBajaBtn.UseVisualStyleBackColor = true;
-            this.darBajaBtn.Click += new System.EventHandler(this.darBajaBtn_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // nuevaDoctorBtn
             // 
@@ -116,7 +79,7 @@
             this.nuevaDoctorBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.nuevaDoctorBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.insert;
             this.nuevaDoctorBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.nuevaDoctorBtn.Location = new System.Drawing.Point(257, 84);
+            this.nuevaDoctorBtn.Location = new System.Drawing.Point(607, 84);
             this.nuevaDoctorBtn.Name = "nuevaDoctorBtn";
             this.nuevaDoctorBtn.Size = new System.Drawing.Size(186, 38);
             this.nuevaDoctorBtn.TabIndex = 18;
@@ -133,7 +96,7 @@
             this.buscarDoctorBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.buscarDoctorBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
             this.buscarDoctorBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buscarDoctorBtn.Location = new System.Drawing.Point(34, 84);
+            this.buscarDoctorBtn.Location = new System.Drawing.Point(125, 84);
             this.buscarDoctorBtn.Name = "buscarDoctorBtn";
             this.buscarDoctorBtn.Size = new System.Drawing.Size(187, 38);
             this.buscarDoctorBtn.TabIndex = 17;
@@ -151,8 +114,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PanelCrudDoctor);
-            this.Controls.Add(this.modificarDoctorBtn);
-            this.Controls.Add(this.darBajaBtn);
             this.Controls.Add(this.nuevaDoctorBtn);
             this.Controls.Add(this.buscarDoctorBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -169,8 +130,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel PanelCrudDoctor;
-        private System.Windows.Forms.Button modificarDoctorBtn;
-        private System.Windows.Forms.Button darBajaBtn;
         private System.Windows.Forms.Button nuevaDoctorBtn;
         private System.Windows.Forms.Button buscarDoctorBtn;
     }

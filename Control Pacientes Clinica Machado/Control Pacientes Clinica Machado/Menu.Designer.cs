@@ -75,7 +75,7 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.button1.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ajustes1;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-3, 556);
+            this.button1.Location = new System.Drawing.Point(-3, 554);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 73);
             this.button1.TabIndex = 6;
@@ -85,14 +85,16 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(12, 694);
+            this.button2.Location = new System.Drawing.Point(10, 694);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Acerca de los desarrolladores";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ContaBtn
             // 
@@ -100,14 +102,15 @@
             this.ContaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
-            this.ContaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.conta;
+            this.ContaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.reportes;
             this.ContaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ContaBtn.Location = new System.Drawing.Point(0, 454);
+            this.ContaBtn.Location = new System.Drawing.Point(-3, 450);
             this.ContaBtn.Name = "ContaBtn";
             this.ContaBtn.Size = new System.Drawing.Size(204, 58);
             this.ContaBtn.TabIndex = 4;
-            this.ContaBtn.Text = "  Contabilidad";
-            this.ContaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ContaBtn.Text = "            Reportes";
+            this.ContaBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ContaBtn.Click += new System.EventHandler(this.ContaBtn_Click);
             // 
             // citasBtn
             // 
@@ -117,7 +120,7 @@
             this.citasBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.citasBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.appointment;
             this.citasBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.citasBtn.Location = new System.Drawing.Point(0, 225);
+            this.citasBtn.Location = new System.Drawing.Point(-3, 229);
             this.citasBtn.Name = "citasBtn";
             this.citasBtn.Size = new System.Drawing.Size(197, 71);
             this.citasBtn.TabIndex = 3;
@@ -136,7 +139,7 @@
             this.pacientesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.pacientesBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.team;
             this.pacientesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pacientesBtn.Location = new System.Drawing.Point(1, 125);
+            this.pacientesBtn.Location = new System.Drawing.Point(-3, 125);
             this.pacientesBtn.Name = "pacientesBtn";
             this.pacientesBtn.Size = new System.Drawing.Size(200, 58);
             this.pacientesBtn.TabIndex = 2;
@@ -155,7 +158,7 @@
             this.doctoresBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
             this.doctoresBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.doctor;
             this.doctoresBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.doctoresBtn.Location = new System.Drawing.Point(3, 337);
+            this.doctoresBtn.Location = new System.Drawing.Point(-3, 346);
             this.doctoresBtn.Name = "doctoresBtn";
             this.doctoresBtn.Size = new System.Drawing.Size(200, 58);
             this.doctoresBtn.TabIndex = 1;

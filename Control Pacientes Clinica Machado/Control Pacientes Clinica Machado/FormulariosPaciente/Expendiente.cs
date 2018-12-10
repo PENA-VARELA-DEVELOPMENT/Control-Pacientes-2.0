@@ -39,33 +39,98 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
         {
             Paciente listar = new Paciente();
             listar = listar.ObtenerPaciente(identidad);
-            identidadTxt.Text = listar.identidad;
-            identidadTxt.Enabled = false;
+            identidadTxt.Text = listar.identidad;          
             nombreTxt.Text = listar.nombre;
-            nombreTxt.Enabled = false;
             apellidoTxt.Text = listar.apellido;
-            apellidoTxt.Enabled = false;
             edadNmr.Value = listar.edad;
-            edadNmr.Enabled = false;
             direccionTxt.Text = listar.direccion;
-            direccionTxt.Enabled = false;
             telefonoTxt.Text = Convert.ToString(listar.telefono);
-            telefonoTxt.Enabled = false;
             CiudadTxt.Text = listar.ciudad;
-            CiudadTxt.Enabled = false;
             fechaNacimientoTxt.Text = listar.fechaNacimiento;
-            fechaNacimientoTxt.Enabled = false;
             ocupacionTxt.Text = listar.ocupacion;
-            ocupacionTxt.Enabled = false;
             tutorTxt.Text = listar.tutor;
-            tutorTxt.Enabled = false;
             doctorRefTxt.Text = listar.nombreDelDoctorQueRefiere;
-            doctorRefTxt.Enabled = false;
             TipoTxt.Text = listar.tipo;
-            TipoTxt.Enabled = false;
             observacionesTxt.Text = listar.observaciones;
-            observacionesTxt.Enabled = false;
 
+            HistoriaMedica ListarHMedica = new HistoriaMedica();
+            ListarHMedica = ListarHMedica.ObtenerHistoriaMedica(identidad);
+            if (ListarHMedica.padeceEnfermedad == 1)
+            {
+                checkBox14.Checked = true;
+            }
+            else if (ListarHMedica.padeceEnfermedad == 0)
+            {
+                checkBox13.Checked = true;
+            }
+
+            richTextBox1.Text = ListarHMedica.tmMedico;
+            richTextBox2.Text = ListarHMedica.tomaMedicamentos;
+
+            if (ListarHMedica.intervenidoQuirurgicamente == 1)
+            {
+                checkBox16.Checked = true;
+            }
+            else if (ListarHMedica.intervenidoQuirurgicamente == 0)
+            {
+                checkBox15.Checked = true;
+            }
+
+            if (ListarHMedica.hospitalizadoAlgunaVez == 1)
+            {
+                checkBox4.Checked = true;
+            }
+            else if (ListarHMedica.hospitalizadoAlgunaVez == 0)
+            {
+                checkBox3.Checked = true;
+            }
+
+            richTextBox3.Text = ListarHMedica.alergias;
+
+            if (ListarHMedica.enfermedadCardiaca == 1)
+            {
+                checkBox12.Checked = true;
+            }
+            else if (ListarHMedica.enfermedadCardiaca == 0)
+            {
+                checkBox11.Checked = true;
+            }
+
+            if (ListarHMedica.diabetico == 1)
+            {
+                checkBox10.Checked = true;
+            }
+            else if (ListarHMedica.diabetico == 0)
+            {
+                checkBox9.Checked = true;
+            }
+
+            if (ListarHMedica.tuberculosisPulmonar == 1)
+            {
+                checkBox6.Checked = true;
+            }
+            else if (ListarHMedica.tuberculosisPulmonar == 0)
+            {
+                checkBox5.Checked = true;
+            }
+
+            if (ListarHMedica.enfermedadHepatica == 1)
+            {
+                checkBox8.Checked = true;
+            }
+            else if (ListarHMedica.enfermedadHepatica == 0)
+            {
+                checkBox7.Checked = true;
+            }
+
+            if (ListarHMedica.problemasSangrado == 1)
+            {
+                checkBox18.Checked = true;
+            }
+            else if (ListarHMedica.problemasSangrado == 0)
+            {
+                checkBox17.Checked = true;
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -96,6 +161,119 @@ namespace Control_Pacientes_Clinica_Machado.FormulariosPaciente
             e.Graphics.DrawImage(memoryImage, 0, 0);
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Paciente Nuevo = new Paciente();
+            Nuevo.identidad = identidadTxt.Text;
+            Nuevo.nombre = nombreTxt.Text;
+            Nuevo.apellido = apellidoTxt.Text;
+            Nuevo.edad = Convert.ToInt32(edadNmr.Value);
+            Nuevo.direccion = direccionTxt.Text;
+            Nuevo.telefono = Convert.ToInt32(telefonoTxt.Text);
+            Nuevo.ciudad = CiudadTxt.Text;
+            Nuevo.fechaNacimiento = fechaNacimientoTxt.Text;
+            Nuevo.ocupacion = ocupacionTxt.Text;
+            Nuevo.tutor = tutorTxt.Text;
+            Nuevo.nombreDelDoctorQueRefiere = doctorRefTxt.Text;
+            Nuevo.observaciones = observacionesTxt.Text;
+            Nuevo.Estado = 1;
+            Nuevo.tipo = TipoTxt.Text;
+
+            if (Nuevo.ActualizarPaciente(Nuevo))
+            {
+                MessageBox.Show("Exito");
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+
+            HistoriaMedica NuevaHMedica = new HistoriaMedica();
+
+            if (checkBox14.Checked)
+            {
+                NuevaHMedica.padeceEnfermedad = 1;
+            }
+            else if (checkBox13.Checked)
+            {
+                NuevaHMedica.padeceEnfermedad = 0;
+            }
+            NuevaHMedica.tmMedico = richTextBox1.Text;
+            if (checkBox16.Checked)
+            {
+                NuevaHMedica.intervenidoQuirurgicamente = 1;
+            }
+            else if (checkBox15.Checked)
+            {
+                NuevaHMedica.intervenidoQuirurgicamente = 0;
+            }
+            NuevaHMedica.tomaMedicamentos = richTextBox2.Text;
+            if (checkBox4.Checked)
+            {
+                NuevaHMedica.hospitalizadoAlgunaVez = 1;
+            }
+            else if (checkBox3.Checked)
+            {
+                NuevaHMedica.hospitalizadoAlgunaVez = 0;
+            }
+
+            NuevaHMedica.alergias = richTextBox3.Text;
+
+            if (checkBox12.Checked)
+            {
+                NuevaHMedica.enfermedadCardiaca = 1;
+            }
+            else if (checkBox11.Checked)
+            {
+                NuevaHMedica.enfermedadCardiaca = 0;
+            }
+
+            if (checkBox10.Checked)
+            {
+                NuevaHMedica.diabetico = 1;
+            }
+            else if (checkBox9.Checked)
+            {
+                NuevaHMedica.diabetico = 0;
+            }
+
+            if (checkBox6.Checked)
+            {
+                NuevaHMedica.tuberculosisPulmonar = 1;
+            }
+            else if (checkBox5.Checked)
+            {
+                NuevaHMedica.tuberculosisPulmonar = 0;
+            }
+            if (checkBox8.Checked)
+            {
+                NuevaHMedica.enfermedadHepatica = 1;
+            }
+            else if (checkBox7.Checked)
+            {
+                NuevaHMedica.enfermedadHepatica = 0;
+            }
+
+            if (checkBox18.Checked)
+            {
+                NuevaHMedica.problemasSangrado = 1;
+            }
+            else if (checkBox17.Checked)
+            {
+                NuevaHMedica.problemasSangrado = 0;
+            }
+
+            NuevaHMedica.paciente_Identidad = identidadTxt.Text;
+
+            if (NuevaHMedica.ActualizarHistoriaMedica(NuevaHMedica))
+            {
+                MessageBox.Show("Exito");
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+            
+        }
     }
 }

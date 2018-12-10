@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Control_Pacientes_Clinica_Machado.Clases;
 
 namespace Control_Pacientes_Clinica_Machado
 {
     public partial class ModificarCita : Form
     {
-        public ModificarCita()
+        int id;
+        public ModificarCita(int x)
         {
             InitializeComponent();
+            Cita listar = new Cita();
+            listar = listar.ListarCitas1(x);
+            dateTimeFecha.Value = listar.fecha;
+            textBox1.Text = listar.hora;
+            id = x;
+
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -35,14 +44,14 @@ namespace Control_Pacientes_Clinica_Machado
         private void BtnModificar_Click(object sender, EventArgs e)
         {
             Clases.Cita Actualizar = new Clases.Cita();
-            Actualizar.fecha = dateTimeFecha.Value;
-            Actualizar.hora = dateTimeFecha.Value;
-            Actualizar.pacienteIdentidad = pacienteComBox.Text;
-            Actualizar.idDoctor = Convert.ToInt32(doctorComBox.Text);
+            Actualizar.idCita = id;
+            Actualizar.fecha = dateTimeFecha.Value;  
+            Actualizar.hora = textBox1.Text;
 
-            if (Actualizar.InsertarCita(Actualizar))
+            if (Actualizar.ActualizarCita(Actualizar))
             {
                 MessageBox.Show("Exito");
+                this.Close();
             }
             else
             {

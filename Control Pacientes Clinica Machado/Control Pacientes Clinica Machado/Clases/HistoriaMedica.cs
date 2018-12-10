@@ -58,17 +58,17 @@ namespace Control_Pacientes_Clinica_Machado.Clases
                 while (rdr.Read())
                 {
                     resultado.IdHistoria = rdr.GetInt32(0);
-                    resultado.padeceEnfermedad = rdr.GetInt32(1);
+                    resultado.padeceEnfermedad = Convert.ToInt32(rdr.GetValue(1));
                     resultado.tmMedico = rdr.GetString(2);
                     resultado.tomaMedicamentos = rdr.GetString(3);
-                    resultado.intervenidoQuirurgicamente = rdr.GetInt32(4);
-                    resultado.hospitalizadoAlgunaVez = rdr.GetInt32(5);
+                    resultado.intervenidoQuirurgicamente = Convert.ToInt32(rdr.GetValue(4));
+                    resultado.hospitalizadoAlgunaVez = Convert.ToInt32(rdr.GetValue(5));
                     resultado.alergias = rdr.GetString(6);
-                    resultado.enfermedadCardiaca = rdr.GetInt32(7);
-                    resultado.diabetico = rdr.GetInt32(8);
-                    resultado.tuberculosisPulmonar = rdr.GetInt32(9);
-                    resultado.enfermedadHepatica = rdr.GetInt32(10);
-                    resultado.problemasSangrado = rdr.GetInt32(11);
+                    resultado.enfermedadCardiaca = Convert.ToInt32(rdr.GetValue(7));
+                    resultado.diabetico = Convert.ToInt32(rdr.GetValue(8));
+                    resultado.tuberculosisPulmonar = Convert.ToInt32(rdr.GetValue(9));
+                    resultado.enfermedadHepatica = Convert.ToInt32(rdr.GetValue(10));
+                    resultado.problemasSangrado = Convert.ToInt32(rdr.GetValue(11));
                     resultado.paciente_Identidad = rdr.GetString(12);
                 }
                 return resultado;
@@ -143,7 +143,7 @@ namespace Control_Pacientes_Clinica_Machado.Clases
         /// </summary>
         /// <param name="HMedica"></param>
         /// <returns></returns>
-        public static bool ActualizarHistoriaMedica(HistoriaMedica HMedica)
+        public bool ActualizarHistoriaMedica(HistoriaMedica HMedica)
         {
             Conexion conn = new Conexion(@"(local)\sqlexpress", "ClinicaMachado");
 
@@ -186,8 +186,8 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             cmd.Parameters.Add(new SqlParameter("@ProblemasSangrado", SqlDbType.Bit));
             cmd.Parameters["@ProblemasSangrado"].Value = HMedica.problemasSangrado;
 
-            //cmd.Parameters.Add(new SqlParameter("@Paciente_Identidad", SqlDbType.Bit));
-            //cmd.Parameters["@Paciente_Identidad"].Value = HMedica.paciente_Identidad;
+            cmd.Parameters.Add(new SqlParameter("@Paciente_Identidad", SqlDbType.VarChar, 15));
+            cmd.Parameters["@Paciente_Identidad"].Value = HMedica.paciente_Identidad;
 
             // intentamos insertar al nuevo Paciente
             try
@@ -257,8 +257,8 @@ namespace Control_Pacientes_Clinica_Machado.Clases
             cmd.Parameters.Add(new SqlParameter("@ProblemasSangrado", SqlDbType.Bit));
             cmd.Parameters["@ProblemasSangrado"].Value = HMedica.problemasSangrado;
 
-            //cmd.Parameters.Add(new SqlParameter("@Paciente_Identidad", SqlDbType.Bit));
-            //cmd.Parameters["@Paciente_Identidad"].Value = HMedica.paciente_Identidad;
+            cmd.Parameters.Add(new SqlParameter("@Paciente_Identidad", SqlDbType.VarChar, 15));
+            cmd.Parameters["@Paciente_Identidad"].Value = HMedica.paciente_Identidad;
 
             // intentamos insertar la nueva historia médica
             try

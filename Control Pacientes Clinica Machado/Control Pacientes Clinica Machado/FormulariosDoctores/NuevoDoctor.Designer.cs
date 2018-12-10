@@ -132,7 +132,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.BtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnCancelar.FlatAppearance.BorderSize = 0;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,7 +150,7 @@
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.BtnAgregar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnAgregar.FlatAppearance.BorderSize = 0;
             this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

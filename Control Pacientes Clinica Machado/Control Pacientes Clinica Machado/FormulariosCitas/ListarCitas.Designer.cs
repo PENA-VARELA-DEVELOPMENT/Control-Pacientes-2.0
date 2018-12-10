@@ -34,6 +34,7 @@
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.dgvListarCita = new System.Windows.Forms.DataGridView();
+            this.buscarCitaBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListarCita)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,8 +45,9 @@
             this.ListarComBox.FormattingEnabled = true;
             this.ListarComBox.Location = new System.Drawing.Point(12, 62);
             this.ListarComBox.Name = "ListarComBox";
-            this.ListarComBox.Size = new System.Drawing.Size(333, 28);
+            this.ListarComBox.Size = new System.Drawing.Size(312, 28);
             this.ListarComBox.TabIndex = 1;
+            this.ListarComBox.TextChanged += new System.EventHandler(this.ListarComBox_TextChanged);
             // 
             // label1
             // 
@@ -60,14 +62,14 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCancelar.FlatAppearance.BorderSize = 0;
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.error;
             this.BtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCancelar.Location = new System.Drawing.Point(701, 381);
+            this.BtnCancelar.Location = new System.Drawing.Point(700, 381);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(154, 39);
             this.BtnCancelar.TabIndex = 74;
@@ -85,7 +87,7 @@
             this.BtnEliminar.ForeColor = System.Drawing.Color.White;
             this.BtnEliminar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.trash;
             this.BtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEliminar.Location = new System.Drawing.Point(351, 381);
+            this.BtnEliminar.Location = new System.Drawing.Point(369, 381);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(139, 39);
             this.BtnEliminar.TabIndex = 75;
@@ -96,27 +98,30 @@
             // 
             // BtnModificar
             // 
-            this.BtnModificar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnModificar.FlatAppearance.BorderSize = 0;
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnModificar.ForeColor = System.Drawing.Color.White;
             this.BtnModificar.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.ok;
             this.BtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificar.Location = new System.Drawing.Point(514, 381);
+            this.BtnModificar.Location = new System.Drawing.Point(524, 381);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(160, 39);
             this.BtnModificar.TabIndex = 76;
             this.BtnModificar.Text = "MODIFICAR";
             this.BtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // dgvListarCita
             // 
             this.dgvListarCita.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvListarCita.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListarCita.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.dgvListarCita.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvListarCita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListarCita.GridColor = System.Drawing.SystemColors.Control;
             this.dgvListarCita.Location = new System.Drawing.Point(374, 25);
@@ -125,12 +130,28 @@
             this.dgvListarCita.TabIndex = 77;
             this.dgvListarCita.SelectionChanged += new System.EventHandler(this.dgvListarCita_SelectionChanged);
             // 
+            // buscarCitaBtn
+            // 
+            this.buscarCitaBtn.FlatAppearance.BorderSize = 0;
+            this.buscarCitaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buscarCitaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarCitaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(50)))), ((int)(((byte)(129)))));
+            this.buscarCitaBtn.Image = global::Control_Pacientes_Clinica_Machado.Properties.Resources.search;
+            this.buscarCitaBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buscarCitaBtn.Location = new System.Drawing.Point(330, 62);
+            this.buscarCitaBtn.Name = "buscarCitaBtn";
+            this.buscarCitaBtn.Size = new System.Drawing.Size(38, 28);
+            this.buscarCitaBtn.TabIndex = 78;
+            this.buscarCitaBtn.UseVisualStyleBackColor = true;
+            this.buscarCitaBtn.Click += new System.EventHandler(this.buscarCitaBtn_Click);
+            // 
             // ListarCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(867, 443);
+            this.Controls.Add(this.buscarCitaBtn);
             this.Controls.Add(this.dgvListarCita);
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnEliminar);
@@ -153,5 +174,6 @@
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.DataGridView dgvListarCita;
+        private System.Windows.Forms.Button buscarCitaBtn;
     }
 }

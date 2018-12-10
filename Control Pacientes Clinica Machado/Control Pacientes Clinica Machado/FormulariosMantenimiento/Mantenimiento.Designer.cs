@@ -87,6 +87,7 @@
             this.inventarioBtn.Text = "Inventario";
             this.inventarioBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.inventarioBtn.UseVisualStyleBackColor = true;
+            this.inventarioBtn.Click += new System.EventHandler(this.inventarioBtn_Click);
             // 
             // habilitarPxBtn
             // 
